@@ -1,0 +1,113 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kurt Donnerwetter, freelancer, LIC=50D7S-LUZZR-BX4UY-IWJ2K-HGE9I-C075C
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v535\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      ULP2V8M.DLL V1.8.32.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\LoRa\Ra-08\Keil\STAR_QCU_Perf_MPS3\STAR_QCU_Perf.uvprojx
+Project File Date:  02/05/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v535\ARM\ARMCLANG\Bin'
+Build target 'STAR'
+compiling Flash_driver.c...
+compiling main.c...
+compiling Timing.c...
+compiling Mat_mult.c...
+compiling Flash_api.c...
+compiling QCU_driver.c...
+compiling UART_APB.c...
+compiling lowlevel_retarget.c...
+compiling retarget_io.c...
+compiling startup_STAR.c...
+compiling system_STAR.c...
+linking...
+Program Size: Code=8418 RO-data=2886 RW-data=16 ZI-data=4168  
+".\Objects\STAR_QCU.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: USART Version: 2.4.0
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: ArmChina
+                https://www.armchina.com/webarm/arm/common/download/profile/resource/file/Software-and-Tools/CMSIS-PACKs/ArmChina.STAR.2.1.0.pack
+                ArmChina.STAR.2.1.0
+                The Arm China STAR-MC1 processor is the first processor in the STAR series processor family.
+  It is a fully featured microcontroller class processor based on the Armv8-M mainline architecture with Arm TrustZone technology(depending on the actual core).
+   * Component: STAR QCU Version: 1.0.0
+   * Component: STAR USART Version: 1.1.0
+   * Component: Startup Version: 1.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.ARM_Compiler.1.7.2.pack
+                Keil.ARM_Compiler.1.7.2
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: STDIN Variant: User Version: 1.2.0
+   * Component: STDOUT Variant: User Version: 1.2.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/CMSIS_Driver/STAR_CU_MPS3
+  ./RTE/_STAR
+  C:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Driver/Include
+  C:/Users/Admin/AppData/Local/Arm/Packs/ArmChina/STAR/2.1.0/Device/ArmChina/STAR/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::CMSIS Driver:USART:2.4.0 (API)
+      Include file:  CMSIS/Driver/Include/Driver_USART.h
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: ArmChina::CMSIS Driver:QSPI(Driver):STAR QCU:1.0.0
+      Include file:  Driver/Include/QCU_common.h
+      Source file:   Driver/DriverTemplates/QCU_driver.c
+      Include file:  Driver/Include/QCU_driver.h
+
+   * Component: ArmChina::CMSIS Driver:USART:STAR USART:1.1.0
+      Source file:   Driver/DriverTemplates/UART_APB.c
+      Include file:  Driver/Include/lowlevel_retarget.h
+      Source file:   Driver/DriverTemplates/lowlevel_retarget.c
+      Include file:  Driver/Include/UART_APB.h
+
+   * Component: ArmChina::Device:Startup:1.1.0
+      Source file:   Device/ArmChina/STAR/Source/startup_STAR.c
+      Source file:   Device/ArmChina/STAR/Source/system_STAR.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDIN:User:1.2.0
+      Source file:   Source/retarget_io.c
+      Source file:   Template/stdin_user.c
+      Source file:   Template/stdin_keyboard.c
+      Source file:   Template/stdin_USART.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:User:1.2.0
+      Source file:   Source/retarget_io.c
+      Source file:   Template/stdout_user.c
+      Source file:   Template/stdout_USART.c
+      Source file:   Template/stdout_display.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

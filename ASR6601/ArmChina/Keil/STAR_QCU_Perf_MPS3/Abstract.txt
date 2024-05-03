@@ -1,0 +1,4 @@
+This is a QCU performance example for STAR MPS3 system.
+This is a QCU performance example for STAR MPS3 system.
+The 'main' application booted from FLASH in XIP mode which is operating a simple matrix-multiplication.
+By changing QCU and FLASH from SPI to SQI mode, the performance uplift of accessing FLASH can be observed from UART output message.

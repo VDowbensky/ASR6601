@@ -1,0 +1,16 @@
+--cpu=Cortex-M33
+".\objects\main.o"
+".\objects\mat_mult.o"
+".\objects\timing.o"
+".\objects\flash_api.o"
+".\objects\flash_driver.o"
+".\objects\qcu_driver.o"
+".\objects\uart_apb.o"
+".\objects\lowlevel_retarget.o"
+".\objects\retarget_io.o"
+".\objects\startup_star.o"
+".\objects\system_star.o"
+--strict --scatter ".\RTE\Device\STAR_CU_MPS3\STAR_ac6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STAR_QCU.map" -o .\Objects\STAR_QCU.axf

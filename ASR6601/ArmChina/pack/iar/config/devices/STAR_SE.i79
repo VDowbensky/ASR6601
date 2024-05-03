@@ -1,0 +1,27 @@
+[FILEFORMAT]
+rev=1.6
+
+[CHIP]
+name=STAR_SE
+endiansupport=le_be8
+thumbsupport=true
+armsupport=false
+fpu=VFPv5_sp
+
+JTAG=false
+SWD=true
+CJTAG=false
+SWO_clock=150.0
+
+[EMUPARAMS]
+
+[CORE]
+name=STAR
+
+[DDF FILE]
+name=${CMSIS_PACK_PATH_ArmChina#STAR#1.3.0}$\iar\config\debugger\STAR_SE.ddf
+
+[LINKER FILE]
+name=${CMSIS_PACK_PATH_ArmChina#STAR#1.3.0}$\iar\config\linker\STAR_SE.icf
+
+[FLASH LOADER]

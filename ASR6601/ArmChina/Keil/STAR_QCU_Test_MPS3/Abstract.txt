@@ -1,0 +1,4 @@
+This is a QCU test example for STAR MPS3 system.
+The program is running in SRAM.
+It shows how to use STAR QCU driver to manipulate the FLASH device.
+In this example, main does Init->Erase->Program->Uninit operations by calling API->QCU.driver->Flash.driver.

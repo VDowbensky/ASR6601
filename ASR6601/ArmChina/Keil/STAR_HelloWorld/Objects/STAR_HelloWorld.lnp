@@ -1,0 +1,11 @@
+--cpu=Cortex-M33
+".\objects\main.o"
+".\objects\uart_apb.o"
+".\objects\lowlevel_retarget.o"
+".\objects\retarget_io.o"
+".\objects\startup_star.o"
+".\objects\system_star.o"
+--strict --scatter ".\RTE\Device\STAR_CU\STAR_ac6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\STAR_HelloWorld.map" -o .\Objects\STAR_HelloWorld.axf

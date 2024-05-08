@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [RA08T.PrjPcb]
+   Generated File[RA08T.TXT]
+   Generated File[RA08T.LDP]
+   Generated File[RA08T.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 16:21:34 On 08.05.2024

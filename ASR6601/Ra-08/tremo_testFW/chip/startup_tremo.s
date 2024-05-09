@@ -1,6 +1,6 @@
 ;**************************************************************************
 ;* @file     startup_tremo.s
-;* @brief    tremo_437 startup file for keil
+;* @brief    tremo startup file for keil
 ;* <<< Use Configuration Wizard in Context Menu >>>  
 ;**************************************************************************
 ;

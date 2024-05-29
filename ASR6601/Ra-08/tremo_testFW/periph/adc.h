@@ -3,4 +3,9 @@
 
 #include "bsp.h"
 
+void myadc_init(void);
+
+extern float Vcc;
+extern float T;
+
 #endif

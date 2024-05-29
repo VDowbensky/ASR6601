@@ -5,6 +5,11 @@ void radio_init(void)
 	
 }
 
+void radio_config(void)
+{
+	
+}
+
 void radio_proc(void)
 {
 	

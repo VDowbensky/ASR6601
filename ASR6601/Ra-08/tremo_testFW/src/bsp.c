@@ -2,6 +2,7 @@
 
 #include "gpio.h"
 #include "uart.h"
+#include "adc.h"
 #include "retargetserial.h"
 
 void init_power_clk(void)
@@ -20,7 +21,7 @@ void init_power_clk(void)
 void init_peripherals(void)
 {
 	mygpio_init();
-	//myuart_init(115200);
+	myadc_init();
 	RETARGET_SerialInit();
 }
 

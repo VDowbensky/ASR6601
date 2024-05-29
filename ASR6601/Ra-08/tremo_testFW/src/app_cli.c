@@ -2,6 +2,7 @@
 #include "app_cli.h"
 #include "bsp.h"
 #include "radio_proc.h"
+#include "adc.h"
 //#include "gpsparser.h"
 
 
@@ -220,8 +221,10 @@ void cli_reset(int argc, char **argv)
 
 void cli_info(int argc, char **argv)
 {
-  //printf("GET_UID: 0x%08X%08X%08X\r\n",*(uint32_t*)0x4926,*(uint32_t*)0x492a,*(uint32_t*)0x492e);
-	printf("GET_UID: TODO\r\n");
+  uint64_t id;
+	id = *(uint64_t*)0x4002002c;
+	//id = EFC->SN_L | ((uint64_t)EFC->SN_H << 32);
+	printf("GET_UID: 0x%llX\r\n", id);
 }
 
 void cli_getver(int argc, char **argv)
@@ -1330,9 +1333,7 @@ void cli_setrssioffset(int argc, char **argv)
 //Device dependent commands
 void cli_getvt(int argc, char **argv)
 {
-  //calcVccTemp();
-  //printf("GET_VT: %.1f,%.3f\r\n",Temp,Vcc / 1000.0);
-	printf("GET_VT: TODO\r\n");
+  printf("GET_VT: %.1f,%.3f\r\n",T,Vcc);
 }
 
 void cli_setem(int argc, char **argv)

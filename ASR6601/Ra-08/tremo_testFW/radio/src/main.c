@@ -74,8 +74,8 @@ void board_init()
     
 
     RtcInit();
-	gpio_set_iomux(GPIOA,GPIO_PIN_6,0);
-	gpio_set_iomux(GPIOA,GPIO_PIN_7,0);
+	//gpio_set_iomux(GPIOA,GPIO_PIN_6,0);
+	//gpio_set_iomux(GPIOA,GPIO_PIN_7,0); SWD off. WTF???
     uart_log_init();
 }
 

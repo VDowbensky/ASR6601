@@ -46,6 +46,11 @@
 #define K1_PORT				GPIOA
 #define K1_PIN				GPIO_PIN_9
 
+#define RFSW_CTRL_PORT	GPIOA
+#define RFSW_CTRL_PIN		GPIO_PIN_10 //GPIO10
+#define RFSW_TXRX_PORT	GPIOD
+#define RFSW_TXRX_PIN		GPIO_PIN_11 //GPIO59
+
 #define UART0_BR			115200
 
 void init_power_clk(void);

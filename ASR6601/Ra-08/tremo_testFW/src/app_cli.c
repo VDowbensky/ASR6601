@@ -1333,7 +1333,7 @@ void cli_setrssioffset(int argc, char **argv)
 //Device dependent commands
 void cli_getvt(int argc, char **argv)
 {
-  printf("GET_VT: %.1f,%.3f\r\n",T,Vcc);
+  printf("GET_VT: T=%.3f,V=%.3f\r\n",T,Vcc);
 }
 
 void cli_setem(int argc, char **argv)

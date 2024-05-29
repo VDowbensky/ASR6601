@@ -15,18 +15,21 @@ void myadc_init(void)
 	rcc_enable_peripheral_clk(RCC_PERIPHERAL_ADC, true);
 	rcc_enable_peripheral_clk(RCC_PERIPHERAL_AFEC, true);
 	
+	//test pin
+	gpio_init(GPIOA, GPIO_PIN_8, GPIO_MODE_ANALOG);
+	
 	adc_get_calibration_value(false, &gain_value, &dco_value);
 	dco_value *= 1000.0;
 	adc_init();
 	adc_config_clock_division(8);
-	
+	//It not works now. Temp sensor and Vcc divider must be enabled in AFEC!
 	adc_config_sample_sequence(0, 13); //temp.sensor
-  adc_config_sample_sequence(1, 15); //Vcc
+  //adc_config_sample_sequence(1, 15); //Vcc
 	
-	adc_config_conv_mode(ADC_CONV_MODE_SINGLE);
+	adc_config_conv_mode(ADC_CONV_MODE_DISCONTINUE); //(ADC_CONV_MODE_SINGLE);
   adc_enable(true);
 	phase = 0;
-  //adc_start(true);
+  adc_start(true);
 	
 	//enable interrupt
 	adc_config_interrupt(ADC_IER_EOC,true); //ADC_IER_EOS
@@ -36,20 +39,25 @@ void myadc_init(void)
 
 void ADC_IRQHandler(void)
 {
-	uint16_t v;
+	uint16_t adc_val;
+	float mv;
 	
 	adc_clear_interrupt_status(ADC_ISR_EOC);//ADC_ISR_EOS
-	v = adc_get_data();
+	adc_start(false);
+	adc_val = adc_get_data();
+	mv = ((Vref/4096.0) * adc_val - dco_value) / gain_value;
+	adc_enable(false);
 	if (phase == 0)
 	{
-		T = ((Vref/4096.0) * v - dco_value) / gain_value;
+		T = mv;
+		adc_config_sample_sequence(0, 15); 
 		phase = 1;
-		//adc_start(true);
 	}
 	else
 	{
-		Vcc = ((Vref/4096.0) * v - dco_value) / gain_value;
+		Vcc = mv;
+		adc_config_sample_sequence(0, 13); 
 		phase = 0;
-		adc_start(false);
 	}
+	adc_enable(true);
 }

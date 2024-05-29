@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\inc;.\lib\inc;.\chip;.\periph;.\radio</IncludePath>
+              <IncludePath>.\inc;.\lib\inc;.\chip;.\periph;.\radio;.\cli</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,6 +409,11 @@
               <FileName>retarget.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\src\retarget.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_cli.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\app_cli.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -564,6 +569,16 @@
               <FileName>radio_proc.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\radio\radio_proc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>cli</GroupName>
+          <Files>
+            <File>
+              <FileName>command_interpreter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\cli\command_interpreter.c</FilePath>
             </File>
           </Files>
         </Group>

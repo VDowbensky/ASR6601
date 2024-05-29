@@ -9,6 +9,10 @@
 #include "tremo_delay.h"
 #include "retargetserial.h"
 
+#define HW_VERSION    1
+#define FW_VERSION		0
+#define FW_REVISION		1
+
 #define TXD0_PORT			GPIOB
 #define TXD0_PIN			GPIO_PIN_1
 #define RXD0_PORT			GPIOB

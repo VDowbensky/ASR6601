@@ -21,7 +21,7 @@
 #include <stdlib.h>
 //#include <stdint.h>
 //#include <stdbool.h>
-#include "stm8l15x.h"
+#include "bsp.h"
 #include <string.h>
 #include <errno.h>
 
@@ -118,7 +118,7 @@ WEAK bool ciPrintHelp(CommandEntry_t *commands)
     commands++;
   }
 	printf("\r\n");
-  return TRUE;
+  return true;
 }
 
 uint8_t ciInitState(CommandState_t *state,
@@ -223,7 +223,7 @@ int32_t ciGetSigned(char *arg)
 
 bool ciValidateInteger(char *arg, char type)
 {
-  bool isSigned = FALSE;
+  bool isSigned = false;
   int length;
 
   switch (type) {
@@ -238,10 +238,10 @@ bool ciValidateInteger(char *arg, char type)
       break;
     case 's':
       length = 4;
-      isSigned = TRUE;
+      isSigned = true;
       break;
     default:
-      return FALSE;
+      return false;
   }
 
   return validateInteger(arg, length, isSigned);
@@ -265,7 +265,7 @@ static void parseBackspaces(char *buffer)
 
 static bool processCommand(CommandEntry_t *commands, char *buffer)
 {
-  bool success = FALSE;
+  bool success = false;
   char *saveptr, *token;
   CommandEntry_t *commandListStart = commands;
 
@@ -277,7 +277,7 @@ static bool processCommand(CommandEntry_t *commands, char *buffer)
 
   // Treat the empty command as a valid command
   if (token == NULL) {
-    return TRUE;
+    return true;
   }
 
   // Iterate through all the known commands and see if any of them match the
@@ -299,7 +299,7 @@ static bool processCommand(CommandEntry_t *commands, char *buffer)
         argc++;
         if (argc >= MAX_COMMAND_ARGUMENTS) {
           ciErrorCallback(buffer, CI_MAX_ARGUMENTS);
-          return FALSE;
+          return false;
         }
         token = strtok_r(NULL, ":\n\r ", &saveptr);
       }
@@ -308,12 +308,12 @@ static bool processCommand(CommandEntry_t *commands, char *buffer)
       // skip over the first argument (command name)
       if (!validateArguments(commands->arguments, argc - 1, argv + 1)) {
         ciErrorCallback(buffer, CI_INVALID_ARGUMENTS);
-        return FALSE;
+        return false;
       }
 
       // Call the appropriate callback with its arguments
       commands->callback(argc, argv);
-      success = TRUE;
+      success = true;
       break;
     }
     commands++;
@@ -358,7 +358,7 @@ static bool validateArguments(char *argstring, int argc, char **argv)
   // If there is no argstring or only a '?' then treat any arguments
   // as valid
   if (argstring == NULL || (strcmp(argstring, "?") == 0)) {
-    return TRUE;
+    return true;
   }
   argstringLen = strlen(argstring);
   minArgs = argstringLen;
@@ -369,7 +369,7 @@ static bool validateArguments(char *argstring, int argc, char **argv)
     // Ensure the '*' is at the end of the string and that the string has more
     // than just the '*' character
     if ((loc != (argstring + argstringLen - 1)) || (argstringLen == 1)) {
-      return FALSE;
+      return false;
     }
     minArgs -= 2; // Get rid of the '*' and its optional predecessor
   }
@@ -382,7 +382,7 @@ static bool validateArguments(char *argstring, int argc, char **argv)
     // case of a '*' character at the end.
     if (i >= argstringLen) {
       if (argstring[argstringLen - 1] != '*') {
-        return FALSE;
+        return false;
       }
     } else if (argstring[i] != '*') {
       argType = argstring[i];
@@ -392,28 +392,28 @@ static bool validateArguments(char *argstring, int argc, char **argv)
     // type. We really only validate different types of integers here.
     switch (argType) {
       case 'w':
-        isValid = validateInteger(argv[i], 4, FALSE);
+        isValid = validateInteger(argv[i], 4, false);
         break;
       case 'v':
-        isValid = validateInteger(argv[i], 2, FALSE);
+        isValid = validateInteger(argv[i], 2, false);
         break;
       case 'u':
-        isValid = validateInteger(argv[i], 1, FALSE);
+        isValid = validateInteger(argv[i], 1, false);
         break;
       case 's':
-        isValid = validateInteger(argv[i], 4, TRUE);
+        isValid = validateInteger(argv[i], 4, true);
         break;
       case 'b':
         // Strings are always valid...
-        isValid = TRUE;
+        isValid = true;
         break;
       default:
         // Error in the argstring so stop processing
-        isValid = FALSE;
+        isValid = false;
         break;
     }
     if (!isValid) {
-      return FALSE;
+      return false;
     }
   }
 
@@ -443,17 +443,17 @@ static bool validateInteger(char *str, int lengthInBytes, bool isSigned)
 
     // Make sure that this value doesn't set higher order bits
     if ((val & mask) != val) {
-      return FALSE;
+      return false;
     }
   }
 
   // If we didn't process the whole string or errno was set then something
   // probably went wrong
   if ((errno != 0) || ((uint32_t)(endptr - str) != strlen(str))) {
-    return FALSE;
+    return false;
   }
 
-  return TRUE;
+  return true;
 }
 
 #if _WIN32 == 1

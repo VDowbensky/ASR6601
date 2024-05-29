@@ -1,5 +1,6 @@
 #include "bsp.h"
 #include "radio_proc.h"
+#include "app_cli.h"
 
 int main(void)
 {
@@ -11,9 +12,11 @@ int main(void)
 	radio_init();
 	delay_ms(100);
 	led_off();
+	cli_init();
 	printf("Radio init OK\r\n");
 	while(1)
 	{
 		radio_proc();
+		cli_proc();
 	}
 }

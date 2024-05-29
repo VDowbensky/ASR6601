@@ -60,7 +60,7 @@
 
 // Get the standard include types
 //#include <stdint.h>
-#include "stm8l15x.h"
+#include "bsp.h"
 //#include <stdbool.h>
 
 #define _WIN32  1

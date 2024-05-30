@@ -99,3 +99,6 @@ void lorac_rfsw_off(void)
 {
 	gpio_init(RFSW_CTRL_PORT, RFSW_CTRL_PIN, GPIO_MODE_OUTPUT_PP_LOW); //turn off RF switch power
 }
+
+
+

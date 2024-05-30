@@ -1,6 +1,7 @@
 #include "bsp.h"
 #include "tremo_it.h"
 #include "adc.h"
+#include "radio_proc.h"
 
 
 #define ADC_MS		10
@@ -98,6 +99,25 @@ void SysTick_Handler(void)
 	{
 		adc_ticks = 0;
 		adc_start(true);
+	}
+	
+	if(master)
+	{
+	 tx_ticks++;
+   if((tx_ticks >= inter_packet_delay) && (master == true))
+   {
+     tx_ticks = 0;
+     txpacketnumber++;
+     //if((txpacketnumber <= txpacketcount) || (contTX)) tx_needed = true;
+		 if(txpacketnumber <= txpacketcount) tx_needed = true;
+     else
+     {
+       tx_needed = false;
+       master = false;
+       printf("SEND_PACKET: DONE\r\n");
+     }
+   }
+		
 	}
 }
 

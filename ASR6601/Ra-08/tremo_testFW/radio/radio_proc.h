@@ -133,6 +133,7 @@ extern uint16_t inter_packet_delay;
 extern bool answer_needed;
 extern bool packet_received;
 extern bool packet_sent;
+extern uint32_t tx_ticks;
 
 extern uint8_t txmode;
 extern int16_t Channel;

@@ -4,6 +4,8 @@ void processHardEvents(void);
 void processTxEvents(void);
 void processRxEvents(void);
 
+uint32_t tx_ticks = 0;
+
 //uint8_t HardEvents;
 //uint8_t RxEvents;
 //uint8_t TxEvents;
@@ -72,21 +74,6 @@ void radio_init(void)
 void radio_proc(void)
 {
   static uint8_t phase = 0;
-/* 
-  if(radioConfig.modem == MODEM_FSK)
-  {
-    if(pre_rcv)
-    {
-      pre_rcv = false;
-      printf("Pre det.\r\n");
-    }
-    if(sync_rcv)
-    {
-      sync_rcv = false;
-      printf("Sync det.\r\n");
-    }
-  }
-*/
   
   if(tx_needed)
   {
@@ -208,7 +195,7 @@ void radio_startburst(void)
   master = true;
   txpacketnumber = 1;
   //start TX timer here
-//  Tim4cnt = 0; //to systick
+	tx_ticks = 0; //to systick
   tx_needed = true;
 }
 
@@ -273,21 +260,15 @@ void printcrcerror(void)
   printf("FERR\r\n");
 }
 
-void RADIO_DIO0handler(void)
+void LORA_IRQHandler(void)
 {
   uint16_t irqstatus;
 
 //  EXTI_ClearITPendingBit(RADIO_DIO1_EXTI_IT_PIN);
   //read SX126x status
   irqstatus = SX126X_GetIrqStatus();
-  //SX126X_ClearIrqStatus(TXDONE_IRQMSK | RXDONE_IRQMSK | CRCERR_IRQMSK);
   SX126X_ClearIrqStatus(ALL_IRQMSK);
-/*  if(radioConfig.LoRaMode == false)
-  {
-    if(irqstatus & RPEDET_IRQMSK) pre_rcv = true;
-    if(irqstatus & SYNCDET_IRQMSK) sync_rcv = true;
-  }
-*/  
+
   if(irqstatus & TXDONE_IRQMSK) packet_sent = true;
   if(irqstatus & RXDONE_IRQMSK) packet_received = true;
   if(irqstatus & CRCERR_IRQMSK) crc_error = true;

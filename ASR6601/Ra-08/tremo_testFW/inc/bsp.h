@@ -2,6 +2,7 @@
 #define _BSP_H_
 
 #include <stdio.h>
+#include <string.h>
 #include "tremo_system.h"
 #include "tremo_rcc.h"
 #include "tremo_flash.h"

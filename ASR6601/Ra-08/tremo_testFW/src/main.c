@@ -13,7 +13,7 @@ int main(void)
 	delay_ms(100);
 	led_off();
 	cli_init();
-	printf("Radio init OK\r\n");
+
 	while(1)
 	{
 		radio_proc();

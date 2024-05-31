@@ -3,6 +3,7 @@
 #include "bsp.h"
 #include "radio_proc.h"
 #include "adc.h"
+#include "flash.h"
 //#include "gpsparser.h"
 
 
@@ -39,7 +40,7 @@ void cli_getxoparams(int argc, char **argv);
 void cli_setxoparams(int argc, char **argv);
 void cli_getctune(int argc, char **argv);
 void cli_setctune(int argc, char **argv);
-void cli_storectune(int argc, char **argv);
+//void cli_storectune(int argc, char **argv);
 
 void cli_getRSSI(int argc, char **argv);
 void cli_gettimeouts(int argc, char **argv);
@@ -82,6 +83,7 @@ void cli_fs_setcrcwhite(int argc, char **argv);
 void cli_readreg(int argc, char **argv);
 void cli_writereg(int argc, char **argv);
 void cli_initconfig(int argc, char **argv);
+void cli_storeconfig(int argc, char **argv);
 
 void cli_dumpregs(int argc, char **argv);
 
@@ -140,7 +142,7 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("SET_XOPARAMS", "ww", cli_setxoparams, ""),
     COMMAND_ENTRY("GET_CTUNE", "", cli_getctune, ""),
     COMMAND_ENTRY("SET_CTUNE", "w", cli_setctune, ""),
-    COMMAND_ENTRY("STORE_CTUNE", "", cli_storectune, ""),
+    //COMMAND_ENTRY("STORE_CTUNE", "", cli_storectune, ""),
 
     COMMAND_ENTRY("GET_RSSI", "", cli_getRSSI, ""),
     COMMAND_ENTRY("GET_TIMEOUTS", "", cli_gettimeouts, ""),
@@ -195,6 +197,7 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("SWEEP_RX", "www", cli_sweeprx, "RX scan"),
 
     COMMAND_ENTRY("INIT_CONFIG", "", cli_initconfig, ""),
+		COMMAND_ENTRY("STORE_CONFIG", "", cli_storeconfig, ""),
     COMMAND_ENTRY("SET_EM", "w", cli_setem, ""),
   };
 
@@ -247,18 +250,15 @@ void cli_getver(int argc, char **argv)
 void cli_getdevid(int argc, char **argv)
 {
   printf("GET_DEVID: 0x%04X\r\n", radioConfig.deviceID);
-	//printf("GET_DEVID: TODO\r\n");
 }
 
 void cli_setdevid(int argc, char **argv)
 {
   uint16_t id;
   id = ciGetUnsigned(argv[1]);
-  //FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.deviceID = id;
-  //FLASH_Lock(FLASH_MemType_Data);
+  writeconfig();
   printf("SET_DEVID: 0x%04X\r\n", radioConfig.deviceID);
-	//printf("SET_DEVID: TODO\r\n");
 }
 
 void cli_aesenable(int argc, char **argv)
@@ -332,7 +332,6 @@ void cli_getmodem(int argc, char **argv)
 {
   if(radioConfig.modem == MODEM_LORA) printf("GET_MODEM: LORA\r\n");
   else printf("GET_MODEM: FSK\r\n");
-	//printf("GET_MODEM: TODO\r\n");
 }
 
 void cli_setmodem(int argc, char **argv)
@@ -341,15 +340,13 @@ void cli_setmodem(int argc, char **argv)
   uint8_t m = ciGetUnsigned(argv[1]);
   if((m == MODEM_FSK) || (m == MODEM_LORA))
   {
-  //  FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.modem = m;
-  //  FLASH_Lock(FLASH_MemType_Data);
+    //writeconfig();
     SX126X_config();
     if(m == MODEM_FSK) printf("SET_MODEM: FSK\r\n");
     else printf("SET_MODEM: LORA\r\n");
   }
   else printf("SET_MODEM: ERROR\r\n");
-	//printf("SET_MODEM: TODO\r\n");
 }
 
 void cli_getopmode(int argc, char **argv)
@@ -565,7 +562,6 @@ void cli_getctune(int argc, char **argv)
   ctunea = SX126X_readreg(REG_XTATRIM);
   ctuneb = SX126X_readreg(REG_XTBTRIM);
   printf("GET_CTUNE: %d\r\n", ctunea + ctuneb);
-	//printf("GET_CTUNE: TODO\r\n");
 }
 
 void cli_setctune(int argc, char **argv)
@@ -576,36 +572,32 @@ void cli_setctune(int argc, char **argv)
   if(tune > 94) tune = 94;
   RADIO_setctune(tune);
   printf("SET_CTUNE: %d\r\n",tune);
-	//printf("SET_CTUNE: TODO\r\n");
 }
-
+/*
 void cli_storectune(int argc, char **argv)
 {
   uint8_t ctunea, ctuneb;
 
   ctunea = SX126X_readreg(REG_XTATRIM);
   ctuneb = SX126X_readreg(REG_XTBTRIM);
-  //FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.CtuneA = ctunea;
   radioConfig.CtuneB = ctuneb;
-  //FLASH_Lock(FLASH_MemType_Data);
+  writeconfig();
   printf("STORE_CTUNE: %d\r\n", ctunea + ctuneb);
-	//printf("STORE_CTUNE: TODO\r\n");
 }
+*/
 
 void cli_getRSSI(int argc, char **argv)
 {
   float rssi;
   rssi = -((float)SX126X_GetRssiInst()/2);
   printf("GET_RSSI: %.1f dBm\r\n",rssi);
-	//printf("GET_RSSI: TODO\r\n");
 }
 
 void cli_gettimeouts(int argc, char **argv)
 {
   if(radioConfig.modem == MODEM_LORA) printf("GET_TIMEOUTS: %d,%d\r\n",radioConfig.LoRaTxTimeout,radioConfig.LoRaRxTimeout);
   else printf("GET_TIMEOUTS: %d,%d\r\n",radioConfig.FskTxTimeout,radioConfig.FskRxTimeout);
-	//printf("GET_TIMEOUTS: TODO\r\n");
 }
 
 void cli_settimeouts(int argc, char **argv)
@@ -1416,6 +1408,12 @@ void cli_initconfig(int argc, char **argv)
   if(retval == 0) printf("INIT_CONFIG: OK\r\n");
   else printf("INIT_CONFIG: ERROR %d\r\n", retval);
 	//printf("INIT_CONFIG: TODO\r\n");
+}
+
+void cli_storeconfig(int argc, char **argv)
+{
+	writeconfig();
+	printf("STORE_CONFIG: OK\r\n");
 }
 
 void cli_getgpsdata(int argc, char **argv)

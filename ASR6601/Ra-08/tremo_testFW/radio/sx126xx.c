@@ -1,6 +1,7 @@
 #include "sx126xx.h"
 #include "bsp.h"
 #include "radio_proc.h"
+#include "flash.h"
 
 uint8_t opmode = 0;
 uint8_t prevopmode = 0;
@@ -175,7 +176,7 @@ int8_t SX126X_initconfigstructure(void)
   radioConfig.SlaveID = 0xffff;
   radioConfig.AesEnabled = false;
   for(i = 0; i < 32; i++) radioConfig.AesKey[i] = i;
-//  FLASH_Lock(FLASH_MemType_Data);
+	writeconfig();
   printf("Config init OK.\r\n");
   return 0;
 }

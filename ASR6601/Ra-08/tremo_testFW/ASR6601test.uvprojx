@@ -565,6 +565,11 @@
               <FileType>1</FileType>
               <FilePath>.\periph\lorac.c</FilePath>
             </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\periph\flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

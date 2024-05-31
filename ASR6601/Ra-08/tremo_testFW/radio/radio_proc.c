@@ -1,4 +1,5 @@
 #include "radio_proc.h"
+#include "flash.h"
 
 void processHardEvents(void);
 void processTxEvents(void);
@@ -58,8 +59,9 @@ bool sweepflag; //temp/
 void radio_init(void)
 {
 	lorac_init();
-	SX126X_initconfigstructure();
-	//  if(radioConfig.MagicNumber != MAGICNUMBER) SX126X_initconfigstructure();
+	readconfig();
+	if(radioConfig.MagicNumber != MAGICNUMBER)SX126X_initconfigstructure();
+
   if(SX126X_config() == 0) printf("Radio Init OK.\r\n");
   else printf("Radio Init Error.\r\n");
 //  if(radioConfig.AesEnabled == true)
@@ -282,6 +284,8 @@ void RADIO_setctune(uint8_t tune)
   if(tune > 94) tune = 94;
   tuneA = tune / 2;
   tuneB = tune - tuneA;
+	radioConfig.CtuneA = tuneA;
+	radioConfig.CtuneB = tuneB;
   prevopmode = opmode;
   SX126X_setopmode(OPMODE_STBYXOSC);
   SX126X_writereg(REG_XTATRIM,tuneA);

@@ -219,8 +219,8 @@ void preparepacketcommon(void)
 {
   uint8_t i;
 
-//  txpacket.masterid = radioConfig.deviceID;
-//  txpacket.slaveid = slaveID;
+  txpacket.masterid = radioConfig.deviceID;
+  txpacket.slaveid = slaveID;
 //  txpacket.latitude = GPSdata.lat;
 //  txpacket.longitude = GPSdata.lon;
 //  txpacket.status = GPSdata.status;

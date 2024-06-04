@@ -27,11 +27,13 @@ void init_peripherals(void)
 
 void led_on(void)
 {
-	gpio_write(LED_PORT, LED_PIN,GPIO_LEVEL_LOW);
+	//gpio_write(LED_PORT, LED_PIN,GPIO_LEVEL_LOW); //this function not working!
+	gpio_init(LED_PORT, LED_PIN, GPIO_MODE_OUTPUT_PP_LOW);
 }
 
 void led_off(void)
 {
-	gpio_write(LED_PORT, LED_PIN,GPIO_LEVEL_HIGH);
+	//gpio_write(LED_PORT, LED_PIN,GPIO_LEVEL_HIGH);
+	gpio_init(LED_PORT, LED_PIN, GPIO_MODE_OUTPUT_PP_HIGH);
 }
 

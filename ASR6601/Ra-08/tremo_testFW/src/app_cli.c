@@ -111,6 +111,8 @@ void cli_sweeprx(int argc, char **argv);
 //device specific
 void cli_setem(int argc, char **argv);
 
+void cli_setpaconfig(int argc, char **argv); //technological
+
 
 CommandEntry_t commands[] =
   {
@@ -138,6 +140,7 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("SET_POWER", "w", cli_setpower, ""),
     COMMAND_ENTRY("GET_RAMPTIME", "", cli_getramptime, ""),
     COMMAND_ENTRY("SET_RAMPTIME", "w", cli_setramptime, ""),
+		
     COMMAND_ENTRY("GET_XOPARAMS", "", cli_getxoparams, ""),
     COMMAND_ENTRY("SET_XOPARAMS", "ww", cli_setxoparams, ""),
     COMMAND_ENTRY("GET_CTUNE", "", cli_getctune, ""),
@@ -199,6 +202,8 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("INIT_CONFIG", "", cli_initconfig, ""),
 		COMMAND_ENTRY("STORE_CONFIG", "", cli_storeconfig, ""),
     COMMAND_ENTRY("SET_EM", "w", cli_setem, ""),
+		
+		COMMAND_ENTRY("SET_PACONFIG", "ww", cli_setpaconfig, ""), //technological
   };
 
 
@@ -1368,11 +1373,9 @@ void cli_setem(int argc, char **argv)
 
 void cli_readreg(int argc, char **argv)
 {
- // uint16_t r;
-  //r = ciGetUnsigned(argv[1]);
-  //printf("READ_REG: 0x%02X\r\n",SX126X_readreg(r));
-	
-	printf("READ_REG: TODO\r\n");
+  uint16_t r;
+  r = ciGetUnsigned(argv[1]);
+  printf("READ_REG: 0x%02X\r\n",SX126X_readreg(r));
 }
 
 void cli_writereg(int argc, char **argv)
@@ -1383,7 +1386,6 @@ void cli_writereg(int argc, char **argv)
   val = ciGetUnsigned(argv[2]) & 0xff;
   SX126X_writereg(reg,val);
   printf("WRITE_REG: 0x%04X,0x%02X\r\n",reg,val);
-	//printf("WRITE_REG: TODO\r\n");
 }
 
 void cli_dumpregs(int argc, char **argv)
@@ -1429,6 +1431,20 @@ void cli_getgpsdata(int argc, char **argv)
 */	
 	printf("GET_GNSS: TODO\r\n");
 }
+
+void cli_setpaconfig(int argc, char **argv)
+{
+	uint8_t dutycycle;
+	uint8_t hpmax;
+	
+	dutycycle = ciGetUnsigned(argv[1]);
+	if(dutycycle > 7) dutycycle = 7;
+	if(hpmax > 7) hpmax = 7;
+	hpmax = ciGetUnsigned(argv[2]);
+	SX126X_SetPaConfig(dutycycle,hpmax,false);
+	printf("SET_PACONFIG: %d,%d\r\n",dutycycle,hpmax);
+}
+
 
       
 

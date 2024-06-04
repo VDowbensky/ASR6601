@@ -529,7 +529,7 @@ void SX126X_SetPaConfig(uint8_t dutycycle, uint8_t hpmax, bool lp)
   lorac_TXbuffer[1] = dutycycle;
   if(hpmax > 7) hpmax = 7; //protect PA
   lorac_TXbuffer[2] = hpmax;
-  if(lp) lorac_TXbuffer[3] = 1; //paLut
+  if(lp) lorac_TXbuffer[3] = 1; //deviceSel
   else lorac_TXbuffer[3] = 0;
   lorac_TXbuffer[4] = 1; //paLut
   lorac_transferblock(5);

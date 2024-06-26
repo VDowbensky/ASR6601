@@ -47,7 +47,9 @@ enum AES_ENC_DEC{
  */
 enum AES_ECB_CBC{
     AES_ECB_MODE = 0, /*!< ECB mode*/
-    AES_CBC_MODE ,    /*!< CBC mode*/
+    AES_CBC_MODE,    /*!< CBC mode*/
+	AES_OFB_MODE,
+	AES_CTR_MODE
 };
 
 /**
@@ -73,7 +75,7 @@ enum AES_ECB_CBC{
  * @retval AESCloseError close error
  * @retval AESAttacked attacked
  */
-U8 aes_init(U8* key, U8 keymod,U8 mode,U8* IVorNonce);
+uint8_t aes_init(uint8_t* key, uint8_t keymod,uint8_t mode,uint8_t* IVorNonce);
 
  /**
  * @brief  AES encryption/decryption
@@ -93,7 +95,7 @@ U8 aes_init(U8* key, U8 keymod,U8 mode,U8* IVorNonce);
  * @retval AESCloseError close error
  * @retval AESAttacked attacked
  */
-U8 aes_crypto(U8* in, U16 inLen, U8 En_De, U8*  out);
+uint8_t aes_crypto(uint8_t* in, uint16_t inLen, uint8_t En_De, uint8_t*  out);
 
  /**
  * @brief  AES close
@@ -107,7 +109,7 @@ U8 aes_crypto(U8* in, U16 inLen, U8 En_De, U8*  out);
  * @retval AESCloseError close error
  * @retval AESAttacked attacked
  */
-U8 aes_close(void);
+uint8_t aes_close(void);
 
 #endif /* ifndef __AES_H__ */
 

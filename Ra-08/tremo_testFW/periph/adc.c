@@ -24,7 +24,7 @@ void myadc_init(void)
 	adc_config_clock_division(8);
 	//It not works now. Temp sensor and Vcc divider must be enabled in AFEC!
 	adc_config_sample_sequence(0, 13); //temp.sensor
-  //adc_config_sample_sequence(1, 15); //Vcc
+  adc_config_sample_sequence(1, 15); //Vcc
 	
 	adc_config_conv_mode(ADC_CONV_MODE_DISCONTINUE); //(ADC_CONV_MODE_SINGLE);
 	adc_enable_vbat31(true);

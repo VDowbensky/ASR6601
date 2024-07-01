@@ -90,12 +90,12 @@ void lorac_wait_on_busy(void)
 	while(LORAC->SR & 0x100);
 }
 
-void lorac_rfsw_on(void)
+void lorac_rfsw_rx(void)
 {
 	gpio_init(RFSW_CTRL_PORT, RFSW_CTRL_PIN, GPIO_MODE_OUTPUT_PP_HIGH); //turn on RF switch power
 }
 
-void lorac_rfsw_off(void)
+void lorac_rfsw_tx(void)
 {
 	gpio_init(RFSW_CTRL_PORT, RFSW_CTRL_PIN, GPIO_MODE_OUTPUT_PP_LOW); //turn off RF switch power
 }

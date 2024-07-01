@@ -42,15 +42,15 @@ int8_t SX126X_config(void)
   //SX126X_SetDioIrqParams(TXDONE_IRQMSK | RXDONE_IRQMSK | CRCERR_IRQMSK, TXDONE_IRQMSK | RXDONE_IRQMSK, 0, 0);
   SX126X_SetDioIrqParams(TXDONE_IRQMSK | RPEDET_IRQMSK | SYNCDET_IRQMSK | RXDONE_IRQMSK | CRCERR_IRQMSK, TXDONE_IRQMSK | RPEDET_IRQMSK | SYNCDET_IRQMSK | RXDONE_IRQMSK, 0, 0);
 	
-	lorac_rfsw_on();
+	//lorac_rfsw_on();
   SX126X_setopmode(OPMODE_RX);
   return 0;
 }
 
-#define RFSW_CTRL_PORT	GPIOA
-#define RFSW_CTRL_PIN		GPIO_PIN_10 //GPIO10
-#define RFSW_TXRX_PORT	GPIOD
-#define RFSW_TXRX_PIN		GPIO_PIN_11 //GPIO59
+//#define RFSW_CTRL_PORT	GPIOA
+//#define RFSW_CTRL_PIN		GPIO_PIN_10 //GPIO10
+//#define RFSW_TXRX_PORT	GPIOD
+//#define RFSW_TXRX_PIN		GPIO_PIN_11 //GPIO59
 
 int8_t SX126xx_LoRaConfig(void)
 {
@@ -280,7 +280,8 @@ void SX126X_SetFs(void)
 
 void SX126X_SetTx(uint32_t timeout)
 {
-  if(timeout > 0x00ffffff) timeout = 0x00ffffff;
+  lorac_rfsw_tx();
+	if(timeout > 0x00ffffff) timeout = 0x00ffffff;
   lorac_TXbuffer[0] = CMD_SET_TX;
   lorac_TXbuffer[1] = (uint8_t)((timeout & 0xff0000) >> 16);
   lorac_TXbuffer[2] = (uint8_t)((timeout & 0xff00) >> 8);
@@ -290,7 +291,8 @@ void SX126X_SetTx(uint32_t timeout)
 
 void SX126X_SetRx(uint32_t timeout)
 {
-  if(timeout > 0x00ffffff) timeout = 0x00ffffff;
+  lorac_rfsw_rx();
+	if(timeout > 0x00ffffff) timeout = 0x00ffffff;
   lorac_TXbuffer[0] = CMD_SET_RX;
   lorac_TXbuffer[1] = (uint8_t)((timeout & 0xff0000) >> 16);
   lorac_TXbuffer[2] = (uint8_t)((timeout & 0xff00) >> 8);
@@ -323,19 +325,22 @@ void SX126X_SetRxDutyCycle(uint32_t rxperiod, uint32_t sleepperiod)
 
 void SX126X_SetCAD(void)
 {
-  lorac_TXbuffer[0] = CMD_SET_CAD;
+  lorac_rfsw_rx();
+	lorac_TXbuffer[0] = CMD_SET_CAD;
   lorac_transferblock(1);
 }
 
 void SX126X_SetCW(void)
 {
-  lorac_TXbuffer[0] = CMD_SET_TXCONTINUOUSWAVE;
+  lorac_rfsw_tx();
+	lorac_TXbuffer[0] = CMD_SET_TXCONTINUOUSWAVE;
   lorac_transferblock(1);
 }
 
 void SX126X_SetTxInfinitePreamble(void)
 {
-  lorac_TXbuffer[0] = CMD_SET_TXCONTINUOUSPREAMBLE;
+  lorac_rfsw_tx();
+	lorac_TXbuffer[0] = CMD_SET_TXCONTINUOUSPREAMBLE;
   lorac_transferblock(1);
 }
 

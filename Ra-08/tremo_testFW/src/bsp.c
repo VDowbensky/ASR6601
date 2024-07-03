@@ -3,6 +3,7 @@
 #include "gpio.h"
 #include "uart.h"
 #include "adc.h"
+#include "i2c.h"
 #include "retargetserial.h"
 
 void init_power_clk(void)
@@ -23,6 +24,7 @@ void init_peripherals(void)
 	mygpio_init();
 	myadc_init();
 	RETARGET_SerialInit();
+	i2c0_init();
 }
 
 void led_on(void)

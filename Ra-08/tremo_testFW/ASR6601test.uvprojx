@@ -569,6 +569,11 @@
               <FileType>1</FileType>
               <FilePath>.\periph\flash.c</FilePath>
             </File>
+            <File>
+              <FileName>i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\periph\i2c.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -593,6 +598,16 @@
               <FileName>command_interpreter.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\cli\command_interpreter.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>SSD1306</GroupName>
+          <Files>
+            <File>
+              <FileName>ssd1306.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SSD1306\ssd1306.c</FilePath>
             </File>
           </Files>
         </Group>

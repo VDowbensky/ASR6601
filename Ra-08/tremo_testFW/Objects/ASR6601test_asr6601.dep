@@ -2,7 +2,7 @@ Dependencies for Project 'ASR6601test', Target 'asr6601': (DO NOT MODIFY !)
 CompilerVersion: 6210000::V6.21::ARMCLANG
 F (.\src\main.c)(0x66583BF1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/main.o -MD)
 I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
-I (C:\Keil_v535\ARM\ARMCLANG\include\string.h%ib\inc\tremo_system.h)(0x00000000)
+I (C:\Keil_v535\ARM\ARMCLANG\include\string.h4ib\inc\tremo_system.h)(0x00000000)
 I (chip\tremo_cm4.h\hip\core_cm4.h)(0x00000000)
 I (C:\Keil_v535\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
 I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_version.h)(0x60D42F32)
@@ -14,7 +14,7 @@ I (lib\inc\tremo_gpio.h:ib\inc\tremo_uart.h\ib\inc\tremo_adc.h)(0x00000000)
 I (lib\inc\tremo_delay.hinc\retargetserial.hieriph\uart.h)(0x00000000)
 I (radio\radio_proc.hyadio\sx126xx.hseriph\lorac.h\nc\app_cli.h)(0x00000000)
 I (cli\command_interpreter.h)(0x6656BA95)
-F (.\src\bsp.c)(0x665EA75B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/bsp.o -MD)
+F (.\src\bsp.c)(0x6685135A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/bsp.o -MD)
 I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
 I (C:\Keil_v535\ARM\ARMCLANG\include\string.hrib\inc\tremo_system.h)(0x00000000)
 I (chip\tremo_cm4.h\hip\core_cm4.h)(0x00000000)
@@ -26,10 +26,10 @@ I (lib\inc\tremo_rcc.h8:\Keil_v535\ARM\ARMCLANG\include\stdbool.h)(0x00000000)
 I (lib\inc\tremo_regs.h:hip\system_cm4.hRib\inc\tremo_flash.h)(0x00000000)
 I (lib\inc\tremo_gpio.h:ib\inc\tremo_uart.h\ib\inc\tremo_adc.h)(0x00000000)
 I (lib\inc\tremo_delay.hinc\retargetserial.hieriph\uart.haeriph\gpio.h)(0x00000000)
-I (periph\adc.h)(0x6656E57C)
+I (periph\adc.hoeriph\i2c.h\ib\inc\tremo_i2c.h)(0x00000000)
 F (.\src\tremo_it.c)(0x665880FC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/tremo_it.o -MD)
 I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
-I (C:\Keil_v535\ARM\ARMCLANG\include\string.heib\inc\tremo_system.h)(0x00000000)
+I (C:\Keil_v535\ARM\ARMCLANG\include\string.hhib\inc\tremo_system.h)(0x00000000)
 I (chip\tremo_cm4.h\hip\core_cm4.h)(0x00000000)
 I (C:\Keil_v535\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
 I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_version.h)(0x60D42F32)
@@ -319,8 +319,21 @@ I (lib\inc\tremo_regs.h:hip\system_cm4.hRib\inc\tremo_flash.h)(0x00000000)
 I (lib\inc\tremo_gpio.h:ib\inc\tremo_uart.h\ib\inc\tremo_adc.h)(0x00000000)
 I (lib\inc\tremo_delay.hinc\retargetserial.hieriph\uart.h)(0x00000000)
 I (radio\radio_proc.hyadio\sx126xx.hseriph\lorac.h)(0x00000000)
+F (.\periph\i2c.c)(0x66857377)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/i2c.o -MD)
+I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Keil_v535\ARM\ARMCLANG\include\string.hrib\inc\tremo_system.h)(0x00000000)
+I (chip\tremo_cm4.h\hip\core_cm4.h)(0x00000000)
+I (C:\Keil_v535\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_version.h)(0x60D42F32)
+I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_compiler.h)(0x60D42F32)
+I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_armclang.h)(0x60D42F32)
+I (lib\inc\tremo_rcc.h8:\Keil_v535\ARM\ARMCLANG\include\stdbool.h)(0x00000000)
+I (lib\inc\tremo_regs.h:hip\system_cm4.hRib\inc\tremo_flash.h)(0x00000000)
+I (lib\inc\tremo_gpio.h:ib\inc\tremo_uart.h\ib\inc\tremo_adc.h)(0x00000000)
+I (lib\inc\tremo_delay.hinc\retargetserial.hieriph\uart.h)(0x00000000)
+I (lib\inc\tremo_i2c.h)(0x6639D9C9)
 F (.\radio\radio_proc.c)(0x6659B65D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/radio_proc.o -MD)
-I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.honc\bsp.h)(0x00000000)
+I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.hinc\bsp.h)(0x00000000)
 I (C:\Keil_v535\ARM\ARMCLANG\include\string.hnib\inc\tremo_system.h)(0x00000000)
 I (chip\tremo_cm4.h\hip\core_cm4.h)(0x00000000)
 I (C:\Keil_v535\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
@@ -359,3 +372,16 @@ I (lib\inc\tremo_regs.h:hip\system_cm4.hRib\inc\tremo_flash.h)(0x00000000)
 I (lib\inc\tremo_gpio.h:ib\inc\tremo_uart.h\ib\inc\tremo_adc.h)(0x00000000)
 I (lib\inc\tremo_delay.hinc\retargetserial.hieriph\uart.h)(0x00000000)
 I (C:\Keil_v535\ARM\ARMCLANG\include\errno.hili\command_interpreter.h)(0x00000000)
+F (.\SSD1306\ssd1306.c)(0x66857377)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="539" -DARMCM4-o ./objects/ssd1306.o -MD)
+I (C:\Keil_v535\ARM\ARMCLANG\include\stdio.h)(0x656A0472)
+I (C:\Keil_v535\ARM\ARMCLANG\include\string.hhib\inc\tremo_system.h)(0x00000000)
+I (chip\tremo_cm4.h\hip\core_cm4.h)(0x00000000)
+I (C:\Keil_v535\ARM\ARMCLANG\include\stdint.h)(0x656A0472)
+I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_version.h)(0x60D42F32)
+I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_compiler.h)(0x60D42F32)
+I (D:\MCU\ASR6601\Ra-08\tremo_testFW\chip\cmsis_armclang.h)(0x60D42F32)
+I (lib\inc\tremo_rcc.h8:\Keil_v535\ARM\ARMCLANG\include\stdbool.h)(0x00000000)
+I (lib\inc\tremo_regs.h:hip\system_cm4.hRib\inc\tremo_flash.h)(0x00000000)
+I (lib\inc\tremo_gpio.h:ib\inc\tremo_uart.h\ib\inc\tremo_adc.h)(0x00000000)
+I (lib\inc\tremo_delay.hinc\retargetserial.hieriph\uart.haeriph\i2c.h)(0x00000000)
+I (lib\inc\tremo_i2c.h)(0x6639D9C9)

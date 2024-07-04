@@ -46,12 +46,12 @@ uint16_t slaveID;
 
 int16_t Rssi;
 
-uint8_t minchan;
-uint8_t maxchan;
+uint16_t minchan;
+uint16_t maxchan;
 volatile bool sweeptx = false;
 volatile bool sweeprx = false;
 uint32_t sweepdelay;
-
+uint32_t sweepcnt;
 bool sweepflag; //temp/
 
 //struct AES_ctx aes_ctx;

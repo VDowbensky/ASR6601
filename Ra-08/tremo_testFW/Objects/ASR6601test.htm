@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\ASR6601test.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\ASR6601test.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Wed Jul  3 18:51:21 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Thu Jul  4 16:33:31 2024
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -296,8 +296,8 @@ Global Symbols
 <P><STRONG><a name="[fd]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_memcpy4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readconfig
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readconfig
 </UL>
 
 <P><STRONG><a name="[d1]"></a>__aeabi_memmove</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, memmovea.o(.text))
@@ -315,9 +315,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[c9]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciProcessInput
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validateInteger
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciProcessInput
 </UL>
 
 <P><STRONG><a name="[ce]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
@@ -353,8 +353,8 @@ Global Symbols
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validateInteger
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetSigned
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetSigned
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validateInteger
 </UL>
 
 <P><STRONG><a name="[80]"></a>strtoul</STRONG> (Thumb, 114 bytes, Stack size 40 bytes, strtoul.o(.text))
@@ -364,8 +364,8 @@ Global Symbols
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validateInteger
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validateInteger
 </UL>
 
 <P><STRONG><a name="[81]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text))
@@ -433,11 +433,11 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[96]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRxPacket
-<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getvt
+<BR><BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getvt
 <LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getRSSI
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRxPacket
 </UL>
 
 <P><STRONG><a name="[8d]"></a>__aeabi_d2f</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, d2f.o(.text))
@@ -557,9 +557,9 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
 </UL>
 
-<P><STRONG><a name="[11c]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[11c]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dclz77c.o(.text), UNUSED)
 
-<P><STRONG><a name="[11d]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[11d]"></a>__decompress2</STRONG> (Thumb, 94 bytes, Stack size unknown bytes, __dclz77c.o(.text), UNUSED)
 
 <P><STRONG><a name="[5f]"></a>ADC_IRQHandler</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, adc.o(.text.ADC_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = ADC_IRQHandler &rArr; __aeabi_dsub &rArr; __aeabi_dadd &rArr; _double_epilogue &rArr; _double_round
@@ -588,9 +588,9 @@ Global Symbols
 <P><STRONG><a name="[47]"></a>HardFault_Handler</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, tremo_it.o(.text.HardFault_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HardFault_Handler &rArr; puts &rArr; fputc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SystemReset
+<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SystemReset
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tremo.o(RESET)
 </UL>
@@ -699,16 +699,18 @@ Global Symbols
 <P><STRONG><a name="[aa]"></a>SX126X_SetChannel</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_SetChannel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_LoRaConfig
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_sweeprx
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_sweeptx
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setchannel
 <LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setfreq
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_LoRaConfig
 </UL>
 
 <P><STRONG><a name="[ab]"></a>SX126X_SetFskCrcWhitening</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126X_SetFskCrcWhitening))
@@ -780,15 +782,15 @@ Global Symbols
 <P><STRONG><a name="[b4]"></a>SX126X_config</STRONG> (Thumb, 266 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126X_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_CalibrateIR
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetTxParams
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_CalibrateIR
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_LoRaConfig
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_rx
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_Wakeup
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_reset
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetTxParams
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_fs_setcrcwhite
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_fs_setsync
@@ -805,8 +807,8 @@ Global Symbols
 <P><STRONG><a name="[b9]"></a>SX126X_initconfigstructure</STRONG> (Thumb, 248 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_initconfigstructure))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SX126X_initconfigstructure &rArr; writeconfig &rArr; flash_program_bytes &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_initconfig
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_init
@@ -837,7 +839,8 @@ Global Symbols
 <LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_rx
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_txstream
+<BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_sweeptx
+<LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_txstream
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RADIO_setctune
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setopmode
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
@@ -863,11 +866,11 @@ Global Symbols
 <P><STRONG><a name="[b7]"></a>SX126xx_FskConfig</STRONG> (Thumb, 252 bytes, Stack size 32 bytes, sx126xx.o(.text.SX126xx_FskConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskCrcWhitening
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskCrcWhitening
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskSyncWord
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskModParams
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
 </UL>
 <BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_txstream
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
@@ -876,19 +879,19 @@ Global Symbols
 <P><STRONG><a name="[b6]"></a>SX126xx_LoRaConfig</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126xx_LoRaConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = SX126xx_LoRaConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetLoRaPacketParams
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetLoRaPacketParams
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetLoRaModParams
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 </UL>
 
-<P><STRONG><a name="[4e]"></a>SysTick_Handler</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, tremo_it.o(.text.SysTick_Handler))
+<P><STRONG><a name="[4e]"></a>SysTick_Handler</STRONG> (Thumb, 204 bytes, Stack size 8 bytes, tremo_it.o(.text.SysTick_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SysTick_Handler &rArr; puts &rArr; fputc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_start
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_start
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_tremo.o(RESET)
 </UL>
@@ -1007,6 +1010,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtoul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setpaconfig
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_sweeprx
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_sweeptx
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_dumpregs
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_writereg
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_readreg
@@ -1047,7 +1052,8 @@ Global Symbols
 <P><STRONG><a name="[cb]"></a>ciProcessInput</STRONG> (Thumb, 704 bytes, Stack size 144 bytes, command_interpreter.o(.text.ciProcessInput))
 <BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = ciProcessInput &rArr; validateInteger &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcasecmp
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciErrorCallback
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcasecmp
 <LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strchr
@@ -1056,7 +1062,6 @@ Global Symbols
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok_r
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;validateInteger
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciErrorCallback
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_proc
 </UL>
@@ -1071,9 +1076,9 @@ Global Symbols
 <P><STRONG><a name="[3f]"></a>cli_dumpregs</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, app_cli.o(.text.cli_dumpregs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = cli_dumpregs &rArr; ciGetUnsigned &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_readreg
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_readreg
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1117,9 +1122,9 @@ Global Symbols
 <P><STRONG><a name="[2d]"></a>cli_fs_setaddr</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, app_cli.o(.text.cli_fs_setaddr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = cli_fs_setaddr &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1127,9 +1132,9 @@ Global Symbols
 <P><STRONG><a name="[31]"></a>cli_fs_setcrcwhite</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, app_cli.o(.text.cli_fs_setcrcwhite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = cli_fs_setcrcwhite &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1137,9 +1142,9 @@ Global Symbols
 <P><STRONG><a name="[29]"></a>cli_fs_setmodparams</STRONG> (Thumb, 464 bytes, Stack size 56 bytes, app_cli.o(.text.cli_fs_setmodparams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = cli_fs_setmodparams &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1147,9 +1152,9 @@ Global Symbols
 <P><STRONG><a name="[2b]"></a>cli_fs_setpacketparams</STRONG> (Thumb, 328 bytes, Stack size 40 bytes, app_cli.o(.text.cli_fs_setpacketparams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = cli_fs_setpacketparams &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1157,9 +1162,9 @@ Global Symbols
 <P><STRONG><a name="[2f]"></a>cli_fs_setsync</STRONG> (Thumb, 132 bytes, Stack size 32 bytes, app_cli.o(.text.cli_fs_setsync))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = cli_fs_setsync &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1318,8 +1323,8 @@ Global Symbols
 <P><STRONG><a name="[42]"></a>cli_initconfig</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, app_cli.o(.text.cli_initconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = cli_initconfig &rArr; SX126X_initconfigstructure &rArr; writeconfig &rArr; flash_program_bytes &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_initconfigstructure
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_initconfigstructure
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1357,9 +1362,9 @@ Global Symbols
 <P><STRONG><a name="[21]"></a>cli_lr_setmodparams</STRONG> (Thumb, 352 bytes, Stack size 40 bytes, app_cli.o(.text.cli_lr_setmodparams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = cli_lr_setmodparams &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1367,9 +1372,9 @@ Global Symbols
 <P><STRONG><a name="[23]"></a>cli_lr_setpacketparams</STRONG> (Thumb, 224 bytes, Stack size 24 bytes, app_cli.o(.text.cli_lr_setpacketparams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = cli_lr_setpacketparams &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1384,8 +1389,8 @@ Global Symbols
 <P><STRONG><a name="[25]"></a>cli_lr_setsync</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, app_cli.o(.text.cli_lr_setsync))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = cli_lr_setsync &rArr; ciGetUnsigned &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
@@ -1411,9 +1416,9 @@ Global Symbols
 <P><STRONG><a name="[0]"></a>cli_reset</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, app_cli.o(.text.cli_reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = cli_reset &rArr; puts &rArr; fputc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SystemReset
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SystemReset
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
 </UL>
@@ -1494,18 +1499,18 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>cli_setmodem</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, app_cli.o(.text.cli_setmodem))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = cli_setmodem &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
 </UL>
 <P><STRONG><a name="[c]"></a>cli_setopmode</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, app_cli.o(.text.cli_setopmode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = cli_setopmode &rArr; ciGetUnsigned &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
+<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
 </UL>
@@ -1591,32 +1596,37 @@ Global Symbols
 <P><STRONG><a name="[43]"></a>cli_storeconfig</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, app_cli.o(.text.cli_storeconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = cli_storeconfig &rArr; writeconfig &rArr; flash_program_bytes &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
+<BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
 </UL>
-<P><STRONG><a name="[41]"></a>cli_sweeprx</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, app_cli.o(.text.cli_sweeprx))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = cli_sweeprx &rArr; puts &rArr; fputc
+<P><STRONG><a name="[41]"></a>cli_sweeprx</STRONG> (Thumb, 152 bytes, Stack size 16 bytes, app_cli.o(.text.cli_sweeprx))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = cli_sweeprx &rArr; ciGetUnsigned &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
-</UL>
-<P><STRONG><a name="[40]"></a>cli_sweeptx</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, app_cli.o(.text.cli_sweeptx))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = cli_sweeptx &rArr; puts &rArr; fputc
-</UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
 </UL>
-<P><STRONG><a name="[36]"></a>cli_txstream</STRONG> (Thumb, 132 bytes, Stack size 16 bytes, app_cli.o(.text.cli_txstream))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = cli_txstream &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
+<P><STRONG><a name="[40]"></a>cli_sweeptx</STRONG> (Thumb, 296 bytes, Stack size 24 bytes, app_cli.o(.text.cli_sweeptx))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = cli_sweeptx &rArr; ciGetUnsigned &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
+</UL>
+<P><STRONG><a name="[36]"></a>cli_txstream</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, app_cli.o(.text.cli_txstream))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = cli_txstream &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciGetUnsigned
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> app_cli.o(.data.commands)
 </UL>
@@ -1650,11 +1660,11 @@ Global Symbols
 <P><STRONG><a name="[b3]"></a>delay_us</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, tremo_delay.o(.text.delay_us))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_wait_on_busy
+<BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_wait_on_busy
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_Wakeup
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_reset
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_init
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_init
 </UL>
 
 <P><STRONG><a name="[104]"></a>flash_erase_page</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, tremo_flash.o(.text.flash_erase_page))
@@ -1684,20 +1694,20 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[eb]"></a>gpio_init</STRONG> (Thumb, 372 bytes, Stack size 0 bytes, tremo_gpio.o(.text.gpio_init))
-<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_tx
-<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_rx
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myadc_init
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myadc_init
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mygpio_init
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_tx
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_rx
 </UL>
 
 <P><STRONG><a name="[dd]"></a>gpio_set_iomux</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, tremo_gpio.o(.text.gpio_set_iomux))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = gpio_set_iomux
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_init
-<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myuart_init
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myuart_init
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c0_init
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_init
 </UL>
 
 <P><STRONG><a name="[db]"></a>i2c0_init</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, i2c.o(.text.i2c0_init))
@@ -1800,7 +1810,17 @@ Global Symbols
 <P><STRONG><a name="[a5]"></a>lorac_transferblock</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, lorac.o(.text.lorac_transferblock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lorac_transferblock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskCrcWhitening
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetPaConfig
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_writereg
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_GetStatus
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetRssiInst
+<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_readreg
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetTxParams
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskCrcWhitening
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskSyncWord
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetFskModParams
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetLoRaPacketParams
@@ -1813,16 +1833,6 @@ Global Symbols
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetFskPacketStatus
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetLoRaPacketStatus
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_writebuffer
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetPaConfig
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_writereg
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx126x_GetStatus
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetRssiInst
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_readreg
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetTxParams
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 </UL>
 
 <P><STRONG><a name="[a6]"></a>lorac_wait_on_busy</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lorac.o(.text.lorac_wait_on_busy))
@@ -1836,8 +1846,7 @@ Global Symbols
 <P><STRONG><a name="[74]"></a>main</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = main &rArr; cli_proc &rArr; ciProcessInput &rArr; validateInteger &rArr; strtoul &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_proc
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_proc
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_init
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
@@ -1846,6 +1855,7 @@ Global Symbols
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_peripherals
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;init_power_clk
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
@@ -1881,13 +1891,13 @@ Global Symbols
 <P><STRONG><a name="[a2]"></a>myuart_init</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, uart.o(.text.myuart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = myuart_init &rArr; uart_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcc_set_uart0_clk_source
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_set_iomux
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcc_enable_peripheral_clk
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_cmd
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_config_init
 <LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_config_interrupt
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcc_set_uart0_clk_source
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_set_iomux
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcc_enable_peripheral_clk
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RETARGET_ReadChar
 <LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RETARGET_SerialInit
@@ -1905,11 +1915,11 @@ Global Symbols
 <P><STRONG><a name="[ee]"></a>radio_init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, radio_proc.o(.text.radio_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = radio_init &rArr; SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_initconfigstructure
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
 <LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;readconfig
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_init
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_initconfigstructure
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1917,18 +1927,18 @@ Global Symbols
 <P><STRONG><a name="[ef]"></a>radio_proc</STRONG> (Thumb, 792 bytes, Stack size 48 bytes, radio_proc.o(.text.radio_proc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = radio_proc &rArr; printRxPacket &rArr; __2printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRxPacket
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_readbuffer
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetFskPacketStatus
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetLoRaPacketStatus
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_writebuffer
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetRssiInst
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetRssiInst
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_setopmode
 <LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;puts
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRxPacket
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_readbuffer
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetFskPacketStatus
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_GetLoRaPacketStatus
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_writebuffer
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1951,9 +1961,9 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d8]"></a>rcc_get_clk_freq</STRONG> (Thumb, 92 bytes, Stack size 0 bytes, tremo_rcc.o(.text.rcc_get_clk_freq))
-<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
+<BR><BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_init
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 </UL>
 
 <P><STRONG><a name="[101]"></a>rcc_get_uart0_clk_source</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, tremo_rcc.o(.text.rcc_get_uart0_clk_source))
@@ -2067,9 +2077,9 @@ Global Symbols
 <P><STRONG><a name="[ba]"></a>writeconfig</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, flash.o(.text.writeconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = writeconfig &rArr; flash_program_bytes &rArr; __aeabi_memcpy
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_program_bytes
+<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_program_bytes
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_erase_page
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_storeconfig
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_initconfigstructure
@@ -2085,9 +2095,7 @@ Global Symbols
 <P><STRONG><a name="[ca]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRxPacket
-<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setpaconfig
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setpaconfig
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_initconfig
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_dumpregs
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_writereg
@@ -2134,6 +2142,8 @@ Global Symbols
 <LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getver
 <LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_info
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;printRxPacket
 </UL>
 
 <P><STRONG><a name="[11f]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
@@ -2160,8 +2170,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciErrorCallback
+<BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciErrorCallback
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_storeconfig
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_initconfigstructure
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_initconfig
@@ -2204,6 +2213,7 @@ Global Symbols
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_init
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciPrintHelp
 </UL>
 <P>
 <H3>

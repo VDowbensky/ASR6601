@@ -117,8 +117,17 @@ void SysTick_Handler(void)
        printf("SEND_PACKET: DONE\r\n");
      }
    }
-		
 	}
+	//sweep procedures
+	   if(sweeprx || sweeptx) 
+   {
+     sweepcnt--;
+     if(sweepcnt == 0)
+     {
+       sweepcnt = sweepdelay;
+       sweepflag = true;
+     }
+   }
 }
 
 /**

@@ -144,10 +144,15 @@ extern int16_t Rssi;
 
 extern rfpacket_t rfpacket;
 
-extern uint8_t minchan;
-extern uint8_t maxchan;
+extern uint16_t minchan;
+extern uint16_t maxchan;
 extern volatile bool sweeptx;
 extern volatile bool sweeprx;
 extern uint32_t sweepdelay;
+extern volatile bool sweeptx;
+extern volatile bool sweeprx;
+extern uint32_t sweepdelay;
+extern uint32_t sweepcnt;
+extern bool sweepflag; //temp/
 
 #endif

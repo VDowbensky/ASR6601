@@ -1217,7 +1217,7 @@ void cli_txstream(int argc, char **argv)
 
 void cli_sweeptx(int argc, char **argv)
 {
-/*  uint8_t stream;
+  uint8_t stream;
 	
   minchan = ciGetUnsigned(argv[1]);
   maxchan = ciGetUnsigned(argv[2]);
@@ -1267,13 +1267,12 @@ void cli_sweeptx(int argc, char **argv)
       sweeptx = true;
     }
   }
-	*/
-	printf("SWEEP_TX: TODO\r\n");
+	//printf("SWEEP_TX: TODO\r\n");
 }
 
 void cli_sweeprx(int argc, char **argv)
 {
-/*  minchan = ciGetUnsigned(argv[1]);
+  minchan = ciGetUnsigned(argv[1]);
   maxchan = ciGetUnsigned(argv[2]);
   //if(minchan > 63) minchan = 63;
   //if(maxchan > 63) maxchan = 63;
@@ -1293,8 +1292,7 @@ void cli_sweeprx(int argc, char **argv)
     sweepcnt = sweepdelay;
     sweeprx = true;
   }
-	*/
-	printf("SWEEP_RX: TODO\r\n");
+	//printf("SWEEP_RX: TODO\r\n");
 }
 
 void cli_startrxcount(int argc, char **argv)

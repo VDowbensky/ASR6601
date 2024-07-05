@@ -119,15 +119,15 @@ void SysTick_Handler(void)
    }
 	}
 	//sweep procedures
-	   if(sweeprx || sweeptx) 
-   {
-     sweepcnt--;
-     if(sweepcnt == 0)
-     {
-       sweepcnt = sweepdelay;
-       sweepflag = true;
-     }
-   }
+//	   if(sweeprx || sweeptx) 
+//   {
+//     sweepcnt--;
+//     if(sweepcnt == 0)
+//     {
+//       sweepcnt = sweepdelay;
+//       sweepflag = true;
+//     }
+//   }
 }
 
 /**

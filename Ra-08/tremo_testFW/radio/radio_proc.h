@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include "bsp.h"
 #include "sx126xx.h"
+#include "ustimer.h"
 //#include "aes.h"
 //#include "aes_stm8.h"
 //#include "gpsparser.h"
@@ -146,13 +147,11 @@ extern rfpacket_t rfpacket;
 
 extern uint16_t minchan;
 extern uint16_t maxchan;
-extern volatile bool sweeptx;
-extern volatile bool sweeprx;
 extern uint32_t sweepdelay;
 extern volatile bool sweeptx;
 extern volatile bool sweeprx;
 extern uint32_t sweepdelay;
-extern uint32_t sweepcnt;
+//extern uint32_t sweepcnt;
 extern bool sweepflag; //temp/
 
 #endif

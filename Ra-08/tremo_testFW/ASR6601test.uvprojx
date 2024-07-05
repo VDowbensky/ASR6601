@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\inc;.\lib\inc;.\chip;.\periph;.\radio;.\cli</IncludePath>
+              <IncludePath>.\inc;.\lib\inc;.\chip;.\periph;.\radio;.\cli;.\AES</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -574,6 +574,11 @@
               <FileType>1</FileType>
               <FilePath>.\periph\i2c.c</FilePath>
             </File>
+            <File>
+              <FileName>ustimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\periph\ustimer.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -608,6 +613,21 @@
               <FileName>ssd1306.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\SSD1306\ssd1306.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>AES</GroupName>
+          <Files>
+            <File>
+              <FileName>aes_proc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\AES\aes_proc.c</FilePath>
+            </File>
+            <File>
+              <FileName>aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\AES\aes.c</FilePath>
             </File>
           </Files>
         </Group>

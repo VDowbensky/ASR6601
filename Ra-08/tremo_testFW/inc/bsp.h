@@ -11,6 +11,7 @@
 #include "tremo_adc.h"
 #include "tremo_delay.h"
 #include "retargetserial.h"
+#include "aes_proc.h"
 
 #define HW_VERSION    1
 #define FW_VERSION		0
@@ -53,6 +54,13 @@
 #define RFSW_TXRX_PIN		GPIO_PIN_11 //GPIO59
 
 #define UART0_BR			115200
+#define AES_MODE			AES_ECB_MODE
+//#define AES_MODE    	AES_CBC_MODE
+//#define AES_MODE			AES_OFB_MODE
+//#define AES_MODE			AES_CTR_MODE
+//#define AES_KEYLEN		AES_128
+//#define AES_KEYLEN		AES_192
+#define AES_KEYLEN		AES_256
 
 void init_power_clk(void);
 void init_peripherals(void);

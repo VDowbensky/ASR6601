@@ -4,6 +4,7 @@
 #include "uart.h"
 #include "adc.h"
 #include "i2c.h"
+#include "ustimer.h"
 #include "retargetserial.h"
 
 void init_power_clk(void)
@@ -25,6 +26,7 @@ void init_peripherals(void)
 	myadc_init();
 	RETARGET_SerialInit();
 	i2c0_init();
+	ustimer_init();
 }
 
 void led_on(void)

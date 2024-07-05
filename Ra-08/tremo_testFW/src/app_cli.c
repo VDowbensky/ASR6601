@@ -268,68 +268,61 @@ void cli_setdevid(int argc, char **argv)
 
 void cli_aesenable(int argc, char **argv)
 {
-  //uint8_t aes;
-  //aes = ciGetUnsigned(argv[1]);
+  uint8_t aes;
+  aes = ciGetUnsigned(argv[1]);
   //FLASH_Unlock(FLASH_MemType_Data);
-  //if(aes == 0) radioConfig.AesEnabled = false;
-  //else radioConfig.AesEnabled = true;
+  if(aes == 0) radioConfig.AesEnabled = false;
+  else radioConfig.AesEnabled = true;
   //FLASH_Lock(FLASH_MemType_Data);
-  //if(radioConfig.AesEnabled == true) printf("AES: ON\r\n");
-  //else printf("AES_EN: OFF\r\n");
-	printf("AES_EN: TODO\r\n");
+  if(radioConfig.AesEnabled == true) printf("AES: ON\r\n");
+  else printf("AES_EN: OFF\r\n");
+	//printf("AES_EN: TODO\r\n");
 }
 
 void cli_getaeskey(int argc, char **argv)
 {
-    //uint8_t i;
+    uint8_t i;
     //add password request?
-    //printf("GET_AESSTATUS: ");
-    //if(radioConfig.AesEnabled == true) printf("AES:ON, ");
-    //else printf("AES:OFF, ");
-    //printf("KEY=");
-    //for (i = 0; i < 32; i++) printf("0x%02X,",radioConfig.AesKey[i]);
-    //printf("IV=");
-    //for (i = 0; i < 15; i++) printf("0x%02X,",radioConfig.AesIv[i]);
-    //printf("0x%02X\r\n",radioConfig.AesIv[15]);
-		printf("GET_AESSTATUS: TODO\r\n");
+    printf("GET_AESSTATUS: ");
+    if(radioConfig.AesEnabled == true) printf("AES:ON, ");
+    else printf("AES:OFF, ");
+    printf("KEY=");
+    for (i = 0; i < 32; i++) printf("0x%02X,",radioConfig.AesKey[i]);
+    printf("IV=");
+    for (i = 0; i < 15; i++) printf("0x%02X,",radioConfig.AesIv[i]);
+    printf("0x%02X\r\n",radioConfig.AesIv[15]);
 }
 
 void cli_setaeskey(int argc, char **argv)
 {
-  //uint32_t tmp[8];
-  //uint8_t i;
+  uint32_t tmp[8];
+  uint8_t i;
 
-  //for(i = 0; i < 8; i++) tmp[i] = ciGetUnsigned(argv[i+1]);
-  //FLASH_Unlock(FLASH_MemType_Data);
-  //for(i = 0; i < 8; i++)
-  //{
-  //  radioConfig.AesKey[i*4] = (tmp[i] >> 24) & 0xff;
-  //  radioConfig.AesKey[i*4 + 1] = (tmp[i] >> 16) & 0xff;
-  //  radioConfig.AesKey[i*4 + 2] = (tmp[i] >> 8) & 0xff;
-  //  radioConfig.AesKey[i*4 + 3] = tmp[i] & 0x000000ff;
-  //}
-  //FLASH_Lock(FLASH_MemType_Data);
-  //printf("SET_AESKEY: OK\r\n");
-	printf("SET_AESKEY: TODO\r\n");
+  for(i = 0; i < 8; i++) tmp[i] = ciGetUnsigned(argv[i+1]);
+  for(i = 0; i < 8; i++)
+  {
+    radioConfig.AesKey[i*4] = (tmp[i] >> 24) & 0xff;
+    radioConfig.AesKey[i*4 + 1] = (tmp[i] >> 16) & 0xff;
+    radioConfig.AesKey[i*4 + 2] = (tmp[i] >> 8) & 0xff;
+    radioConfig.AesKey[i*4 + 3] = tmp[i] & 0x000000ff;
+  }
+  printf("SET_AESKEY: OK\r\n");
 }
 
 void cli_setaesiv(int argc, char **argv)
 {
-  //uint32_t tmp[4];
-  //uint8_t i;
+  uint32_t tmp[4];
+  uint8_t i;
 
-  //for(i = 0; i < 4; i++) tmp[i] = ciGetUnsigned(argv[i+1]);
-  //FLASH_Unlock(FLASH_MemType_Data);
-  //for(i = 0; i < 4; i++)
-  //{
-  //  radioConfig.AesIv[i*4] = (tmp[i] >> 24) & 0xff;
-  //  radioConfig.AesIv[i*4 + 1] = (tmp[i] >> 16) & 0xff;
-  //  radioConfig.AesIv[i*4 + 2] = (tmp[i] >> 8) & 0xff;
-  //  radioConfig.AesIv[i*4 + 3] = tmp[i] & 0x000000ff;
-  //}
-  //FLASH_Lock(FLASH_MemType_Data);
-  //printf("SET_AESIV: OK\r\n");
-	printf("SET_AESIV: TODO\r\n");
+  for(i = 0; i < 4; i++) tmp[i] = ciGetUnsigned(argv[i+1]);
+  for(i = 0; i < 4; i++)
+  {
+    radioConfig.AesIv[i*4] = (tmp[i] >> 24) & 0xff;
+    radioConfig.AesIv[i*4 + 1] = (tmp[i] >> 16) & 0xff;
+    radioConfig.AesIv[i*4 + 2] = (tmp[i] >> 8) & 0xff;
+    radioConfig.AesIv[i*4 + 3] = tmp[i] & 0x000000ff;
+  }
+  printf("SET_AESIV: OK\r\n");
 }
 
 //RF settings
@@ -346,7 +339,6 @@ void cli_setmodem(int argc, char **argv)
   if((m == MODEM_FSK) || (m == MODEM_LORA))
   {
     radioConfig.modem = m;
-    //writeconfig();
     SX126X_config();
     if(m == MODEM_FSK) printf("SET_MODEM: FSK\r\n");
     else printf("SET_MODEM: LORA\r\n");
@@ -391,21 +383,10 @@ void cli_getopmode(int argc, char **argv)
     printf("GET_OPMODE: TX PREAMBLE\r\n");
     break;
   }
-	//printf("GET_OPMODE: TODO\r\n");
 }
 
 void cli_setopmode(int argc, char **argv)
 {
-/*
-#define OPMODE_SLEEP            0
-#define OPMODE_STBYRC           1
-#define OPMODE_STBYXOSC         2
-#define OPMODE_FS               3
-#define OPMODE_TX               4
-#define OPMODE_RX               5
-#define OPMODE_TXSTREAMCW       6
-#define OPMODE_TXSTREAMPRE      7
-*/
   uint8_t mode;
   mode = ciGetUnsigned(argv[1]);
   prevopmode = opmode;
@@ -453,55 +434,43 @@ void cli_setopmode(int argc, char **argv)
     printf("SET_OPMODE: TX PREAMBLE\r\n");
     break;
   }
-	//printf("SET_OPMODE: TODO\r\n");
 }
 
 void cli_getfreq(int argc, char **argv)
 {
   printf("GET_FREQ: %u,%u\r\n",radioConfig.RfFreq,radioConfig.ChannelStep);
-	//printf("GET_FREQ: TODO\r\n");
 }
 
 void cli_setfreq(int argc, char **argv)
 {
-  //FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.RfFreq = ciGetUnsigned(argv[1]);
   radioConfig.ChannelStep = ciGetUnsigned(argv[2]);
-  //FLASH_Lock(FLASH_MemType_Data);
-  //reload synthesizer here
   SX126X_SetChannel();
   printf("SET_FREQ: %u,%u\r\n",radioConfig.RfFreq,radioConfig.ChannelStep);
-	//printf("SET_FREQ: TODO\r\n");
 }
 
 void cli_getchannel(int argc, char **argv)
 {
   printf("GET_CHANNEL: %d\r\n",Channel);
-	//printf("GET_CHANNEL: TODO\r\n");
 }
 
 void cli_setchannel(int argc, char **argv)
 {
   Channel = ciGetSigned(argv[1]);
-  //reload synthesizer here
   SX126X_SetChannel();
   printf("SET_CHANNEL: %d\r\n",Channel);
-	//printf("SET_CHANNEL: TODO\r\n");
 }
 
 void cli_storechannel(int argc, char **argv)
 {
-  //FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.Channel = Channel;
-  //FLASH_Lock(FLASH_MemType_Data);
+  writeconfig();
   printf("STORE_CHANNEL: %d\r\n",Channel);
-	//printf("STORE_CHANNEL: TODO\r\n");
 }
 
 void cli_getpower(int argc, char **argv)
 {
   printf("GET_POWER: %d dBm\r\n",radioConfig.TxPowerDbm);
-	//printf("GET_POWER: TODO\r\n");
 }
 
 void cli_setpower(int argc, char **argv)
@@ -511,37 +480,35 @@ void cli_setpower(int argc, char **argv)
   pwr = ciGetSigned(argv[1]);
   if(pwr > 22) pwr = 22;
   if(pwr < -9) pwr = -9;
-//  FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.TxPowerDbm = pwr;
-//  FLASH_Lock(FLASH_MemType_Data);
   SX126X_SetTxParams();
   printf("SET_POWER: %d dBm\r\n",radioConfig.TxPowerDbm);
-//	printf("SET_POWER: TODO\r\n");
 }
 
 void cli_getramptime(int argc, char **argv)
 {
   printf("GET_RAMPTIME: %d us\r\n",radioConfig.RampTimeUs);
-	//printf("GET_RAMPTIME: TODO\r\n");
 }
 
 void cli_setramptime(int argc, char **argv)
 {
-  //FLASH_Unlock(FLASH_MemType_Data);
-  radioConfig.RampTimeUs = ciGetUnsigned(argv[1]);
-  //FLASH_Lock(FLASH_MemType_Data);
+  uint32_t ramp_time = ciGetUnsigned(argv[1]);
+	if(ramp_time < 20) ramp_time = 10;
+	else if(ramp_time < 40) ramp_time = 20;
+	else if(ramp_time < 80) ramp_time = 40;
+	else if(ramp_time < 200) ramp_time = 80;
+	else if(ramp_time < 800) ramp_time = 200;
+	else if(ramp_time < 1700) ramp_time = 800;
+	else if(ramp_time < 3400) ramp_time = 1700;
+	else ramp_time = 3400;
+  radioConfig.RampTimeUs = ramp_time;
   SX126X_SetTxParams();
   printf("SET_RAMPTIME: %d us\r\n",radioConfig.RampTimeUs);
-	//printf("SET_RAMPTIME: TODO\r\n");
 }
 
 void cli_getxoparams(int argc, char **argv)
 {
-  //uint8_t ctunea, ctuneb;
-  //ctunea = SX126X_readreg(REG_XTATRIM);
-  //ctuneb = SX126X_readreg(REG_XTBTRIM);
   printf("GET_XOPARAMS: %d,%d\r\n",radioConfig.XoTempFactor,radioConfig.CalTemp);
-	//printf("GET_XOPARAMS: TODO\r\n");
 }
 
 void cli_setxoparams(int argc, char **argv)
@@ -552,12 +519,9 @@ void cli_setxoparams(int argc, char **argv)
   //check limits
   ct = ciGetSigned(argv[2]);
   //check limits
-  //FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.XoTempFactor = tf;
   radioConfig.CalTemp = ct;
-  //FLASH_Lock(FLASH_MemType_Data);
   printf("SET_XOPARAMS: %d,%d\r\n",radioConfig.XoTempFactor,radioConfig.CalTemp);
-	//printf("GET_XOPARAMS: TODO\r\n");
 }
 
 void cli_getctune(int argc, char **argv)
@@ -610,7 +574,6 @@ void cli_settimeouts(int argc, char **argv)
   uint32_t txto,rxto;
   txto = ciGetUnsigned(argv[1]);
   rxto = ciGetUnsigned(argv[2]);
-  //FLASH_Unlock(FLASH_MemType_Data);
   if(radioConfig.modem == MODEM_LORA)
   {
     radioConfig.LoRaTxTimeout = txto;
@@ -621,10 +584,8 @@ void cli_settimeouts(int argc, char **argv)
     radioConfig.FskTxTimeout = txto;
     radioConfig.FskRxTimeout = rxto;
   }
-  //FLASH_Lock(FLASH_MemType_Data);
   SX126X_config();
   printf("SET_TIMEOUTS: %d,%d\r\n", txto, rxto);
-	//printf("SET_TIMEOUTS: TODO\r\n");
 }
 
 void cli_getsleepparams(int argc, char **argv)
@@ -641,7 +602,6 @@ void cli_getstatus(int argc, char **argv)
 {
   uint8_t s = sx126x_GetStatus();
   printf("GET_STATUS: 0x%02X\r\n",s);
-	//printf("GET_STATUS: TODO\r\n");
 }
 
 //LoRa
@@ -687,7 +647,6 @@ void cli_lr_getmodparams(int argc, char **argv)
   printf("LROPT:");
   if(radioConfig.LoRaLowRateOpt == true) printf("ON\r\n");
   else printf("OFF\r\n");
-	//printf("LR_GET_MODPARAMS: TODO\r\n");
 }
 
 void cli_lr_setmodparams(int argc, char **argv)
@@ -718,14 +677,11 @@ void cli_lr_setmodparams(int argc, char **argv)
     //check
     if(cr > 4) cr = 4;
     opt = ciGetUnsigned(argv[4]);
-
-    //FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.LoRaBw = bw_val;
     radioConfig.LoRaSf = sf;
     radioConfig.LoRaCr = cr;
     if(opt != 0) radioConfig.LoRaLowRateOpt = true;
     else radioConfig.LoRaLowRateOpt = false;
-    //FLASH_Lock(FLASH_MemType_Data);
     SX126X_config();
     printf("LR_SET_MODPARAMS:\r\nBW=%.1f\r\nSF=%d\r\n",bw_kHz,radioConfig.LoRaSf);
     printf("CR:");
@@ -755,7 +711,6 @@ void cli_lr_setmodparams(int argc, char **argv)
     else printf("OFF\r\n");
   }
   else printf("LR_SET_MODPARAMS: ERROR\r\n");
-	//printf("LR_SET_MODPARAMS: TODO\r\n");
 }
 
 void cli_lr_getpacketparams(int argc, char **argv)
@@ -769,7 +724,6 @@ void cli_lr_getpacketparams(int argc, char **argv)
   printf("INVERTIQ:");
   if(radioConfig.LoRaInvertIQ == true) printf("ON\r\n");
   else printf("OFF\r\n");
-	//printf("LR_GET_PACKETPARAMS: TODO\r\n");
 }
 
 void cli_lr_setpacketparams(int argc, char **argv)
@@ -786,7 +740,6 @@ void cli_lr_setpacketparams(int argc, char **argv)
     head = ciGetUnsigned(argv[3]) & 0x1;
     crc = ciGetUnsigned(argv[4]) & 0x1;
     inviq = ciGetUnsigned(argv[5]) & 0x1;
-    //FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.LoRaPreLen = pre;
     radioConfig.LoRaPayLen = pay;
     if(head != 0) radioConfig.LoRaImplHeader = true;
@@ -795,7 +748,6 @@ void cli_lr_setpacketparams(int argc, char **argv)
     else radioConfig.LoRaCrcOn = false;
     if(inviq != 0) radioConfig.LoRaInvertIQ = true;
     else radioConfig.LoRaInvertIQ = false;
-    //FLASH_Lock(FLASH_MemType_Data);
     SX126X_config();
     printf("LR_SET_PACKETPARAMS:\r\nPRE_LEN=%d\r\nPAY_LEN=%d\r\nHEADER:",radioConfig.LoRaPreLen,radioConfig.LoRaPayLen);
     if(radioConfig.LoRaImplHeader == true) printf("IMPLICIT\r\n");
@@ -808,13 +760,11 @@ void cli_lr_setpacketparams(int argc, char **argv)
     else printf("OFF\r\n");
   }
   else printf("LR_SET_PACKETPARAMS: ERROR\r\n");
-	//printf("LR_SET_PACKETPARAMS: TODO\r\n");
 }
 
 void cli_lr_getsync(int argc, char **argv)
 {
   printf("LR_GET_SYNC: 0x%04X\r\n",radioConfig.LoRaSyncWord);
-	//printf("LR_GET_SYNC: TODO\r\n");
 }
 
 void cli_lr_setsync(int argc, char **argv)
@@ -823,13 +773,10 @@ void cli_lr_setsync(int argc, char **argv)
   {
     uint16_t sw;
     sw = ciGetUnsigned(argv[1]) & 0xffff;
-    //FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.LoRaSyncWord = sw;
-    //FLASH_Lock(FLASH_MemType_Data);
     printf("LR_SET_SYNC: 0x%04X\r\n",radioConfig.LoRaSyncWord);
   }
   else printf("LR_SET_SYNC: ERROR\r\n");
-	//printf("LR_SET_SYNC: TODO\r\n");
 }
 
 void cli_lr_getsymboltimeout(int argc, char **argv)
@@ -844,16 +791,12 @@ void cli_lr_setsymboltimeout(int argc, char **argv)
     printf("LR_SET_SYMTO: IN DEVELOPMENT\r\n");
   }
   else printf("LR_SET_SYMTO: ERROR\r\n");
-	//printf("LR_SET_SYMTO: TODO\r\n");
 }
 
 //FSK
 //baudrate,pulse shape,RXBW,deviation
 void cli_fs_getmodparams(int argc, char **argv)
 {
-  //FS_GET_MODPARAMS
-  //void SX126X_SetFskModParams(uint32_t br, uint8_t shaping, uint8_t rxbw, uint32_t fdev)
-
   float bw_kHz;
 
   if(radioConfig.FskBw == FSK_BW_4p8) bw_kHz = 4.8;
@@ -877,7 +820,6 @@ void cli_fs_getmodparams(int argc, char **argv)
   else if(radioConfig.FskBw == FSK_BW_467) bw_kHz = 467.0;
   else bw_kHz = -1.0;
   printf("FS_GETMODPARAMS:\r\nBR=%d\r\nSH=%d\r\nBW=%.1f\r\nDEV=%d\r\n",radioConfig.FskBr,radioConfig.FskShaping,bw_kHz,radioConfig.FskFdev);
-	//printf("FS_GETMODPARAMS: TODO\r\n");
 }
 
 void cli_fs_setmodparams(int argc, char **argv)
@@ -899,7 +841,6 @@ void cli_fs_setmodparams(int argc, char **argv)
     sh = ciGetUnsigned(argv[2]); //4 - shaping
     //check
     bw = ciGetUnsigned(argv[3]); //5 - RX BW
-    
     if(bw <= 5) {bw_val = FSK_BW_4p8; bw_kHz = 4.8;}
     else if(bw <= 6) {bw_val = FSK_BW_5p8; bw_kHz = 5.8;}
     else if(bw <= 8) {bw_val = FSK_BW_7p3; bw_kHz = 7.3;}
@@ -910,7 +851,6 @@ void cli_fs_setmodparams(int argc, char **argv)
     else if(bw <= 24) {bw_val = FSK_BW_23p4; bw_kHz = 23.4;}
     else if(bw <= 30) {bw_val = FSK_BW_29p3; bw_kHz = 29.3;}
     else if(bw <= 39) {bw_val = FSK_BW_39; bw_kHz = 39.0;}
-    
     else if(bw <= 47) {bw_val = FSK_BW_46p9; bw_kHz = 46.9;}
     else if(bw <= 59) {bw_val = FSK_BW_58p6; bw_kHz = 58.6;}
     else if(bw <= 79) {bw_val = FSK_BW_78p2; bw_kHz = 78.2;}
@@ -927,12 +867,10 @@ void cli_fs_setmodparams(int argc, char **argv)
     //check
     if(dev < 600) dev = 600;
     if(dev > 200000) dev = 200000;
-    //FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.FskBr = br;
     radioConfig.FskShaping = sh;
     radioConfig.FskBw = bw_val;
     radioConfig.FskFdev = dev;
-    //FLASH_Lock(FLASH_MemType_Data);
     SX126X_config();
     printf("FS_SETMODPARAMS:\r\nBR=%d\r\nSH=%d\r\nBW=%.1f\r\nDEV=%d\r\n",radioConfig.FskBr,radioConfig.FskShaping,bw_kHz,radioConfig.FskFdev);
   }
@@ -1055,7 +993,6 @@ void cli_fs_setpacketparams(int argc, char **argv)
 void cli_fs_getaddr(int argc, char **argv)
 {
   printf("FS_GET_ADDR: 0x%02X,0x%02X\r\n",radioConfig.FskNodeAddr,radioConfig.FskBrAddr);
-	//printf("FS_GET_ADDR: TODO\r\n");
 }
 
 void cli_fs_setaddr(int argc, char **argv)
@@ -1066,15 +1003,12 @@ void cli_fs_setaddr(int argc, char **argv)
     
     nodeaddr = ciGetUnsigned(argv[1]);
     braddr = ciGetUnsigned(argv[2]);
-    //FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.FskNodeAddr = nodeaddr;
     radioConfig.FskBrAddr = braddr;
-    //FLASH_Lock(FLASH_MemType_Data);
     SX126X_config();
     printf("FS_SET_ADDR: 0x%02X,0x%02X\r\n",radioConfig.FskNodeAddr,radioConfig.FskBrAddr);
   }
   else printf("FS_SET_ADDR: ERROR\r\n");
-	//printf("FS_SET_ADDR: TODO\r\n");
 }
 
 //sync word(s)
@@ -1085,7 +1019,6 @@ void cli_fs_getsync(int argc, char **argv)
   printf("FS_GET_SYNC: ");
   for(i = 0; i < 7; i++) printf("0x%02X,",radioConfig.FskSync[i]);
   printf("0x%02X\r\n",radioConfig.FskSync[7]);
-	//printf("FS_GET_SYNC: TODO\r\n");
 }
 
 void cli_fs_setsync(int argc, char **argv)
@@ -1096,22 +1029,18 @@ void cli_fs_setsync(int argc, char **argv)
     uint8_t i;
     
     for(i = 0; i < 8; i++) sync[i] = ciGetUnsigned(argv[i+1]);
-    //FLASH_Unlock(FLASH_MemType_Data);
     for(i = 0; i < 8; i++) radioConfig.FskSync[i] = sync[i];
-    //FLASH_Lock(FLASH_MemType_Data);
     SX126X_config();
     printf("FS_SET_SYNC: ");
     for(i = 0; i < 7; i++) printf("0x%02X,",radioConfig.FskSync[i]);
     printf("0x%02X\r\n",radioConfig.FskSync[7]);
   }
   else printf("FS_SET_SYNC: ERROR\r\n");
-	//printf("FS_SET_SYNC: TODO\r\n");
 }
 //CRC init, CRC poly, whitening init
 void cli_fs_getcrcwhite(int argc, char **argv)
 {
   printf("FS_GET_CRCWH:\r\nCRC_INIT=0x%04X\r\nCRC_POLY=0x%04X\r\nWH_INIT=0x%04X\r\n",radioConfig.FskCrcInit,radioConfig.FskCrcPoly,radioConfig.FskWhiteInit);
-	//printf("FS_GET_CRCWH: TODO\r\n");
 }
 
 void cli_fs_setcrcwhite(int argc, char **argv)
@@ -1124,16 +1053,13 @@ void cli_fs_setcrcwhite(int argc, char **argv)
     c_poly = ciGetUnsigned(argv[2]);
     w_init = ciGetUnsigned(argv[3]);
     
-    //FLASH_Unlock(FLASH_MemType_Data);
     radioConfig.FskCrcInit = c_init;
     radioConfig.FskCrcPoly = c_poly;
     radioConfig.FskWhiteInit = w_init;
-    //FLASH_Lock(FLASH_MemType_Data);
     SX126X_config();
     printf("FS_SET_CRCWH:\r\nCRC_INIT=0x%04X\r\nCRC_POLY=0x%04X\r\nWH_INIT=0x%04X\r\n",radioConfig.FskCrcInit,radioConfig.FskCrcPoly,radioConfig.FskWhiteInit);
   }
   else printf("FS_SET_CRCWH: ERROR\r\n");
-	printf("FS_SET_CRCWH: TODO\r\n");
 }
 
 //System tests
@@ -1146,7 +1072,6 @@ void cli_sendburst(int argc, char **argv)
   if(inter_packet_delay < 100) inter_packet_delay = 100;
   radio_startburst();
   printf("SEND_PACKET: %d,%d\r\n",txpacketcount,inter_packet_delay);
-	//printf("SEND_PACKET: TODO\r\n");
 }
 
 void cli_stopburst (int argc, char **argv)
@@ -1158,13 +1083,11 @@ void cli_stopburst (int argc, char **argv)
     printf("STOP_TX: OK\r\n");
   }
   else printf("STOP_TX: ERROR\r\n");
-	//printf("STOP_TX: TODO\r\n");
 }
 
 void cli_getautosendparams(int argc, char **argv)
 {
   printf("GET_AUTOSEND: %d,0x%04X\r\n",radioConfig.InterPacketDelay,radioConfig.SlaveID);
-	//printf("GET_AUTOSEND: TODO\r\n");
 }
 
 void cli_setautosendparams(int argc, char **argv)
@@ -1174,12 +1097,9 @@ void cli_setautosendparams(int argc, char **argv)
   id = ciGetUnsigned(argv[2]);
   if(d < 50) d = 50;
   if(d > 60000) d = 60000;
-  //FLASH_Unlock(FLASH_MemType_Data);
   radioConfig.InterPacketDelay = d;
   radioConfig.SlaveID = id;
-  //FLASH_Lock(FLASH_MemType_Data);
   printf("SET_AUTOSEND: %d,0x%04X\r\n",radioConfig.InterPacketDelay,radioConfig.SlaveID);
-	//printf("SET_AUTOSEND: TODO\r\n");
 }
 
 void cli_txstream(int argc, char **argv)
@@ -1212,7 +1132,6 @@ void cli_txstream(int argc, char **argv)
       txmode = 2;
       break;
   }
-	//printf("TX_STREAM: TODO\r\n");
 }
 
 void cli_sweeptx(int argc, char **argv)
@@ -1223,14 +1142,13 @@ void cli_sweeptx(int argc, char **argv)
   maxchan = ciGetUnsigned(argv[2]);
   sweepdelay = ciGetUnsigned(argv[3]);
   stream = ciGetUnsigned(argv[4]);
-  //if(minchan > 63) minchan = 63;
-  //if(maxchan > 63) maxchan = 63;
   if(stream > 2) stream = 2;
   if((stream == 0) || (sweepdelay == 0))
   {
     if(txmode != 0)
     {
       sweeptx = false;
+			ustimer_stop();
       SX126X_setopmode(prevopmode);
       Channel = radioConfig.Channel;
       SX126X_SetChannel();
@@ -1251,37 +1169,37 @@ void cli_sweeptx(int argc, char **argv)
       prevopmode = opmode;
       Channel = minchan;
       SX126X_SetChannel();
-      sweepcnt = sweepdelay;
+      //sweepcnt = sweepdelay;
+			ustimer_setinterval(sweepdelay);
       if(stream == 1) 
       {
-        SX126X_setopmode(OPMODE_TXSTREAMCW);//SX126X_SetCW();
-        txmode = 1;
+        SX126X_setopmode(OPMODE_TXSTREAMCW);
+				txmode = 1;
         printf("TX_STREAM: CW\r\n");
       }
       else 
       {
-        SX126X_setopmode(OPMODE_TXSTREAMPRE);//SX126X_SetTxInfinitePreamble();
+        SX126X_setopmode(OPMODE_TXSTREAMPRE);
         txmode = 2;
         printf("TX_STREAM: PREAMBLE\r\n");
       }
       sweeptx = true;
+			ustimer_start();
     }
   }
-	//printf("SWEEP_TX: TODO\r\n");
 }
 
 void cli_sweeprx(int argc, char **argv)
 {
   minchan = ciGetUnsigned(argv[1]);
   maxchan = ciGetUnsigned(argv[2]);
-  //if(minchan > 63) minchan = 63;
-  //if(maxchan > 63) maxchan = 63;
   sweepdelay = ciGetUnsigned(argv[3]);
   if(sweepdelay == 0)
   {
     sweeprx = false;
     Channel = radioConfig.Channel;
     SX126X_SetChannel();
+		ustimer_stop();
     printf("SWEEP_RX: STOP\r\n");
   }
   else
@@ -1289,35 +1207,35 @@ void cli_sweeprx(int argc, char **argv)
     printf("SWEEP_RX: START\r\n");
     Channel = minchan;
     SX126X_SetChannel();
-    sweepcnt = sweepdelay;
+		ustimer_setinterval(sweepdelay);
+		ustimer_start();
     sweeprx = true;
   }
-	//printf("SWEEP_RX: TODO\r\n");
 }
 
 void cli_startrxcount(int argc, char **argv)
 {
-  printf("START_RXCOUNT: ERROR\r\n");
+  printf("START_RXCOUNT: TODO\r\n");
 }
 
 void cli_stoprxcount(int argc, char **argv)
 {
-  printf("STOP_RXCOUNT: ERROR\r\n");
+  printf("STOP_RXCOUNT: TODO\r\n");
 }
 
 void cli_getrxcount(int argc, char **argv)
 {
-  printf("GET_RXCOUNT: ERROR\r\n");
+  printf("GET_RXCOUNT: TODO\r\n");
 }
 
 void cli_getrssioffset(int argc, char **argv)
 {
-  printf("GET_RSSIOFFSET: ERROR\r\n");
+  printf("GET_RSSIOFFSET: TODO\r\n");
 }
 
 void cli_setrssioffset(int argc, char **argv)
 {
-  printf("SET_RSSIOFFSET: ERROR\r\n");
+  printf("SET_RSSIOFFSET: TODO\r\n");
 }
 
 //Device dependent commands
@@ -1340,12 +1258,12 @@ void cli_setem(int argc, char **argv)
       printf("SET_EM: 0\r\n");
     break;
     
-    case 1:
+    case 1: //CPU stall
       printf("SET_EM: 1\r\n");
       setEM1();
     break;
     
-    case 2:
+    case 2://CPU active, radio off
       printf("SET_EM: 2\r\n");
       setEM2();
     break;
@@ -1397,7 +1315,6 @@ void cli_dumpregs(int argc, char **argv)
   {
     printf("0x%04X,0x%02X\r\n",i,SX126X_readreg(i));
   }
-	//printf("DUMP_REGS: TODO\r\n");
 }
 
 void cli_initconfig(int argc, char **argv)
@@ -1407,7 +1324,6 @@ void cli_initconfig(int argc, char **argv)
   retval = SX126X_initconfigstructure();
   if(retval == 0) printf("INIT_CONFIG: OK\r\n");
   else printf("INIT_CONFIG: ERROR %d\r\n", retval);
-	//printf("INIT_CONFIG: TODO\r\n");
 }
 
 void cli_storeconfig(int argc, char **argv)

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\ASR6601test.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\ASR6601test.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Fri Jul  5 17:03:53 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6210000: Last Updated: Fri Jul  5 18:54:23 2024
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -984,8 +984,8 @@ Global Symbols
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myadc_init
 </UL>
 
-<P><STRONG><a name="[c5]"></a>aes_crypto</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, aes.o(.text.aes_crypto))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = aes_crypto &rArr; __aeabi_memcpy
+<P><STRONG><a name="[c5]"></a>aes_crypto</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, aes.o(.text.aes_crypto))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = aes_crypto &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
@@ -994,7 +994,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[c7]"></a>aes_decrypt</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, aes_proc.o(.text.aes_decrypt))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = aes_decrypt &rArr; aes_crypto &rArr; __aeabi_memcpy
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = aes_decrypt &rArr; aes_crypto &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes_crypto
 </UL>
@@ -1002,7 +1002,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[c8]"></a>aes_encrypt</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, aes_proc.o(.text.aes_encrypt))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = aes_encrypt &rArr; aes_crypto &rArr; __aeabi_memcpy
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = aes_encrypt &rArr; aes_crypto &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes_crypto
 </UL>
@@ -1967,7 +1967,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[106]"></a>preparepacketcommon</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, radio_proc.o(.text.preparepacketcommon))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = preparepacketcommon &rArr; aes_encrypt &rArr; aes_crypto &rArr; __aeabi_memcpy
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = preparepacketcommon &rArr; aes_encrypt &rArr; aes_crypto &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_writebuffer
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;aes_encrypt

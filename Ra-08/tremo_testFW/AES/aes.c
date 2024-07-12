@@ -17,7 +17,8 @@ uint8_t aes_init(uint8_t *key,uint8_t keymod,uint8_t mode,uint8_t *IVorNonce)
       else if (keymod == 24) SAE->SAEGPR0 = AES_KEY192; //*(uint32_t*)0x4003200c = 4;
     }
     while ((SAE->SAEHCR & 1) != 0); //((*(uint32_t*)0x40032004 & 1) != 0);
-    memcpy((void*)0x40031640,key,keymod); //key
+    //memcpy((void*)0x40031640,key,keymod); //key
+		memcpy((void*)AES_KADR,key,keymod); //key
     //*(uint32_t*)0x4003200c |= 0x82;
 		SAE->SAEGPR0 |= 0x82;
     //while ((*(uint32_t*)0x4003200c & 0x80) != 0);

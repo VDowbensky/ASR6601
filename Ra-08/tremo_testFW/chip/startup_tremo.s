@@ -74,8 +74,8 @@ __Vectors       DCD     __initial_sp                        ; Top of Stack
                 DCD     ADC_IRQHandler             			; ADC 16
                 DCD     AFEC_IRQHandler             		; AFEC 17
                 DCD     SSP2_IRQHandler             		; SSP2 18
-                DCD     DMA1IRQHandler             			; DMA1 19
-                DCD     DMA1_IRQHandler                 	; DAC 20
+                DCD     DMA1_IRQHandler             			; DMA1 19
+                DCD     DAC_IRQHandler                 	; DAC 20
                 DCD     LORA_IRQHandler                  	; LORA 21
                 DCD     GPIO_IRQHandler                 	; GPIO 22
                 DCD     TIMER0_IRQHandler                 	; TIMER0 23

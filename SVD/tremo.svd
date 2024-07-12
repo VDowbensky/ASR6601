@@ -24110,6 +24110,274 @@
 			</registers>
 		</peripheral>
 		<peripheral>
+			<name>SAE</name>
+			<description>Security subsystem</description>
+			<baseAddress>0x40032000</baseAddress>
+			<addressBlock>
+				<offset>0</offset>
+				<size>0x00001000</size>
+				<usage>registers</usage>
+			</addressBlock>
+			<interrupt>
+				<name>SEC</name>
+				<value>0</value>
+			</interrupt>
+			<registers>
+				<register>
+					<name>SAECR</name>
+					<description>common control register</description>
+					<addressOffset>0x000</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x000000FF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEHCR</name>
+					<description>safe control register</description>
+					<addressOffset>0x004</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x000000FF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAESR</name>
+					<description>status register</description>
+					<addressOffset>0x008</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEGPR0</name>
+					<description>general group register 0</description>
+					<addressOffset>0x00C</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEGPR1</name>
+					<description>general group register 1</description>
+					<addressOffset>0x010</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEGPR2</name>
+					<description>general group register 2</description>
+					<addressOffset>0x014</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEGPR3</name>
+					<description>general group register 3</description>
+					<addressOffset>0x018</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEGPR4</name>
+					<description>general group register 4</description>
+					<addressOffset>0x01C</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEGPR5</name>
+					<description>general group register 5</description>
+					<addressOffset>0x020</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEMASKCR</name>
+					<description>mask control register</description>
+					<addressOffset>0x024</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEMASKDAT0</name>
+					<description>mask data register 0</description>
+					<addressOffset>0x028</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEMASKDAT1</name>
+					<description>mask data register 1</description>
+					<addressOffset>0x02C</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEMASKDAT2</name>
+					<description>mask data register 2</description>
+					<addressOffset>0x030</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>SAEBUFCR</name>
+					<description>buffer control register</description>
+					<addressOffset>0x034</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+			</registers>
+		</peripheral>
+		<peripheral>
 			<name>BSTIMER1</name>
 			<description>Basic timer</description>
 			<baseAddress>0x4001C000</baseAddress>
@@ -24298,6 +24566,202 @@
 							<description>Counter reload value</description>
 							<bitOffset>0</bitOffset>
 							<bitWidth>16</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+			</registers>
+		</peripheral>
+		<peripheral>
+			<name>RNG</name>
+			<description>Random number generator</description>
+			<baseAddress>0x40033000</baseAddress>
+			<addressBlock>
+				<offset>0</offset>
+				<size>0x00001000</size>
+				<usage>registers</usage>
+			</addressBlock>
+			<interrupt>
+				<name>SEC</name>
+				<value>0</value>
+			</interrupt>
+			<registers>
+				<register>
+					<name>RNGDET</name>
+					<description>control register</description>
+					<addressOffset>0x000</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x000000FF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGSR</name>
+					<description>status register</description>
+					<addressOffset>0x004</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0x000000FF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGCLK</name>
+					<description>clock register</description>
+					<addressOffset>0x008</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGCR</name>
+					<description>control register</description>
+					<addressOffset>0x00C</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGRESEED</name>
+					<description>reseed register</description>
+					<addressOffset>0x010</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGDATA</name>
+					<description>data register</description>
+					<addressOffset>0x014</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGPKNUM</name>
+					<description/>
+					<addressOffset>0x018</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGPKRES0</name>
+					<description/>
+					<addressOffset>0x01C</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGPKRES1</name>
+					<description/>
+					<addressOffset>0x020</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
+							<access>read-write</access>
+						</field>
+					</fields>
+				</register>
+				<register>
+					<name>RNGPKRES2</name>
+					<description/>
+					<addressOffset>0x024</addressOffset>
+					<size>32</size>
+					<access>read-write</access>
+					<resetValue>0x00000000</resetValue>
+					<resetMask>0xFFFFFFFF</resetMask>
+					<fields>
+						<field>
+							<name>CEN</name>
+							<description>Counter enable</description>
+							<bitOffset>0</bitOffset>
+							<bitWidth>1</bitWidth>
 							<access>read-write</access>
 						</field>
 					</fields>

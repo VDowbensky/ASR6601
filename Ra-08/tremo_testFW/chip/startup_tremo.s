@@ -74,8 +74,8 @@ __Vectors       DCD     __initial_sp                        ; Top of Stack
                 DCD     ADC_IRQHandler             			; ADC 16
                 DCD     AFEC_IRQHandler             		; AFEC 17
                 DCD     SSP2_IRQHandler             		; SSP2 18
-                DCD     DMA1_IRQHandler             			; DMA1 19
-                DCD     DAC_IRQHandler                 	; DAC 20
+                DCD     DMA1_IRQHandler            			; DMA1 19
+                DCD     DAC_IRQHandler 	                	; DAC 20
                 DCD     LORA_IRQHandler                  	; LORA 21
                 DCD     GPIO_IRQHandler                 	; GPIO 22
                 DCD     TIMER0_IRQHandler                 	; TIMER0 23
@@ -177,6 +177,7 @@ Default_Handler PROC
 				EXPORT  SSP2_IRQHandler             		[WEAK]
 				EXPORT  DMA1IRQHandler             			[WEAK]
 				EXPORT  DMA1_IRQHandler                 	[WEAK]
+				EXPORT  DAC_IRQHandler						[WEAK]
 				EXPORT  LORA_IRQHandler                  	[WEAK]
 				EXPORT  GPIO_IRQHandler                 	[WEAK]
 				EXPORT  TIMER0_IRQHandler                 	[WEAK]
@@ -215,6 +216,7 @@ AFEC_IRQHandler
 SSP2_IRQHandler
 DMA1IRQHandler
 DMA1_IRQHandler
+DAC_IRQHandler
 LORA_IRQHandler
 GPIO_IRQHandler
 TIMER0_IRQHandler

@@ -631,6 +631,9 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>radio2g4</GroupName>
+        </Group>
       </Groups>
     </Target>
   </Targets>

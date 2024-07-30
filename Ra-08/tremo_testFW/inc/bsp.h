@@ -54,6 +54,7 @@
 #define RFSW_TXRX_PIN		GPIO_PIN_11 //GPIO59
 
 #define UART0_BR			115200
+#define UART1_BR			115200
 #define AES_MODE			AES_ECB_MODE
 //#define AES_MODE    	AES_CBC_MODE
 //#define AES_MODE			AES_OFB_MODE

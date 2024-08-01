@@ -26,6 +26,7 @@ void init_peripherals(void)
 	myadc_init();
 	RETARGET_SerialInit();
 	i2c0_init();
+	auxuart_init(UART1_BR);
 	ustimer_init();
 }
 

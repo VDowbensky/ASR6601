@@ -12,7 +12,7 @@ void myuart_init(uint32_t br)
 	uart_config_t uart_config;
 	uart_config_init(&uart_config);
 
-	uart_config.baudrate = UART_BAUDRATE_115200;
+	uart_config.baudrate = br;
 	uart_init(UART0, &uart_config);
 	uart_cmd(UART0, ENABLE);
 	
@@ -25,4 +25,32 @@ void myuart_init(uint32_t br)
 void UART0_IRQHandler(void)
 {
 	cbRETARGET_Rx();
+}
+
+//auxillary UART for SX128x
+void auxuart_init(uint32_t br)
+{
+	gpio_set_iomux(TXD1_PORT, TXD1_PIN, 1);
+	gpio_set_iomux(RXD1_PORT, RXD1_PIN, 1);
+	
+	rcc_set_uart1_clk_source(RCC_UART1_CLK_SOURCE_PCLK0);
+	rcc_enable_peripheral_clk(RCC_PERIPHERAL_UART1,true);
+
+	/* uart config struct init */
+	uart_config_t uart_config;
+	uart_config_init(&uart_config);
+
+	uart_config.baudrate = br;
+	uart_init(UART1, &uart_config);
+	uart_cmd(UART1, ENABLE);
+	
+	uart_config_interrupt(UART1,UART_INTERRUPT_RX_DONE,true);
+	
+	NVIC_ClearPendingIRQ(UART1_IRQn);
+	NVIC_EnableIRQ(UART1_IRQn);
+}
+
+void UART1_IRQHandler(void)
+{
+	
 }

@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include "bsp.h"
-#include "sx126xx.h"
+#include "sx126x.h"
 #include "ustimer.h"
 //#include "aes.h"
 //#include "aes_stm8.h"

@@ -36,7 +36,7 @@
 ".\objects\ustimer.o"
 ".\objects\adc.o"
 ".\objects\radio_proc.o"
-".\objects\sx126xx.o"
+".\objects\sx126x.o"
 ".\objects\command_interpreter.o"
 ".\objects\ssd1306.o"
 ".\objects\aes_proc.o"

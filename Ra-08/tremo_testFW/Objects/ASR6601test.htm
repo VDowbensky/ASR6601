@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\ASR6601test.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\ASR6601test.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Tue Jul 30 14:32:17 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6220000: Last Updated: Tue Aug  6 15:19:44 2024
 <BR><P>
 <H3>Maximum Stack Usage =        264 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -642,7 +642,7 @@ Global Symbols
 <P><STRONG><a name="[4b]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, tremo_it.o(.text.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_tremo.o(RESET)
 </UL>
-<P><STRONG><a name="[a2]"></a>SX126X_CalibrateIR</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_CalibrateIR))
+<P><STRONG><a name="[a2]"></a>SX126X_CalibrateIR</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, sx126x.o(.text.SX126X_CalibrateIR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_CalibrateIR &rArr; lorac_wait_on_busy &rArr; delay_us
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_wait_on_busy
@@ -651,7 +651,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 </UL>
 
-<P><STRONG><a name="[9b]"></a>SX126X_ClearIrqStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sx126xx.o(.text.SX126X_ClearIrqStatus))
+<P><STRONG><a name="[9b]"></a>SX126X_ClearIrqStatus</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sx126x.o(.text.SX126X_ClearIrqStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SX126X_ClearIrqStatus &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -659,7 +659,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LORA_IRQHandler
 </UL>
 
-<P><STRONG><a name="[a5]"></a>SX126X_GetFskPacketStatus</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126X_GetFskPacketStatus))
+<P><STRONG><a name="[a5]"></a>SX126X_GetFskPacketStatus</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, sx126x.o(.text.SX126X_GetFskPacketStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX126X_GetFskPacketStatus &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -667,7 +667,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 </UL>
 
-<P><STRONG><a name="[9a]"></a>SX126X_GetIrqStatus</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_GetIrqStatus))
+<P><STRONG><a name="[9a]"></a>SX126X_GetIrqStatus</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx126x.o(.text.SX126X_GetIrqStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SX126X_GetIrqStatus &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -675,7 +675,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LORA_IRQHandler
 </UL>
 
-<P><STRONG><a name="[a6]"></a>SX126X_GetLoRaPacketStatus</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126X_GetLoRaPacketStatus))
+<P><STRONG><a name="[a6]"></a>SX126X_GetLoRaPacketStatus</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, sx126x.o(.text.SX126X_GetLoRaPacketStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX126X_GetLoRaPacketStatus &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -683,7 +683,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 </UL>
 
-<P><STRONG><a name="[a7]"></a>SX126X_GetRssiInst</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_GetRssiInst))
+<P><STRONG><a name="[a7]"></a>SX126X_GetRssiInst</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx126x.o(.text.SX126X_GetRssiInst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SX126X_GetRssiInst &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -692,7 +692,7 @@ Global Symbols
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 </UL>
 
-<P><STRONG><a name="[a8]"></a>SX126X_SetChannel</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_SetChannel))
+<P><STRONG><a name="[a8]"></a>SX126X_SetChannel</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, sx126x.o(.text.SX126X_SetChannel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
@@ -709,7 +709,7 @@ Global Symbols
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_LoRaConfig
 </UL>
 
-<P><STRONG><a name="[a9]"></a>SX126X_SetFskCrcWhitening</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126X_SetFskCrcWhitening))
+<P><STRONG><a name="[a9]"></a>SX126X_SetFskCrcWhitening</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, sx126x.o(.text.SX126X_SetFskCrcWhitening))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SX126X_SetFskCrcWhitening &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -717,7 +717,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
 </UL>
 
-<P><STRONG><a name="[aa]"></a>SX126X_SetFskModParams</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, sx126xx.o(.text.SX126X_SetFskModParams))
+<P><STRONG><a name="[aa]"></a>SX126X_SetFskModParams</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, sx126x.o(.text.SX126X_SetFskModParams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_SetFskModParams &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -725,7 +725,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
 </UL>
 
-<P><STRONG><a name="[ab]"></a>SX126X_SetLoRaModParams</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, sx126xx.o(.text.SX126X_SetLoRaModParams))
+<P><STRONG><a name="[ab]"></a>SX126X_SetLoRaModParams</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, sx126x.o(.text.SX126X_SetLoRaModParams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_SetLoRaModParams &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -733,7 +733,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_LoRaConfig
 </UL>
 
-<P><STRONG><a name="[ac]"></a>SX126X_SetLoRaPacketParams</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, sx126xx.o(.text.SX126X_SetLoRaPacketParams))
+<P><STRONG><a name="[ac]"></a>SX126X_SetLoRaPacketParams</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, sx126x.o(.text.SX126X_SetLoRaPacketParams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_SetLoRaPacketParams &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -741,7 +741,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_LoRaConfig
 </UL>
 
-<P><STRONG><a name="[ad]"></a>SX126X_SetPaConfig</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, sx126xx.o(.text.SX126X_SetPaConfig))
+<P><STRONG><a name="[ad]"></a>SX126X_SetPaConfig</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, sx126x.o(.text.SX126X_SetPaConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SX126X_SetPaConfig &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -749,7 +749,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_setpaconfig
 </UL>
 
-<P><STRONG><a name="[ae]"></a>SX126X_SetTxParams</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, sx126xx.o(.text.SX126X_SetTxParams))
+<P><STRONG><a name="[ae]"></a>SX126X_SetTxParams</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, sx126x.o(.text.SX126X_SetTxParams))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_SetTxParams &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -767,7 +767,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 </UL>
 
-<P><STRONG><a name="[b1]"></a>SX126X_config</STRONG> (Thumb, 266 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126X_config))
+<P><STRONG><a name="[b1]"></a>SX126X_config</STRONG> (Thumb, 266 bytes, Stack size 24 bytes, sx126x.o(.text.SX126X_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = SX126X_config &rArr; SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126xx_FskConfig
@@ -792,7 +792,7 @@ Global Symbols
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_init
 </UL>
 
-<P><STRONG><a name="[b6]"></a>SX126X_initconfigstructure</STRONG> (Thumb, 248 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_initconfigstructure))
+<P><STRONG><a name="[b6]"></a>SX126X_initconfigstructure</STRONG> (Thumb, 248 bytes, Stack size 8 bytes, sx126x.o(.text.SX126X_initconfigstructure))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SX126X_initconfigstructure &rArr; writeconfig &rArr; flash_program_bytes &rArr; __aeabi_memcpy
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;writeconfig
@@ -802,7 +802,7 @@ Global Symbols
 <LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_init
 </UL>
 
-<P><STRONG><a name="[b8]"></a>SX126X_readbuffer</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, sx126xx.o(.text.SX126X_readbuffer))
+<P><STRONG><a name="[b8]"></a>SX126X_readbuffer</STRONG> (Thumb, 74 bytes, Stack size 16 bytes, sx126x.o(.text.SX126X_readbuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_readbuffer &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -810,7 +810,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 </UL>
 
-<P><STRONG><a name="[b9]"></a>SX126X_readreg</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, sx126xx.o(.text.SX126X_readreg))
+<P><STRONG><a name="[b9]"></a>SX126X_readreg</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, sx126x.o(.text.SX126X_readreg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SX126X_readreg &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -820,7 +820,7 @@ Global Symbols
 <LI><a href="#[18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cli_getctune
 </UL>
 
-<P><STRONG><a name="[9d]"></a>SX126X_setopmode</STRONG> (Thumb, 308 bytes, Stack size 16 bytes, sx126xx.o(.text.SX126X_setopmode))
+<P><STRONG><a name="[9d]"></a>SX126X_setopmode</STRONG> (Thumb, 308 bytes, Stack size 16 bytes, sx126x.o(.text.SX126X_setopmode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SX126X_setopmode &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_rfsw_tx
@@ -834,7 +834,7 @@ Global Symbols
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;radio_proc
 </UL>
 
-<P><STRONG><a name="[bb]"></a>SX126X_writebuffer</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, sx126xx.o(.text.SX126X_writebuffer))
+<P><STRONG><a name="[bb]"></a>SX126X_writebuffer</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, sx126x.o(.text.SX126X_writebuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SX126X_writebuffer &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -842,7 +842,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;preparepacketcommon
 </UL>
 
-<P><STRONG><a name="[9e]"></a>SX126X_writereg</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sx126xx.o(.text.SX126X_writereg))
+<P><STRONG><a name="[9e]"></a>SX126X_writereg</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, sx126x.o(.text.SX126X_writereg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SX126X_writereg &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock
@@ -851,7 +851,7 @@ Global Symbols
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RADIO_setctune
 </UL>
 
-<P><STRONG><a name="[b4]"></a>SX126xx_FskConfig</STRONG> (Thumb, 288 bytes, Stack size 32 bytes, sx126xx.o(.text.SX126xx_FskConfig))
+<P><STRONG><a name="[b4]"></a>SX126xx_FskConfig</STRONG> (Thumb, 288 bytes, Stack size 32 bytes, sx126x.o(.text.SX126xx_FskConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SX126xx_FskConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
@@ -863,7 +863,7 @@ Global Symbols
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_config
 </UL>
 
-<P><STRONG><a name="[b3]"></a>SX126xx_LoRaConfig</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, sx126xx.o(.text.SX126xx_LoRaConfig))
+<P><STRONG><a name="[b3]"></a>SX126xx_LoRaConfig</STRONG> (Thumb, 142 bytes, Stack size 24 bytes, sx126x.o(.text.SX126xx_LoRaConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = SX126xx_LoRaConfig &rArr; SX126X_SetChannel &rArr; __aeabi_ui2d &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX126X_SetChannel
@@ -2116,7 +2116,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ciProcessInput
 </UL>
 
-<P><STRONG><a name="[df]"></a>sx126x_GetStatus</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx126xx.o(.text.sx126x_GetStatus))
+<P><STRONG><a name="[df]"></a>sx126x_GetStatus</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, sx126x.o(.text.sx126x_GetStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = sx126x_GetStatus &rArr; lorac_transferblock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lorac_transferblock

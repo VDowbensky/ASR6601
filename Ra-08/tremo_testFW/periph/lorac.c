@@ -1,6 +1,6 @@
 #include "bsp.h"
 #include "lorac.h"
-#include "sx126xx.h"
+#include "sx126x.h"
 
 uint8_t lorac_TXbuffer[LORAC_TXBUFSIZE];
 uint8_t lorac_RXbuffer[LORAC_RXBUFSIZE];

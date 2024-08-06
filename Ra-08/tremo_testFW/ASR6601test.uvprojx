@@ -590,9 +590,9 @@
               <FilePath>.\radio\radio_proc.c</FilePath>
             </File>
             <File>
-              <FileName>sx126xx.c</FileName>
+              <FileName>sx126x.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\radio\sx126xx.c</FilePath>
+              <FilePath>.\radio\sx126x.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -630,9 +630,6 @@
               <FilePath>.\AES\aes.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>radio2g4</GroupName>
         </Group>
       </Groups>
     </Target>

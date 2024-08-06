@@ -1,0 +1,326 @@
+# Created by Ultra Librarian 8.3.353 Copyright © 1999-2024
+# Frank Frank, Accelerated Designs
+
+StartFootprints
+
+Footprint (Name "MOD18_RA-08H_AIT")
+Pad (Name "1") (Location -295.5, 200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -295.5, 150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -295.5, 100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -295.5, 50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location -295.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location -295.5, -50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location -295.5, -100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location -295.5, -150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "9") (Location -295.5, -200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "10") (Location 295.5, -200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "11") (Location 295.5, -150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "12") (Location 295.5, -100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "13") (Location 295.5, -50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "14") (Location 295.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "15") (Location 295.5, 50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "16") (Location 295.5, 100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "17") (Location 295.5, 150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "18") (Location 295.5, 200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 63, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -337, -228.5) (End -337, 228.5) (Layer Mechanical15) 
+Line (Width 6) (Start -337, 228.5) (End -325, 228.5) (Layer Mechanical15) 
+Line (Width 6) (Start 337, 228.5) (End 325, 228.5) (Layer Mechanical15) 
+Line (Width 6) (Start 337, 228.5) (End 337, -228.5) (Layer Mechanical15) 
+Line (Width 6) (Start 337, -228.5) (End 325, -228.5) (Layer Mechanical15) 
+Line (Width 6) (Start -337, -228.5) (End -325, -228.5) (Layer Mechanical15) 
+Line (Width 6) (Start -325, -325) (End -325, -228.5) (Layer Mechanical15) 
+Line (Width 6) (Start -325, 228.5) (End -325, 325) (Layer Mechanical15) 
+Line (Width 6) (Start -325, 325) (End 325, 325) (Layer Mechanical15) 
+Line (Width 6) (Start 325, 325) (End 325, 228.5) (Layer Mechanical15) 
+Line (Width 6) (Start 325, -228.5) (End 325, -325) (Layer Mechanical15) 
+Line (Width 6) (Start 325, -325) (End -325, -325) (Layer Mechanical15) 
+Polygon (PointCount 12) (Layer Mechanical15) 
+Point (-337, -228.5)
+Point (-337, 228.5)
+Point (-325, 228.5)
+Point (-325, 325)
+Point (325, 325)
+Point (325, 228.5)
+Point (337, 228.5)
+Point (337, -228.5)
+Point (325, -228.5)
+Point (325, -325)
+Point (-325, -325)
+Point (-325, -228.5)
+EndPolygon
+Line (Width 6) (Start -320, -320) (End 320, -320) (Layer TopOverlay) 
+Line (Width 6) (Start 320, -320) (End 320, -231.60000038) (Layer TopOverlay) 
+Line (Width 6) (Start 320, 320) (End -320, 320) (Layer TopOverlay) 
+Line (Width 6) (Start -320, 320) (End -320, 231.60000038) (Layer TopOverlay) 
+Line (Width 6) (Start -320, -231.60000038) (End -320, -320) (Layer TopOverlay) 
+Line (Width 6) (Start 320, 231.60000038) (End 320, 320) (Layer TopOverlay) 
+Arc (Width 6) (Radius 4) (Location -379, 200) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Line (Width 1) (Start -315, -315) (End 315, -315) (Layer Mechanical13) 
+Line (Width 1) (Start 315, -315) (End 315, 315) (Layer Mechanical13) 
+Line (Width 1) (Start 315, 315) (End -315, 315) (Layer Mechanical13) 
+Line (Width 1) (Start -315, 315) (End -315, -315) (Layer Mechanical13) 
+Arc (Width 0) (Radius 3) (Location -264, 200) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Arc (Width 0) (Radius 12) (Location 0, 315) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Step (Name MOD18_RA-08H_AIT.step)
+EndFootprint
+
+Footprint (Name "MOD18_RA-08H_AIT-M")
+Pad (Name "1") (Location -297.5, 200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -297.5, 150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -297.5, 100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -297.5, 50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location -297.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location -297.5, -50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location -297.5, -100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location -297.5, -150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "9") (Location -297.5, -200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "10") (Location 297.5, -200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "11") (Location 297.5, -150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "12") (Location 297.5, -100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "13") (Location 297.5, -50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "14") (Location 297.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "15") (Location 297.5, 50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "16") (Location 297.5, 100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "17") (Location 297.5, 150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "18") (Location 297.5, 200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 67, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -351, -238.5) (End -351, 238.5) (Layer Mechanical15) 
+Line (Width 6) (Start -351, 238.5) (End -335, 238.5) (Layer Mechanical15) 
+Line (Width 6) (Start 351, 238.5) (End 335, 238.5) (Layer Mechanical15) 
+Line (Width 6) (Start 351, 238.5) (End 351, -238.5) (Layer Mechanical15) 
+Line (Width 6) (Start 351, -238.5) (End 335, -238.5) (Layer Mechanical15) 
+Line (Width 6) (Start -351, -238.5) (End -335, -238.5) (Layer Mechanical15) 
+Line (Width 6) (Start -335, -335) (End -335, -238.5) (Layer Mechanical15) 
+Line (Width 6) (Start -335, 238.5) (End -335, 335) (Layer Mechanical15) 
+Line (Width 6) (Start -335, 335) (End 335, 335) (Layer Mechanical15) 
+Line (Width 6) (Start 335, 335) (End 335, 238.5) (Layer Mechanical15) 
+Line (Width 6) (Start 335, -238.5) (End 335, -335) (Layer Mechanical15) 
+Line (Width 6) (Start 335, -335) (End -335, -335) (Layer Mechanical15) 
+Polygon (PointCount 12) (Layer Mechanical15) 
+Point (-351, -238.5)
+Point (-351, 238.5)
+Point (-335, 238.5)
+Point (-335, 335)
+Point (335, 335)
+Point (335, 238.5)
+Point (351, 238.5)
+Point (351, -238.5)
+Point (335, -238.5)
+Point (335, -335)
+Point (-335, -335)
+Point (-335, -238.5)
+EndPolygon
+Line (Width 6) (Start 320, 231.60000038) (End 320, 320) (Layer TopOverlay) 
+Line (Width 6) (Start -320, -320) (End 320, -320) (Layer TopOverlay) 
+Line (Width 6) (Start 320, -320) (End 320, -231.60000038) (Layer TopOverlay) 
+Line (Width 6) (Start 320, 320) (End -320, 320) (Layer TopOverlay) 
+Line (Width 6) (Start -320, 320) (End -320, 231.60000038) (Layer TopOverlay) 
+Line (Width 6) (Start -320, -231.60000038) (End -320, -320) (Layer TopOverlay) 
+Arc (Width 6) (Radius 4) (Location -383, 200) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Line (Width 1) (Start -315, -315) (End 315, -315) (Layer Mechanical13) 
+Line (Width 1) (Start 315, -315) (End 315, 315) (Layer Mechanical13) 
+Line (Width 1) (Start 315, 315) (End -315, 315) (Layer Mechanical13) 
+Line (Width 1) (Start -315, 315) (End -315, -315) (Layer Mechanical13) 
+Arc (Width 0) (Radius 3) (Location -264, 200) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Arc (Width 0) (Radius 12) (Location 0, 315) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Step (Name MOD18_RA-08H_AIT.step)
+EndFootprint
+
+Footprint (Name "MOD18_RA-08H_AIT-L")
+Pad (Name "1") (Location -293.5, 200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "2") (Location -293.5, 150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "3") (Location -293.5, 100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "4") (Location -293.5, 50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "5") (Location -293.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "6") (Location -293.5, -50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "7") (Location -293.5, -100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "8") (Location -293.5, -150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "9") (Location -293.5, -200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "10") (Location 293.5, -200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "11") (Location 293.5, -150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "12") (Location 293.5, -100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "13") (Location 293.5, -50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "14") (Location 293.5, 0) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "15") (Location 293.5, 50) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "16") (Location 293.5, 100) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "17") (Location 293.5, 150) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Pad (Name "18") (Location 293.5, 200) (Surface True) (Rotation 0) (ExpandMask 0) (ExpandPaste 0)
+PadShape (Size 59, 37) (Shape Rectangular) (Layer Top)
+EndPad
+Line (Width 6) (Start -327, -222.5) (End -327, 222.5) (Layer Mechanical15) 
+Line (Width 6) (Start -327, 222.5) (End -319, 222.5) (Layer Mechanical15) 
+Line (Width 6) (Start 327, 222.5) (End 319, 222.5) (Layer Mechanical15) 
+Line (Width 6) (Start 327, 222.5) (End 327, -222.5) (Layer Mechanical15) 
+Line (Width 6) (Start 327, -222.5) (End 319, -222.5) (Layer Mechanical15) 
+Line (Width 6) (Start -327, -222.5) (End -319, -222.5) (Layer Mechanical15) 
+Line (Width 6) (Start -319, -319) (End -319, -222.5) (Layer Mechanical15) 
+Line (Width 6) (Start -319, 222.5) (End -319, 319) (Layer Mechanical15) 
+Line (Width 6) (Start -319, 319) (End 319, 319) (Layer Mechanical15) 
+Line (Width 6) (Start 319, 319) (End 319, 222.5) (Layer Mechanical15) 
+Line (Width 6) (Start 319, -222.5) (End 319, -319) (Layer Mechanical15) 
+Line (Width 6) (Start 319, -319) (End -319, -319) (Layer Mechanical15) 
+Polygon (PointCount 12) (Layer Mechanical15) 
+Point (-327, -222.5)
+Point (-327, 222.5)
+Point (-319, 222.5)
+Point (-319, 319)
+Point (319, 319)
+Point (319, 222.5)
+Point (327, 222.5)
+Point (327, -222.5)
+Point (319, -222.5)
+Point (319, -319)
+Point (-319, -319)
+Point (-319, -222.5)
+EndPolygon
+Line (Width 6) (Start 320, 231.60000038) (End 320, 320) (Layer TopOverlay) 
+Line (Width 6) (Start -320, -320) (End 320, -320) (Layer TopOverlay) 
+Line (Width 6) (Start 320, -320) (End 320, -231.60000038) (Layer TopOverlay) 
+Line (Width 6) (Start 320, 320) (End -320, 320) (Layer TopOverlay) 
+Line (Width 6) (Start -320, 320) (End -320, 231.60000038) (Layer TopOverlay) 
+Line (Width 6) (Start -320, -231.60000038) (End -320, -320) (Layer TopOverlay) 
+Arc (Width 6) (Radius 4) (Location -375, 200) (StartAngle 0) (EndAngle 360) (Layer TopOverlay) 
+Line (Width 1) (Start -315, -315) (End 315, -315) (Layer Mechanical13) 
+Line (Width 1) (Start 315, -315) (End 315, 315) (Layer Mechanical13) 
+Line (Width 1) (Start 315, 315) (End -315, 315) (Layer Mechanical13) 
+Line (Width 1) (Start -315, 315) (End -315, -315) (Layer Mechanical13) 
+Arc (Width 0) (Radius 3) (Location -264, 200) (StartAngle 0) (EndAngle 360) (Layer Mechanical13) 
+Arc (Width 0) (Radius 12) (Location 0, 315) (StartAngle 180) (EndAngle 360) (Layer Mechanical13) 
+Step (Name MOD18_RA-08H_AIT.step)
+EndFootprint
+EndFootprints
+
+StartComponents
+
+Component (Name "RA-08H") (PartCount 1) (DesPrefix "U?")
+Pin (Location 300, 0) (Rotation 180) (PinType Power) (Length 300) (Width 0) (Designator Visible "1") (Name Visible "GND") (PinSwap 0) (PartSwap 0) (PinSeq 1) (Part 1)
+Pin (Location 300, -100) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "2") (Name Visible "IO8") (PinSwap 0) (PartSwap 0) (PinSeq 2) (Part 1)
+Pin (Location 300, -200) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "3") (Name Visible "IO11") (PinSwap 0) (PartSwap 0) (PinSeq 3) (Part 1)
+Pin (Location 300, -300) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "4") (Name Visible "IO9") (PinSwap 0) (PartSwap 0) (PinSeq 4) (Part 1)
+Pin (Location 300, -400) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "5") (Name Visible "IO4") (PinSwap 0) (PartSwap 0) (PinSeq 5) (Part 1)
+Pin (Location 300, -500) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "6") (Name Visible "IO5") (PinSwap 0) (PartSwap 0) (PinSeq 6) (Part 1)
+Pin (Location 300, -600) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "7") (Name Visible "SWCLK") (PinSwap 0) (PartSwap 0) (PinSeq 7) (Part 1)
+Pin (Location 300, -700) (Rotation 180) (PinType IO) (Length 300) (Width 0) (Designator Visible "8") (Name Visible "SWDIO") (PinSwap 0) (PartSwap 0) (PinSeq 8) (Part 1)
+Pin (Location 300, -800) (Rotation 180) (PinType Power) (Length 300) (Width 0) (Designator Visible "9") (Name Visible "VCC") (PinSwap 0) (PartSwap 0) (PinSeq 9) (Part 1)
+Pin (Location 1500, -800) (Rotation 0) (PinType IO) (Length 300) (Width 0) (Designator Visible "10") (Name Visible "LPRXD") (PinSwap 0) (PartSwap 0) (PinSeq 10) (Part 1)
+Pin (Location 1500, -700) (Rotation 0) (PinType IO) (Length 300) (Width 0) (Designator Visible "11") (Name Visible "TXD") (PinSwap 0) (PartSwap 0) (PinSeq 11) (Part 1)
+Pin (Location 1500, -600) (Rotation 0) (PinType IO) (Length 300) (Width 0) (Designator Visible "12") (Name Visible "RXD0") (PinSwap 0) (PartSwap 0) (PinSeq 12) (Part 1)
+Pin (Location 1500, -500) (Rotation 0) (PinType IO) (Length 300) (Width 0) (Designator Visible "13") (Name Visible "IO15") (PinSwap 0) (PartSwap 0) (PinSeq 13) (Part 1)
+Pin (Location 1500, -400) (Rotation 0) (PinType IO) (Length 300) (Width 0) (Designator Visible "14") (Name Visible "IO14") (PinSwap 0) (PartSwap 0) (PinSeq 14) (Part 1)
+Pin (Location 1500, -300) (Rotation 0) (PinType IO) (Length 300) (Width 0) (Designator Visible "15") (Name Visible "IO2") (PinSwap 0) (PartSwap 0) (PinSeq 15) (Part 1)
+Pin (Location 1500, -200) (Rotation 0) (PinType Input) (Length 300) (Width 0) (Designator Visible "16") (Name Visible "RST") (PinSwap 0) (PartSwap 0) (PinSeq 16) (Part 1)
+Pin (Location 1500, -100) (Rotation 0) (PinType Power) (Length 300) (Width 0) (Designator Visible "17") (Name Visible "GND") (PinSwap 0) (PartSwap 0) (PinSeq 17) (Part 1)
+Pin (Location 1500, 0) (Rotation 0) (PinType Passive) (Length 300) (Width 0) (Designator Visible "18") (Name Visible "ANT") (PinSwap 0) (PartSwap 0) (PinSeq 18) (Part 1)
+Rectangle (Width 5) (Start 300, -1000) (End 1500, 200) (Part 1)
+Parameter (Name "Type") (Location 900, 300) (Height 82) (Rotation 0) (Justification Center) (Value "RF") (Part 1)
+Parameter (Name "Mfr_Name") (Location 0, 0) (Height 50) (Rotation 0) (Justification Center) (Value "Ai-Thinker") (Part 1)
+Parameter (Name "RefDes") (Location 900, 400) (Height 82) (Rotation 0) (Justification Center) (Value "RefDes") (Part 1)
+Description (Value "No Description Available") (Part 1)
+Footprint (Name "MOD18_RA-08H_AIT")
+EndComponent
+EndComponents

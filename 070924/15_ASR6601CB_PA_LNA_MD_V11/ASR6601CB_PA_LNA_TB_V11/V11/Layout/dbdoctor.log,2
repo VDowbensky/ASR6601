@@ -1,0 +1,15 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : ASR6601CB_PA_TB_V11_240301.brd                )
+(    Software Version : 16.6-2015S091                                 )
+(    Date/Time        : Tue Mar 19 16:37:13 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+WARNING   WARNING(SPMHDB-42): Run batch DRC to correctly regenerate DRC errs.
+
+1 warnings, 0 errors detected, 0 errors could be fixed.

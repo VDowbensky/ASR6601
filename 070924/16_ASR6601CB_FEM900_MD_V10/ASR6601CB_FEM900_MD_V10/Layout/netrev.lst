@@ -1,0 +1,112 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : ASR6601CB_FEM900_MD_V10_231214.brd            )
+(    Software Version : 16.6-2015S088                                 )
+(    Date/Time        : Thu Mar 14 18:00:23 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  Yes
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               IfSame
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro'
+Design Directory:            'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout'
+Old design name:             'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ASR6601CB_FEM900_MD_V10_231214.brd'
+New design name:             'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ASR6601CB_FEM900_MD_V10_231214.brd'
+
+CmdLine: netrev -$ -i F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro -x -u -t -y 2 -z -q netrev_constraint_report.xml F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/#Taaaabb11800.tmp
+
+------ Preparing to read pst files ------
+
+Starting to read F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro/pstchip.dat 
+   Finished reading F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro/pstchip.dat (00:00:00.07)
+Starting to read F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro/pstxprt.dat 
+   Finished reading F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro/pstxprt.dat (00:00:00.01)
+Starting to read F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro/pstxnet.dat 
+   Finished reading F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Schem/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           F:/ProfessionalSoftware/Cadence/Allegro16P6/share/local/pcb/modules 
+
+PSMPATH =  F:/WorkSpace/Allegro16P6/LoRa_Wood/Solution/LoRaSIPSolution/ASR6601_SX1262_Gateway_SIP/Gateway_SIPA/LIB_SIP_V10/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/RLC/ant/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/DTF/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/XO/OSC/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/chip/ 
+           F:/WORKSPACE/ALLEGRO16P6/PCB_LIB_200304/psm_lib/PM/LDO/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/RLC/cap/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/RLC/ind/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/RLC/res/ 
+           F:/WORKSPACE/ALLEGRO16P6/PCB_LIB_200304/psm_lib/LoRa/Connector/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/HTS/TP/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/PM/LDO/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/XO/XTAL/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/CSA/connector/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/LoRa/LoRa_Chip/ 
+           F:/WorkSpace/Allegro17P2/SIP_Study/LIB_XD6500S_V10/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/LoRa/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/DTF/ESD/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/HTS/Hole/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/LoRa/QFN_Socket/ 
+           F:/WorkSpace/Allegro16P6/LoRa_Wood/Solution/LoRaSIPSolution/XD6500S_ZLG/LIB_XD6500S_V10/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/Board_LIB/LIB_RFT19A_EVB/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/psm_lib/CSA/connector/1/ 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/Board_LIB/LIB_RFT19A_EVB/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/pad_lib/mi/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/pad_lib/mm/ 
+           F:/WorkSpace/Allegro16P6/PCB_LIB_200304/pad_lib/sp/ 
+           F:/ProfessionalSoftware/Cadence/Allegro16P6/share/pcb/pcb_lib/symbols 
+           F:/ProfessionalSoftware/Cadence/Allegro16P6/share/pcb/allegrolib/symbols 
+           F:/WorkSpace/Allegro16P6/LoRa_Wood/Solution/LoRaSIPSolution/ASR6601_SX1262_Gateway_SIP/Gateway_SIPA/LIB_SIP_V10/ 
+           F:/ProfessionalSoftware/Cadence/Allegro16P6/share/local/pcb/padstacks 
+           F:/WORKSPACE/ALLEGRO16P6/LORA_WOOD/SOLUTION/LORASIPSOLUTION/XD6500S_ZLG/LIB_XD6500S_V10/ 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Mar 14 18:00:23 2024
+   DESIGN NAME : 'ASR6601CB_FEM_MD'
+   PACKAGING ON Feb 15 2016 19:53:59
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:01:40
+elapsed time  0:00:00
+

@@ -1,0 +1,32 @@
+\t (00:00:08) allegro 16.6-2015 S091 (v16-6-112GY) Windows 32
+\t (00:00:08)     Journal start - Sat Apr 27 17:43:53 2024
+\t (00:00:08)         Host=WENP-PC User=wenp Pid=11572 CPUs=8
+\t (00:00:08) CmdLine= F:\ProfessionalSoftware\Cadence\Allegro16P6\tools\pcb\bin\allegro.exe
+\t (00:00:08) 
+\t (00:00:08) Opening existing design...
+\d (00:00:08) Design opened: F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ASR6601CB_FEM900_MD_V10_240315.brd
+\t (00:00:09) Grids are drawn 0.8128, 0.8128 apart for enhanced viewability.
+\i (00:00:09) trapsize 5818
+\i (00:00:09) trapsize 5682
+\i (00:00:09) trapsize 5841
+\i (00:00:09) trapsize 5907
+\i (00:00:09) trapsize 6034
+\t (00:00:10) Grids are drawn 0.8128, 0.8128 apart for enhanced viewability.
+\i (00:00:10) trapsize 6034
+\i (00:00:10) generaledit 
+\i (00:00:13) open 
+\i (00:01:11) fillin "F:\WorkSpace\Allegro16P6\PCB_LIB_200304\psm_lib\CSA\connector\1\CON_SMA_650X650_5N_mm.dra"
+\i (00:01:11) cd "F:\WorkSpace\Allegro16P6\PCB_LIB_200304\psm_lib\CSA\connector\1"
+\t (00:01:12) Opening existing design...
+\t (00:01:12) Grids are drawn 0.1016, 0.1016 apart for enhanced viewability.
+\i (00:01:12) trapsize 656
+\t (00:01:12) Grids are drawn 0.0508, 0.0508 apart for enhanced viewability.
+\i (00:01:12) trapsize 630
+\t (00:01:12) Grids are drawn 0.1016, 0.1016 apart for enhanced viewability.
+\i (00:01:12) trapsize 648
+\t (00:01:13) Grids are drawn 0.0508, 0.0508 apart for enhanced viewability.
+\i (00:01:13) trapsize 635
+\t (00:01:13) Grids are drawn 0.4064, 0.4064 apart for enhanced viewability.
+\t (00:01:13) Grids are drawn 0.0508, 0.0508 apart for enhanced viewability.
+\i (00:01:13) trapsize 635
+\t (00:01:13)     Journal end - Sat Apr 27 17:44:57 2024

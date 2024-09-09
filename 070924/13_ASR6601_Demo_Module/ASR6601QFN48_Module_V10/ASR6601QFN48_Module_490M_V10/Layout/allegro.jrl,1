@@ -1,0 +1,223 @@
+\t (00:00:01) allegro 16.6-2015 S091 (v16-6-112GY) Windows 32
+\t (00:00:01)     Journal start - Fri May 28 09:52:53 2021
+\t (00:00:01)         Host=WENP-PC User=wenp Pid=14060 CPUs=8
+\t (00:00:01) CmdLine= F:\ProfessionalSoftware\Cadence\Allegro16P6\tools\pcb\bin\allegro.exe
+\t (00:00:01) 
+\t (00:00:03) Starting new design...
+\i (00:00:04) trapsize 837
+\i (00:00:04) trapsize 817
+\i (00:00:04) trapsize 840
+\i (00:00:04) trapsize 850
+\i (00:00:05) trapsize 839
+\i (00:00:05) trapsize 1243
+\i (00:00:06) generaledit 
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 16179.8 8450.3
+\i (00:00:08) trapsize 621
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 13531.4 8450.4
+\i (00:00:08) trapsize 311
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 13500.4 8456.6
+\i (00:00:08) trapsize 155
+\i (00:00:08) zoom in 1 
+\i (00:00:08) setwindow pcb
+\i (00:00:08) zoom in 13500.4 8456.6
+\i (00:00:08) trapsize 78
+\i (00:00:10) open 
+\i (00:00:15) fillin "ASR6601QFN48_Module_V10_210527.brd"
+\t (00:00:15) Opening existing design...
+\i (00:00:15) trapsize 36681
+\d (00:00:15) Design opened: F:/WorkSpace/Allegro16P6/LoRa_Project/LORA_ASR6601/ASR6601QFN48_Moduleboard/ASR6601QFN48_Moduleboard_CTM/ASR6601QFN48_Module_490M_V10/Layout/ASR6601QFN48_Module_V10_210527.brd
+\i (00:00:15) generaledit 
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 9.6965 2.4292
+\i (00:00:16) trapsize 18341
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 9.6965 2.4292
+\i (00:00:16) trapsize 9170
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 9.8799 0.7785
+\i (00:00:16) trapsize 4585
+\i (00:00:16) zoom in 1 
+\i (00:00:16) setwindow pcb
+\i (00:00:16) zoom in 9.8799 0.7786
+\i (00:00:16) trapsize 2293
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in 2.1310 6.8769
+\i (00:00:17) trapsize 1146
+\i (00:00:17) zoom in 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom in 2.1310 6.8769
+\i (00:00:17) trapsize 573
+\i (00:00:17) zoom out 1 
+\i (00:00:17) setwindow pcb
+\i (00:00:17) zoom out 4.5497 5.1689
+\i (00:00:17) trapsize 1146
+\i (00:00:18) zoom in 1 
+\i (00:00:18) setwindow pcb
+\i (00:00:18) zoom in 1.0880 13.4451
+\i (00:00:18) trapsize 573
+\i (00:00:20) show measure 
+\i (00:00:20) zoom in 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom in 0.6181 13.7317
+\i (00:00:20) trapsize 287
+\i (00:00:20) zoom in 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom in 0.6181 13.7317
+\i (00:00:20) trapsize 143
+\i (00:00:22) pick grid 1.2026 13.7146
+\t (00:00:22) last pick:  1.1938 13.7160
+\i (00:00:24) pick grid 0.2397 13.7948
+\t (00:00:24) last pick:  0.2286 13.7922
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 0.3859 13.6057
+\i (00:00:29) trapsize 287
+\i (00:00:29) zoom out 1 
+\i (00:00:29) setwindow pcb
+\i (00:00:29) zoom out 0.3859 13.6056
+\i (00:00:29) trapsize 573
+\i (00:00:30) zoom out 1 
+\i (00:00:30) setwindow pcb
+\i (00:00:30) zoom out 1.7614 12.4708
+\i (00:00:30) trapsize 1146
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in 3.5496 15.5430
+\i (00:00:31) trapsize 573
+\i (00:00:31) zoom in 1 
+\i (00:00:31) setwindow pcb
+\i (00:00:31) zoom in 3.5496 15.5430
+\i (00:00:31) trapsize 287
+\i (00:00:32) pick grid 4.0655 14.8094
+\t (00:00:32) last pick:  4.0640 14.8082
+\i (00:00:34) pick grid 4.1343 15.7838
+\t (00:00:34) last pick:  4.1402 15.7734
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 2.1626 15.4399
+\i (00:00:36) trapsize 573
+\i (00:00:36) zoom out 1 
+\i (00:00:36) setwindow pcb
+\i (00:00:36) zoom out 0.5576 15.2908
+\i (00:00:36) trapsize 1146
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 14.4283 9.5592
+\i (00:00:37) trapsize 573
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 14.1418 9.6853
+\i (00:00:37) trapsize 287
+\i (00:00:37) zoom out 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom out 11.5798 9.9661
+\i (00:00:37) trapsize 573
+\i (00:00:37) zoom out 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom out 11.1211 9.9662
+\i (00:00:37) trapsize 1146
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 16.5777 8.9345
+\i (00:00:37) trapsize 573
+\i (00:00:37) zoom in 1 
+\i (00:00:37) setwindow pcb
+\i (00:00:37) zoom in 16.4974 8.7282
+\i (00:00:37) trapsize 287
+\i (00:00:38) zoom in 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom in 16.2681 8.4646
+\i (00:00:38) trapsize 143
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out 15.6692 8.5076
+\i (00:00:38) trapsize 287
+\i (00:00:38) zoom out 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom out 16.2080 8.5077
+\i (00:00:38) trapsize 573
+\i (00:00:38) zoom in 1 
+\i (00:00:38) setwindow pcb
+\i (00:00:38) zoom in 14.6145 9.3674
+\i (00:00:38) trapsize 287
+\i (00:00:38) zoom in 1 
+\i (00:00:39) setwindow pcb
+\i (00:00:39) zoom in 14.6088 9.3674
+\i (00:00:39) trapsize 143
+\i (00:00:41) pick grid 14.7951 9.2356
+\t (00:00:41) last pick:  14.7828 9.2456
+\i (00:00:44) pick grid 15.7465 9.1095
+\t (00:00:44) last pick:  15.7480 9.1186
+\i (00:00:46) zoom out 1 
+\i (00:00:46) setwindow pcb
+\i (00:00:46) zoom out 16.0360 9.2872
+\i (00:00:46) trapsize 287
+\i (00:00:46) zoom out 1 
+\i (00:00:46) setwindow pcb
+\i (00:00:46) zoom out 16.0359 9.3216
+\i (00:00:46) trapsize 573
+\i (00:00:46) zoom out 1 
+\i (00:00:46) setwindow pcb
+\i (00:00:46) zoom out 16.0359 9.4593
+\i (00:00:46) trapsize 1146
+\i (00:00:46) zoom out 1 
+\i (00:00:46) setwindow pcb
+\i (00:00:46) zoom out 16.0359 9.5280
+\i (00:00:46) trapsize 2293
+\i (00:00:46) zoom out 1 
+\i (00:00:46) setwindow pcb
+\i (00:00:46) zoom out 16.0359 9.5280
+\i (00:00:46) trapsize 4585
+\i (00:00:46) zoom out 1 
+\i (00:00:46) setwindow pcb
+\i (00:00:46) zoom out 16.0359 9.5281
+\i (00:00:46) trapsize 9171
+\i (00:00:47) zoom in 1 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) zoom in 6.4984 0.5408
+\i (00:00:47) trapsize 4585
+\i (00:00:47) zoom in 1 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) zoom in 6.2233 -1.7518
+\i (00:00:47) trapsize 2293
+\i (00:00:47) zoom in 1 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) zoom in 6.2234 0.3575
+\i (00:00:47) trapsize 1146
+\i (00:00:47) zoom in 1 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) zoom in 6.2234 0.3575
+\i (00:00:47) trapsize 573
+\i (00:00:47) zoom in 1 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) zoom in 5.9139 0.6785
+\i (00:00:47) trapsize 287
+\i (00:00:47) zoom in 1 
+\i (00:00:47) setwindow pcb
+\i (00:00:47) zoom in 5.9139 0.6900
+\i (00:00:47) trapsize 143
+\i (00:00:49) pick grid 5.7649 1.1973
+\t (00:00:49) last pick:  5.7658 1.1938
+\i (00:00:50) pick grid 5.7420 0.2544
+\t (00:00:50) last pick:  5.7404 0.2540
+\i (00:00:52) prepopup 5.6331 0.7674
+\i (00:00:52) done 
+\i (00:00:53) generaledit 
+\i (00:00:53) zoom out 1 
+\i (00:00:53) setwindow pcb
+\i (00:00:53) zoom out 4.6301 1.2947
+\i (00:00:53) trapsize 287
+\i (00:00:54) exit 
+\e (00:00:54) Do you want to save the changes you made to ASR6601QFN48_Module_V10_210527.brd?
+\i (00:00:56) fillin yes 
+\t (00:00:57)     Journal end - Fri May 28 09:53:49 2021

@@ -1,0 +1,28 @@
+<HTML><HEAD><STYLE TYPE="text/css">.errorMessage { color:darkred; font-weight:bold; font-style:italic; text-decoration:underline; }</STYLE></HEAD><BODY><PRE>
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : ASR6601CB_FEM900_MD_V10_240315.brd            )
+(    Software Version : 16.6-2015S091                                 )
+(    Date/Time        : Thu Mar 14 19:37:26 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ERROR IN T location = <a href="xprobe:xy:55.9908 31.0550">(55.9908 31.0550)</a>
+  <b><i><font color="darkred">WARNING(SPMHA1-91)</i></b></font>: Illegal connection.
+   Error was fixed.
+
+Number of Xnets before update: 0        after update: 0
+Number of Diff Pairs before update: 0   after update: 0
+
+Regenerating DRC
+  Original DRC errors:   0
+  Updated DRC errors:    0
+  DRC elapsed time:      00:00:01
+
+0 warnings, 1 errors detected, 1 errors  fixed.
+</PRE>
+</BODY></HTML>

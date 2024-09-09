@@ -1,0 +1,56 @@
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   1  |
+|------------------------------------------------------------------------------|
+|  F:.../ASR6601_FEM_TB/Layout/ASR6601CB_FEM_TB_V10_240315.brd                 |
+|                                                    Thu Mar 14 20:26:05 2024  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  GND          pins MOVED FROM this net (to net name listed on right)
+                                 J2.9            54.0000 21.5000
+                                                                         GPIO00
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GPIO00       pins MOVED FROM this net (to net name listed on right)
+                                 J2.6            47.0000 16.5000
+                                                                        VCC_3V3
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GPIO02       pins MOVED FROM this net (to net name listed on right)
+                                 J2.8            51.0000 16.5000
+                                                                         GPIO03
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  GPIO03       pins MOVED FROM this net (to net name listed on right)
+                                 J2.7            49.0000 16.5000
+                                                                         GPIO02
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VBAT_IN      pins MOVED FROM this net (to net name listed on right)
+                                 J2.18           47.0000 38.5000
+                                                                        VDD_FEM
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VCC_3V3      pins MOVED FROM this net (to net name listed on right)
+                                 J2.4            43.0000 16.5000
+                                                                        VDD_FEM
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VDD_FEM      pins MOVED FROM this net (to net name listed on right)
+                                 J2.20           43.0000 38.5000
+                                                                        VBAT_IN
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   2  |
+|------------------------------------------------------------------------------|
+|  F:.../ASR6601_FEM_TB/Layout/ASR6601CB_FEM_TB_V10_240315.brd                 |
+|                                                    Thu Mar 14 20:26:05 2024  |
+|------------------------------------------------------------------------------|
+| NET PROPERTIES added to design                                               |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|     net  name   |   property   |                    value                    |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ UART_DM           DIFFERENTIAL_P USB_DP4
+|------------------------------------------------------------------------------|
+|       Nets changed          :       7                                        |
+|       Net property added    :       1                                        |
+|                                                                              |
+|   Total ECO changes reported:       8                                        |
+|------------------------------------------------------------------------------|

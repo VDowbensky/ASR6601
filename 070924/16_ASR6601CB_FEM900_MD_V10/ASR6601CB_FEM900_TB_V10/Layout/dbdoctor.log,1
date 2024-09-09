@@ -1,0 +1,25 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    DBDOCTOR                                                         )
+(                                                                     )
+(    Drawing          : ASR6601CB_FEM_TB_V10_240315.brd               )
+(    Software Version : 16.6-2015S091                                 )
+(    Date/Time        : Thu Mar 14 20:59:39 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ERROR IN CONNECT LINE (63.3730 33.5256) - (63.3730 31.9532)
+  class = ETCH
+  subclass = TOP 
+  ERROR(SPMHA1-415): Line segments cannot overlap.
+
+ERROR IN CONNECT LINE (64.2874 33.5256) - (64.2874 32.0548)
+  class = ETCH
+  subclass = TOP 
+  ERROR(SPMHA1-415): Line segments cannot overlap.
+
+WARNING   WARNING(SPMHDB-42): Run batch DRC to correctly regenerate DRC errs.
+
+1 warnings, 2 errors detected, 0 errors could be fixed.

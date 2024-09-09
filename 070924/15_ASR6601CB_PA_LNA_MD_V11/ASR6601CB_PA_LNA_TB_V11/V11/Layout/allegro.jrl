@@ -1,0 +1,68 @@
+\t (01:15:26) allegro 16.6-2015 S091 (v16-6-112GY) Windows 32
+\t (01:15:26)     Journal start - Thu Mar 21 16:37:23 2024
+\t (01:15:26)         Host=WENP-PC User=wenp Pid=10472 CPUs=8
+\t (01:15:26) CmdLine= F:\ProfessionalSoftware\Cadence\Allegro16P6\tools\pcb\bin\allegro.exe
+\t (01:15:26) 
+\d (01:15:26) Design opened: F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_PA_TB/V11/Layout/ASR6601CB_PA_TB_V11_240301.brd
+\i (01:15:26) zoom out 1 
+\i (01:15:26) setwindow pcb
+\i (01:15:26) zoom out 73.4413 15.6746
+\i (01:15:26) trapsize 2825
+\i (01:15:26) generaledit 
+\i (01:15:27) zoom out 1 
+\i (01:15:27) setwindow pcb
+\i (01:15:27) zoom out 75.8712 15.1095
+\i (01:15:27) trapsize 5651
+\i (01:15:27) zoom out 1 
+\i (01:15:27) setwindow pcb
+\i (01:15:27) zoom out 75.7581 14.2054
+\i (01:15:27) trapsize 11302
+\i (01:15:28) zoom in 1 
+\i (01:15:28) setwindow pcb
+\i (01:15:28) zoom in 52.9290 44.0416
+\i (01:15:28) trapsize 5651
+\i (01:15:32) artwork 
+\i (01:15:34) setwindow form.film_control
+\i (01:15:34) FORM film_control select_all  
+\i (01:15:47) FORM film_control filmtree popup Save SILK_TOP 
+\i (01:16:26) FORM film_control select_all  
+\i (01:16:28) FORM film_control load  
+\i (01:16:33) fillin "menu_cancel"
+\i (01:16:42) FORM film_control general_parameters  
+\i (01:16:42) FORM film_control film_control  
+\i (01:16:48) FORM film_control select_all  
+\i (01:16:54) FORM film_control load  
+\i (01:16:56) fillin "menu_cancel"
+\i (01:16:57) FORM film_control replace  
+\i (01:16:59) fillin "menu_cancel"
+\i (01:17:04) FORM film_control filmtree  ADB 
+\i (01:17:17) FORM film_control filmtree popup 'Select All' TOP 
+\i (01:17:23) FORM film_control filmtree popup 'Save All Checked' TOP 
+\i (01:17:25) FORM film_control ok  
+\i (01:17:25) setwindow pcb
+\i (01:17:25) generaledit 
+\i (01:26:42) save 
+\i (01:26:43) fillin no 
+\i (01:40:01) fillin "menu_cancel"
+\i (01:40:01) generaledit 
+\i (01:44:53) zoom out 1 
+\i (01:44:53) setwindow pcb
+\i (01:44:53) zoom out 93.3886 41.2162
+\i (01:44:53) trapsize 11302
+\i (01:44:54) zoom out 1 
+\i (01:44:54) setwindow pcb
+\i (01:44:54) zoom out 81.6351 36.6955
+\i (01:44:54) trapsize 22603
+\i (01:44:54) zoom out 1 
+\i (01:44:54) setwindow pcb
+\i (01:44:54) zoom out 71.6896 34.8874
+\i (01:44:54) trapsize 45206
+\i (03:06:25) open 
+\e (03:06:25) Do you want to save the changes you made to ASR6601CB_PA_TB_V11_240301.brd?
+\i (03:06:26) fillin no 
+\i (03:06:35) fillin "F:\WorkSpace\Allegro16P6\LoRa_Wood\Solution\LED_Driver\海外智能灯条\TLSR826X_Dongle_TLSR826XDG32D\C1T82A3_V1.3.brd"
+\i (03:06:35) cd "F:\WorkSpace\Allegro16P6\LoRa_Wood\Solution\LED_Driver\海外智能灯条\TLSR826X_Dongle_TLSR826XDG32D"
+\t (03:06:35) Opening existing design...
+\i (03:06:37) fillin yes 
+\i (03:06:37) trapsize 4630
+\t (03:06:37)     Journal end - Thu Mar 21 18:28:34 2024

@@ -1,0 +1,620 @@
+FILE_TYPE = EXPANDEDPARTLIST;
+{ Using PSTWRITER 16.6.0 d001Mar-14-2024 at 20:00:34 }
+DIRECTIVES
+ PST_VERSION='PST_HDL_CENTRIC_VERSION_0';
+ ROOT_DRAWING='ASR6601CB_FEM_TB_V10_240301';
+ POST_TIME='Feb 15 2016 19:53:59';
+ SOURCE_TOOL='CAPTURE_WRITER';
+END_DIRECTIVES;
+
+PART_NAME
+ C1 'RCL_CAP_NP_C0402_NC':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16873651@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16873651@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16873651@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C2 'RCL_CAP_NP_C0402_NC':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16873686@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16873686@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16873686@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C36 'RCL_CAP_NP_C0402_4.7UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16724791@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16724791@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16724791@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C37 'RCL_CAP_NP_C0402_0.1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16724693@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16724693@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16724693@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C38 'RCL_CAP_NP_C0402_1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16724709@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16724709@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16724709@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C39 'RCL_CAP_NP_C0402_0.1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16726961@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16726961@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16726961@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C40 'RCL_CAP_NP_C0402_1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16726977@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16726977@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16726977@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C41 'RCL_CAP_NP_C0402_10NF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868702@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868702@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868702@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C46 'CAP_C0805_22UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787719@HW.CAP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787719@hw.\cap.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787719@hw.\cap.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C47 'CAP_C0805_47UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16879181@HW.CAP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16879181@hw.\cap.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16879181@hw.\cap.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C48 'CAP_C0603_0.1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16879193@HW.CAP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16879193@hw.\cap.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16879193@hw.\cap.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C5 'RCL_CAP_NP_C0402_0.1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834276@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834276@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834276@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C6 'RCL_CAP_NP_C0402_0.1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834266@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834266@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834266@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ C7 'RCL_CAP_NP_C0402_0.1UF':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834306@PASSIVE.RCL_CAP_NP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834306@passive.\rcl_cap_np.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834306@passive.\rcl_cap_np.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CN1 'USB3_TYPEC_0_CON_USB3_STC_SMD50':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16861270@ASR6601CB_PA_TB_V11_240301.USB3_TYPEC_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16861270@asr6601cb_pa_tb_v11_240301.\usb3_typec_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16861270@asr6601cb_pa_tb_v11_240301.\usb3_typec_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ CN2 'CN_USB_MICRO_0_USB_MICRO_5N_USB':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16860951@LORA_MOTHER_BOARD_V10_190111.CN_USB_MICRO_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16860951@lora_mother_board_v10_190111.\cn_usb_micro_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16860951@lora_mother_board_v10_190111.\cn_usb_micro_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D1 'TVS-UNI_1_DFN_100X60_2N_MM_ESD5':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16877063@ASR6601QFN68_DEMOBOARD_V21_201105.TVS-UNI_1.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16877063@asr6601qfn68_demoboard_v21_201105.\tvs-uni_1.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16877063@asr6601qfn68_demoboard_v21_201105.\tvs-uni_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D2 'TVS-UNI_1_DFN_100X60_2N_MM_ESD5':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16877382@ASR6601QFN68_DEMOBOARD_V21_201105.TVS-UNI_1.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16877382@asr6601qfn68_demoboard_v21_201105.\tvs-uni_1.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16877382@asr6601qfn68_demoboard_v21_201105.\tvs-uni_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D3 'DIODE_1P2N_SOD323_1N5819WS':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16864788@PASSIVE.DIODE_1P2N.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16864788@passive.\diode_1p2n.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16864788@passive.\diode_1p2n.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D4 'DIODE_1P2N_SOD323_1N5819WS':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16864826@PASSIVE.DIODE_1P2N.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16864826@passive.\diode_1p2n.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16864826@passive.\diode_1p2n.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D5 'LED_2_D0603_LED_R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787739@ASR6601QFN68_DEMOBOARD_V20_200926.LED_2.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787739@asr6601qfn68_demoboard_v20_200926.\led_2.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787739@asr6601qfn68_demoboard_v20_200926.\led_2.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D6 'TVS-BI_DFN_100X60_2N_MM_ESD5411':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787662@PASSIVE.TVS-BI.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787662@passive.\tvs-bi.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787662@passive.\tvs-bi.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D7 'TVS-BI_DFN_100X60_2N_MM_ESD5411':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787729@PASSIVE.TVS-BI.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787729@passive.\tvs-bi.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787729@passive.\tvs-bi.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ D8 'LED_2P_D0603_LED_G':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868754@PASSIVE.LED_2P.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868754@passive.\led_2p.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868754@passive.\led_2p.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ F1 'FUSE_R0603_FUSE/1000MA':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787759@ASR_IOT_LIB_V10.FUSE.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787759@asr_iot_lib_v10.\fuse.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787759@asr_iot_lib_v10.\fuse.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ F2 'FUSE/SM_0_R0805_PTC FUSE':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16864154@LORA2RS485_V3.FUSE/SM_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16864154@lora2rs485_v3.\fuse/sm_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16864154@lora2rs485_v3.\fuse/sm_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H1 'HOLE_NC-PTH-3MM-6MM_D3.0,PLATED':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16800500@HW.HOLE.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16800500@hw.\hole.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16800500@hw.\hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H2 'HOLE_NC-PTH-3MM-6MM_D3.0,PLATED':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16800484@HW.HOLE.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16800484@hw.\hole.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16800484@hw.\hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H3 'HOLE_NC-PTH-3MM-6MM_D3.0,PLATED':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16800512@HW.HOLE.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16800512@hw.\hole.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16800512@hw.\hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ H4 'HOLE_NC-PTH-3MM-6MM_D3.0,PLATED':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16800493@HW.HOLE.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16800493@hw.\hole.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16800493@hw.\hole.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J1 'SMA_1_CON_SMA_1420X700_5N_MM_SM':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16873659@ASR5501_MPW_EVB_Q48_20171123.SMA_1.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16873659@asr5501_mpw_evb_q48_20171123.\sma_1.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16873659@asr5501_mpw_evb_q48_20171123.\sma_1.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J2 'CN_6_ASR6601TB_2000X3600_20N_MM':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16886536@ASR6601CB_FEM_MD.CN_6.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16886536@asr6601cb_fem_md.\cn_6.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16886536@asr6601cb_fem_md.\cn_6.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J4 'CN_7_THT_SIP254P_6N_MM_HDR':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16831610@ASR6601CB_PA_TB_V10_231212.CN_7.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16831610@asr6601cb_pa_tb_v10_231212.\cn_7.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16831610@asr6601cb_pa_tb_v10_231212.\cn_7.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ J5 'CN_7_THT_SIP254P_6N_MM_HDR':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16843344@ASR6601CB_PA_TB_V10_231212.CN_7.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16843344@asr6601cb_pa_tb_v10_231212.\cn_7.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16843344@asr6601cb_pa_tb_v10_231212.\cn_7.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ JP3 'HEADER_2P_SIP_THT_SIP254P_2N_MM':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16880817@PASSIVE.HEADER_2P_SIP.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16880817@passive.\header_2p_sip.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16880817@passive.\header_2p_sip.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ M1 'TP_SMT_FID-MARK-1MM_*TP_1MM':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16800538@MISC.TP_SMT.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16800538@misc.\tp_smt.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16800538@misc.\tp_smt.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ M2 'TP_SMT_FID-MARK-1MM_*TP_1MM':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16800533@MISC.TP_SMT.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16800533@misc.\tp_smt.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16800533@misc.\tp_smt.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R1 'RCL_RES_R0603_0.1R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16871679@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16871679@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16871679@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R14 'RCL_RES_R0402_4.7K':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16724615@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16724615@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16724615@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R15 'RCL_RES_R0402_10K':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868682@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868682@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868682@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R16 'RCL_RES_R0402_1K':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834207@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834207@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834207@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R17 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834247@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834247@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834247@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R18 'RCL_RES_R0402_1K':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834222@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834222@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834222@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R19 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834258@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834258@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834258@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R2 'RCL_RES_R0603_0.1R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16870833@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16870833@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16870833@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R25 'RES_R0603_1K':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787751@HW.RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787751@hw.\res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787751@hw.\res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R33 'RCL_RES_R0603_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16786080@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16786080@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16786080@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R35 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16819820@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16819820@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16819820@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R36 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16819835@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16819835@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16819835@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R39 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834365@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834365@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834365@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R40 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16853867@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16853867@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16853867@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R41 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16853899@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16853899@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16853899@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R5 'RCL_RES_R0402_0R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16873694@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16873694@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16873694@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R8 'RCL_RES_R0402_510R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868746@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868746@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868746@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ R9 'RCL_RES_R0402_510R':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868736@PASSIVE.RCL_RES.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868736@passive.\rcl_res.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868736@passive.\rcl_res.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW1 'SW_B3S_0_SW_SMT350X600_2N_MM_SW':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868769@LORA_ASR6501_V10_190521.SW_B3S_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868769@lora_asr6501_v10_190521.\sw_b3s_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868769@lora_asr6501_v10_190521.\sw_b3s_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW2 'SW_B3S_0_SW_SMT350X600_2N_MM_SW':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16868719@LORA_ASR6501_V10_190521.SW_B3S_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16868719@lora_asr6501_v10_190521.\sw_b3s_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16868719@lora_asr6501_v10_190521.\sw_b3s_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ SW4 'SW_3P_0_SW_SIP200P_860X470_5N_M':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16787848@ASR6601QFN68_EVB_RD_V10_200510.SW_3P_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16787848@asr6601qfn68_evb_rd_v10_200510.\sw_3p_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16787848@asr6601qfn68_evb_rd_v10_200510.\sw_3p_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ TP3 'TP_SMT_TP_SMD80C80_MM_TP_3MM':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16860361@MISC.TP_SMT.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16860361@misc.\tp_smt.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16860361@misc.\tp_smt.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U5 'CP2104_0_QFN50P_400X400_24N_MM_':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16724725@LORA_ASR6501_V20_180518.CP2104_0.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16724725@lora_asr6501_v20_180518.\cp2104_0.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16724725@lora_asr6501_v20_180518.\cp2104_0.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+PART_NAME
+ U8 'NL37WZ14_US50P_200X230_8N_MM_NL':;
+
+SECTION_NUMBER 1
+ '@ASR6601CB_FEM_TB_V10_240301.SCHEMATIC1(SCH_1):INS16834182@ASR_IOT_LIB_V10.NL37WZ14.NORMAL(CHIPS)':
+ C_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):ins16834182@asr_iot_lib_v10.\nl37wz14.normal\(chips)',
+ P_PATH='@asr6601cb_fem_tb_v10_240301.schematic1(sch_1):page1_ins16834182@asr_iot_lib_v10.\nl37wz14.normal\(chips)',
+ PRIM_FILE='.\pstchip.dat',
+ SECTION='';
+
+END.

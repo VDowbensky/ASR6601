@@ -1,0 +1,19 @@
+\t (00:00:01) allegro 16.6-2015 S091 (v16-6-112GY) Windows 32
+\t (00:00:01)     Journal start - Fri May 28 09:54:31 2021
+\t (00:00:01)         Host=WENP-PC User=wenp Pid=18140 CPUs=8
+\t (00:00:01) CmdLine= F:\ProfessionalSoftware\Cadence\Allegro16P6\tools\pcb\bin\allegro.exe
+\t (00:00:01) 
+\t (00:00:03) Starting new design...
+\i (00:00:04) trapsize 837
+\i (00:00:04) trapsize 817
+\i (00:00:04) trapsize 840
+\i (00:00:04) trapsize 850
+\i (00:00:05) trapsize 839
+\i (00:00:05) trapsize 1243
+\i (00:00:06) generaledit 
+\i (00:00:07) open 
+\i (00:00:40) fillin "F:\WorkSpace\Allegro16P6\LoRa_Project\LORA_ASR6601\ASR6601QFN68_Moduleboard\ASR6601QFN68_Moduleboard_CTM\ASR6601QFN68_Module_490M_V10\Layout\ASR6601QFN68_Module_V10_210527.brd"
+\i (00:00:40) cd "F:\WorkSpace\Allegro16P6\LoRa_Project\LORA_ASR6601\ASR6601QFN68_Moduleboard\ASR6601QFN68_Moduleboard_CTM\ASR6601QFN68_Module_490M_V10\Layout"
+\t (00:00:40) Opening existing design...
+\i (00:00:40) trapsize 21309
+\t (00:00:40)     Journal end - Fri May 28 09:55:10 2021

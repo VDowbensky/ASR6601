@@ -1,0 +1,80 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC ROUTE Log                                                     )
+(                                                                     )
+(    Drawing          : ASR6601CB_FEM_TB_V10_240315.brd               )
+(    Software Version : 16.6-2015S088                                 )
+(    Date/Time        : Tue Mar 19 16:49:21 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		2.5
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (mm)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		METRIC
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	YES
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		YES
+ TOOL-SELECT		YES
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ SEPARATE-ROUTING	YES
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	YES
+ SCALE			1.000000
+
+
+ WARNING(SPMHMF-326): Cannot find NC Route bit tool file 'ncroutebits.txt'
+ WARNING(SPMHMF-327): ... will auto-generate bit tool file 'ncroutebits_auto.txt'.
+
+ Auto-generating tool file 'ncroutebits_auto.txt' ...
+
+     0.5000  T01       
+     0.6000  T02       
+
+-------------------------------------------------------------
+
+ Pre_processing non-plated route path data ...
+
+ WARNING(SPMHMF-296): No route path data was found for processing.
+
+
+-------------------------------------------------------------
+
+ Processing non-plated slot hole data ...
+
+ WARNING(SPMHMF-323): No non-plated slot holes were found for processing.
+-------------------------------------------------------------
+
+ Pre_processing plated route path data ...
+
+ WARNING(SPMHMF-296): No route path data was found for processing.
+
+
+-------------------------------------------------------------
+
+ Processing plated slot hole data ...
+
+ OVAL      slots routed: 9
+ RECTANGLE slots routed: 0
+
+-------------------------------------------------------------
+
+ NC Route file 'ASR6601CB_FEM_TB_V10_240315_plated.rou' created ...
+
+-------------------------------------------------------------
+
+ Program completed.
+

@@ -1,0 +1,63 @@
+<HTML><HEAD><STYLE TYPE="text/css">.errorMessage { color:darkred; font-weight:bold; font-style:italic; text-decoration:underline; }</STYLE></HEAD><BODY><PRE>
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : ASR6601CB_FEM900_MD_V10_231213.brd            )
+(    Software Version : 16.6-2015S088                                 )
+(    Date/Time        : Thu Feb 29 15:51:11 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  Yes
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               IfSame
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/allegro'
+Design Directory:            'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout'
+Old design name:             'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ASR6601CB_FEM900_MD_V10_231213.brd'
+New design name:             'F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ASR6601CB_FEM900_MD_V10_231213.brd'
+
+CmdLine: netrev -$ -i F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/allegro -x -u -t -y 2 -z -q netrev_constraint_report.xml F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/#Taaaaab03488.tmp
+
+------ Preparing to read pst files ------
+
+
+#1   ERROR(24) File not found
+     Packager files not found
+
+#2   ERROR(102) Run stopped because errors were detected
+
+netrev run on Feb 29 15:51:11 2024
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+  2 errors detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:01:20
+elapsed time  0:00:00
+
+</PRE>
+</BODY></HTML>

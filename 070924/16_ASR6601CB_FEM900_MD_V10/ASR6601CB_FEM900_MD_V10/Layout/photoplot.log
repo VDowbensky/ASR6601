@@ -1,0 +1,568 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    ARTWORK LOG                                                      )
+(                                                                     )
+(    Drawing          : ASR6601CB_FEM900_MD_V10_240315.brd            )
+(    Software Version : 16.6-2015S088                                 )
+(    Date/Time        : Thu Mar 14 19:44:24 2024                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+ ---- Photoplot outline rectangle not found; using drawing extents.
+
+
+
+Results from parameter file ...
+    DEVICE-TYPE           GERBER_RS274X
+    OUTPUT-UNITS          MM
+    FILM-SIZE             2400000 1600000
+    FORMAT                2.5
+    ABORT-ON-ERROR        NO
+    SCALE                 1
+    SUPPRESS-LEAD-ZEROES  YES
+    SUPPRESS-TRAIL-ZEROES NO
+    SUPPRESS-EQUAL        YES
+    UNDEF-APT-CONT        NO
+
+
+
+================================================================
+     PROCESSING FILM < GND >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/GND.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.40640                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  OBLONG     0.40000     x 1.20000       0.000 NO     DARK 
+  OBLONG     0.40000     x 1.20000      90.000 NO     DARK 
+  OBLONG     1.00000     x 1.40000      90.000 NO     DARK 
+
+     GND created.
+
+
+================================================================
+     PROCESSING FILM < VCC >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/VCC.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.20000                                  DARK 
+  CIRCLE     0.40000                                  DARK 
+  CIRCLE     0.40640                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.70000                                  DARK 
+  OBLONG     0.40000     x 1.20000       0.000 NO     DARK 
+  OBLONG     0.40000     x 1.20000      90.000 NO     DARK 
+  OBLONG     1.00000     x 1.40000      90.000 NO     DARK 
+
+     VCC created.
+
+
+================================================================
+     PROCESSING FILM < DRILL >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/DRILL.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: rectangle or unfilled shape composed 0 width line found at (47.4774 34.4870)
+           ... ignored.
+
+
+
+  APERTURES USED:  NONE
+     DRILL created with warnings
+
+
+================================================================
+     PROCESSING FILM < SILK_BOT >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/SILK_BOT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+    WARNING: rectangle or unfilled shape having Multiple 0 width lines; all will be treated the same as the first.
+           ... ignored.
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.14000                                  DARK 
+
+     SILK_BOT created with warnings
+
+
+================================================================
+     PROCESSING FILM < SILK_TOP >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/SILK_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.02500                                  DARK 
+  CIRCLE     0.05080                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.08000                                  DARK 
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.12000                                  DARK 
+  CIRCLE     0.12500                                  DARK 
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15000                                  DARK 
+
+     SILK_TOP created.
+
+
+================================================================
+     PROCESSING FILM < SOLD_TOP >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/SOLD_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.75000                                  DARK 
+  CIRCLE     1.10000                                  DARK 
+  RECTANGLE  0.45000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990       0.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      45.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990     135.000 NO     DARK 
+  RECTANGLE  0.50000     x 1.25000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.30000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.30000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      45.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.75000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.70000       0.000 NO     DARK 
+  RECTANGLE  0.70000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 0.30000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 0.30000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.20000       0.000 NO     DARK 
+  RECTANGLE  0.85000     x 0.75000      90.000 NO     DARK 
+  RECTANGLE  0.90000     x 1.20000       0.000 NO     DARK 
+  RECTANGLE  0.90000     x 1.20000      90.000 NO     DARK 
+  RECTANGLE  1.05000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  1.30000     x 0.70000       0.000 NO     DARK 
+  RECTANGLE  1.30000     x 0.90000       0.000 NO     DARK 
+  RECTANGLE  1.70000     x 0.65000       0.000 NO     DARK 
+  RECTANGLE  1.80000     x 1.80000       0.000 NO     DARK 
+  RECTANGLE  2.10000     x 0.70000       0.000 NO     DARK 
+  RECTANGLE  4.30000     x 4.30000       0.000 NO     DARK 
+  OBLONG     1.10000     x 1.50000      90.000 NO     DARK 
+
+     SOLD_TOP created.
+
+
+================================================================
+     PROCESSING FILM < SOLD_BOT >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/SOLD_BOT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  RECTANGLE  1.10000     x 1.50000       0.000 NO     DARK 
+  RECTANGLE  1.10000     x 1.50000      90.000 NO     DARK 
+  OBLONG     1.10000     x 1.50000      90.000 NO     DARK 
+
+     SOLD_BOT created.
+
+
+================================================================
+     PROCESSING FILM < PAST_TOP >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/PAST_TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.65000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  RECTANGLE  0.45000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990       0.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      45.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990     135.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.30000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.30000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      45.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.75000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.25000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  0.95000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  1.70000     x 0.65000       0.000 NO     DARK 
+  RECTANGLE  2.00000     x 0.60000       0.000 NO     DARK 
+  OBLONG     1.10000     x 1.50000      90.000 NO     DARK 
+
+     PAST_TOP created.
+
+
+================================================================
+     PROCESSING FILM < PAST_BOT >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/PAST_BOT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  RECTANGLE  1.00000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.40000      90.000 NO     DARK 
+  OBLONG     1.10000     x 1.50000      90.000 NO     DARK 
+
+     PAST_BOT created.
+
+
+================================================================
+     PROCESSING FILM < ADB >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ADB.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.2000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.14000                                  DARK 
+  CIRCLE     0.20000                                  DARK 
+  RECTANGLE  1.00000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.40000      90.000 NO     DARK 
+  OBLONG     1.00000     x 1.40000      90.000 NO     DARK 
+
+     ADB created.
+
+
+================================================================
+     PROCESSING FILM < ADT >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/ADT.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.02500                                  DARK 
+  CIRCLE     0.05080                                  DARK 
+  CIRCLE     0.06000                                  DARK 
+  CIRCLE     0.08000                                  DARK 
+  CIRCLE     0.10000                                  DARK 
+  CIRCLE     0.12000                                  DARK 
+  CIRCLE     0.12500                                  DARK 
+  CIRCLE     0.12700                                  DARK 
+  CIRCLE     0.15000                                  DARK 
+  CIRCLE     0.65000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  RECTANGLE  0.45000     x 0.22000       0.000 NO     DARK 
+  RECTANGLE  0.45000     x 0.22000      90.000 NO     DARK 
+  RECTANGLE  0.45000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.45000     x 0.65000      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990       0.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      45.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990     135.000 NO     DARK 
+  RECTANGLE  0.50000     x 1.25000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      45.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.25000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  0.95000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  1.60000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  1.80000     x 1.80000       0.000 NO     DARK 
+  RECTANGLE  2.00000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  4.20000     x 4.20000       0.000 NO     DARK 
+  OBLONG     1.00000     x 1.40000      90.000 NO     DARK 
+
+     ADT created.
+
+
+================================================================
+     PROCESSING FILM < BOTTOM >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/BOTTOM.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.20000                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+  CIRCLE     0.30000                                  DARK 
+  CIRCLE     0.40000                                  DARK 
+  CIRCLE     0.40640                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  RECTANGLE  1.00000     x 1.40000       0.000 NO     DARK 
+  RECTANGLE  1.00000     x 1.40000      90.000 NO     DARK 
+  OBLONG     0.40000     x 1.20000       0.000 NO     DARK 
+  OBLONG     0.40000     x 1.20000      90.000 NO     DARK 
+  OBLONG     1.00000     x 1.40000      90.000 NO     DARK 
+
+     BOTTOM created.
+
+
+================================================================
+     PROCESSING FILM < TOP >
+     TO FILE < F:/WorkSpace/Allegro16P6/LoRa_Wood/LoRa_MD/13_ASR6601_PA_MD/ASR6601_FEM_MD/Layout/TOP.art > ...
+================================================================
+
+  FILM PARAMETERS :
+  ---------------------------------------------------------
+  Undefined line width                0.0000
+  Mirror code                         NONE
+  Rotate angle                        NONE
+  Offset x:                           0.0000
+  Offset y:                           0.0000
+  Plot negative                       NO
+  Suppress unconnected internal pads  NO
+  Draw holes only                     NO
+
+
+
+  APERTURES USED:
+  ---------------------------------------------------------
+  TYPE       SIZE/NAME                   ROT   MIRROR MODE 
+  ---------------------------------------------------------
+  CIRCLE     0.20000                                  DARK 
+  CIRCLE     0.25000                                  DARK 
+  CIRCLE     0.30000                                  DARK 
+  CIRCLE     0.40000                                  DARK 
+  CIRCLE     0.40640                                  DARK 
+  CIRCLE     0.50000                                  DARK 
+  CIRCLE     0.50800                                  DARK 
+  CIRCLE     0.65000                                  DARK 
+  CIRCLE     1.00000                                  DARK 
+  RECTANGLE  0.45000     x 0.22000       0.000 NO     DARK 
+  RECTANGLE  0.45000     x 0.22000      90.000 NO     DARK 
+  RECTANGLE  0.45000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.45000     x 0.65000      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990       0.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      45.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990      90.000 NO     DARK 
+  RECTANGLE  0.47000     x 0.57990     135.000 NO     DARK 
+  RECTANGLE  0.50000     x 1.25000      90.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000       0.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      45.000 NO     DARK 
+  RECTANGLE  0.55000     x 0.50000      90.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  0.60000     x 0.60000      90.000 NO     DARK 
+  RECTANGLE  0.70000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.25000       0.000 NO     DARK 
+  RECTANGLE  0.75000     x 0.25000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 0.70000      90.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000       0.000 NO     DARK 
+  RECTANGLE  0.80000     x 1.10000      90.000 NO     DARK 
+  RECTANGLE  0.95000     x 1.00000      90.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  1.20000     x 0.80000       0.000 NO     DARK 
+  RECTANGLE  1.60000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  1.80000     x 1.80000       0.000 NO     DARK 
+  RECTANGLE  2.00000     x 0.60000       0.000 NO     DARK 
+  RECTANGLE  4.20000     x 4.20000       0.000 NO     DARK 
+  OBLONG     0.40000     x 1.20000       0.000 NO     DARK 
+  OBLONG     0.40000     x 1.20000      90.000 NO     DARK 
+  OBLONG     1.00000     x 1.40000      90.000 NO     DARK 
+
+     TOP created.
+
+
+------------------------------------------------------
+ SUMMARY:
+        GND created.
+        VCC created.
+        DRILL created with warnings
+        SILK_BOT created with warnings
+        SILK_TOP created.
+        SOLD_TOP created.
+        SOLD_BOT created.
+        PAST_TOP created.
+        PAST_BOT created.
+        ADB created.
+        ADT created.
+        BOTTOM created.
+        TOP created.
+
+ ARTWORK had warnings

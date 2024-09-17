@@ -1,5 +1,6 @@
 (ExpressProject ""
   (ProjectVersion "19981106")
+  (SoftwareVersion "23.1 P001 (4147275)  [9/30/2023]-[03/30/24]")
   (ProjectType "PCB")
   (Folder "Design Resources"
     (Folder "Library"
@@ -25,7 +26,10 @@
     (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
     (BOM_One_Part_Per_Line "FALSE")
     (Open_BOM_in_Excel "TRUE")
-    (BOM_View_Output "FALSE"))
+    (BOM_View_Output "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
   (Folder "Outputs"
     (File ".\allegro\pstxnet.dat"
       (Type "Report")
@@ -54,25 +58,34 @@
       (Path "Design Resources" ".\asr6601cb_fem_md.dsn")
       (Path "Design Resources" ".\asr6601cb_fem_md.dsn" "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "f:\workspace\allegro16p6\schem_lib\asr_iot_lib\asr_iot_lib_v10.olb")
       (Path "Outputs")
-      (Select "Design Resources" ".\asr6601cb_fem_md.dsn"))
+      (Select "Design Resources" ".\asr6601cb_fem_md.dsn" "SCHEMATIC1"
+         "01_ASR6601CB_FEM900"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 327"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 765"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 1368 130 496")
-        (Scroll "0 135")
-        (Zoom "104")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 783")
+        (Scroll "-168 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "F:\WORKSPACE\ALLEGRO16P6\LORA_WOOD\LORA_MD\13_ASR6601_PA_MD\ASR6601_FEM_MD\SCHEM\ASR6601CB_FEM_MD.DSN")
+         "D:\RFPROJECTS\ASR6601\070924\16_ASR6601CB_FEM900_MD_V10\ASR6601CB_FEM900_MD_V10\SCHEM\ASR6601CB_FEM_MD.DSN")
       (Schematic "SCHEMATIC1")
       (Page "01_ASR6601CB_FEM900")))
-  (ISPCBBASICLICENSE "false"))
+  (ISPCBBASICLICENSE "false")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (MPSSessionName "Admin"))

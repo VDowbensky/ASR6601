@@ -37,10 +37,10 @@ void cli_getpower(int argc, char **argv);
 void cli_setpower(int argc, char **argv);
 void cli_getramptime(int argc, char **argv);
 void cli_setramptime(int argc, char **argv);
-void cli_getxoparams(int argc, char **argv);
-void cli_setxoparams(int argc, char **argv);
-void cli_getctune(int argc, char **argv);
-void cli_setctune(int argc, char **argv);
+//void cli_getxoparams(int argc, char **argv);
+//void cli_setxoparams(int argc, char **argv);
+//void cli_getctune(int argc, char **argv);
+//void cli_setctune(int argc, char **argv);
 //void cli_storectune(int argc, char **argv);
 
 void cli_getRSSI(int argc, char **argv);
@@ -142,10 +142,10 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("GET_RAMPTIME", "", cli_getramptime, ""),
     COMMAND_ENTRY("SET_RAMPTIME", "w", cli_setramptime, ""),
 		
-    COMMAND_ENTRY("GET_XOPARAMS", "", cli_getxoparams, ""),
-    COMMAND_ENTRY("SET_XOPARAMS", "ww", cli_setxoparams, ""),
-    COMMAND_ENTRY("GET_CTUNE", "", cli_getctune, ""),
-    COMMAND_ENTRY("SET_CTUNE", "w", cli_setctune, ""),
+    //COMMAND_ENTRY("GET_XOPARAMS", "", cli_getxoparams, ""),
+    //COMMAND_ENTRY("SET_XOPARAMS", "ww", cli_setxoparams, ""),
+    //COMMAND_ENTRY("GET_CTUNE", "", cli_getctune, ""),
+    //COMMAND_ENTRY("SET_CTUNE", "w", cli_setctune, ""),
     //COMMAND_ENTRY("STORE_CTUNE", "", cli_storectune, ""),
 
     COMMAND_ENTRY("GET_RSSI", "", cli_getRSSI, ""),
@@ -507,6 +507,7 @@ void cli_setramptime(int argc, char **argv)
   printf("SET_RAMPTIME: %d us\r\n",radioConfig.RampTimeUs);
 }
 
+/*
 void cli_getxoparams(int argc, char **argv)
 {
   printf("GET_XOPARAMS: %d,%d\r\n",radioConfig.XoTempFactor,radioConfig.CalTemp);
@@ -543,6 +544,7 @@ void cli_setctune(int argc, char **argv)
   RADIO_setctune(tune);
   printf("SET_CTUNE: %d\r\n",tune);
 }
+*/
 /*
 void cli_storectune(int argc, char **argv)
 {

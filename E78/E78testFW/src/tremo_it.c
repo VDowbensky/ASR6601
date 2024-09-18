@@ -98,7 +98,8 @@ void SysTick_Handler(void)
 	if(adc_ticks == ADC_MS)
 	{
 		adc_ticks = 0;
-		adc_start(true);
+		kickADC();
+		//adc_start(true);
 	}
 	
 	if(master)

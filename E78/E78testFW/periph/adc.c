@@ -16,7 +16,7 @@ void myadc_init(void)
 	rcc_enable_peripheral_clk(RCC_PERIPHERAL_AFEC, true);
 	
 	//test pin
-	gpio_init(GPIOA, GPIO_PIN_11, GPIO_MODE_ANALOG);
+	gpio_init(VBATT_PORT, VBATT_PIN, GPIO_MODE_ANALOG);
 	
 	adc_get_calibration_value(false, &gain_value, &dco_value);
 	dco_value *= 1000.0;
@@ -27,7 +27,7 @@ void myadc_init(void)
 	adc_enable_vbat31(true);
 	//adc_config_sample_sequence(0, 13); //temp.sensor
   //adc_config_sample_sequence(0, 15); //Vcc
-	adc_config_sample_sequence(0, 1); //PA11
+	adc_config_sample_sequence(0, VBATT_ADC_CHANNEL); //PA11
 	adc_config_conv_mode(ADC_CONV_MODE_SINGLE); //(ADC_CONV_MODE_SINGLE);
 	
   adc_enable(true);
@@ -40,6 +40,12 @@ void myadc_init(void)
 	NVIC_EnableIRQ(ADC_IRQn);
 }
 
+void kickADC(void)
+{
+	gpio_write(VBATT_MEAS_PORT, VBATT_MEAS_PIN,GPIO_LEVEL_HIGH);
+	adc_start(true);
+}
+
 void ADC_IRQHandler(void)
 {
 	uint16_t adc_val;
@@ -48,7 +54,7 @@ void ADC_IRQHandler(void)
 	if(adc_get_interrupt_status(ADC_ISR_EOC))
 	{
 		adc_clear_interrupt_status(ADC_ISR_EOC);//ADC_ISR_EOS
-		//adc_start(false);
+		adc_start(false);
 		adc_val = adc_get_data();
 		mv = ((Vref/4096.0) * adc_val - dco_value) / gain_value;
 		//mv = (Vref/4096.0) * adc_val;
@@ -67,5 +73,6 @@ void ADC_IRQHandler(void)
 		//	phase = 0;
 		//}
 		//adc_enable(true);
+		gpio_write(VBATT_MEAS_PORT, VBATT_MEAS_PIN,GPIO_LEVEL_LOW);
 	}
 }

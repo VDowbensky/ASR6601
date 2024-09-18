@@ -28,13 +28,19 @@
 #define SDA0_PORT						GPIOA
 #define SDA0_PIN						GPIO_PIN_15
 
-//#define LED_PORT						GPIOA
-//#define LED_PIN							GPIO_PIN_8
+//Keys
+/*
+#define K_UP_PORT						GPIOA
+#define K_UP_PIN						GPIO_PIN_9
+#define K_DOWN_PORT					GPIOA
+#define K_DOWN_PIN					GPIO_PIN_4
+#define K_OK_PORT						GPIOA
+#define K_OK_PIN						GPIO_PIN_5
 
-//#define K0_PORT							GPIOA
-//#define K0_PIN							GPIO_PIN_11
-//#define K1_PORT							GPIOA
-//#define K1_PIN							GPIO_PIN_9
+//Buzzer
+#define BUZZER_PORT					GPIOB
+#define BUZZER_PIN					GPIO_PIN_15
+*/
 
 #define RFSW_CTRL_PORT			GPIOA
 #define RFSW_CTRL_PIN				GPIO_PIN_10 //GPIO10
@@ -88,7 +94,7 @@
 #define SSD1306_INTERFACE_HARD_SPI	1
 #define SSD1306_INTERFACE_I2C				0
 
-#if SSD1306_INTERFACE_SOFT_SPI
+#if SSD1306_INTERFACE_SOFT_SPI //Ra-08
 #define SSD1306_SCK_PORT    GPIOA
 #define SSD1306_SCK_PIN			GPIO_PIN_5
 #define SSD1306_MOSI_PORT		GPIOA
@@ -123,6 +129,13 @@
 //#define AES_KEYLEN				AES_128
 //#define AES_KEYLEN				AES_192
 #define AES_KEYLEN					AES_256
+
+#define VBATT_MEAS_PORT			GPIOA
+#define VBATT_MEAS_PIN			GPIO_PIN_8
+
+#define VBATT_PORT					GPIOA
+#define VBATT_PIN						GPIO_PIN_11
+#define VBATT_ADC_CHANNEL		ADC_SAMPLE_CHAN_1//PA11
 
 void init_power_clk(void);
 void init_peripherals(void);

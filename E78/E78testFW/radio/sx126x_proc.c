@@ -23,16 +23,13 @@ int8_t SX126X_config(void)
   delay_ms(10);
   SX126X_setopmode(SX126X_OPMODE_STBYRC);
   SX126X_SetRegulatorMode(true);
-	//enable TCXO
-	SX126X_SetDIO3AsTCXOCtrl(0x02, 10000); //1.8V, 150 ms
-	
-  if(radioConfig.modem == SX126X_MODEM_LORA) SX126X_LoRaConfig();
+	if(radioConfig.modem == SX126X_MODEM_LORA) SX126X_LoRaConfig();
   else if (radioConfig.modem == SX126X_MODEM_FSK) SX126X_FskConfig();
   else return -1; //wrong modem
   SX126X_SetRx(radioConfig.LoRaRxTimeout);
-  //SX126X_setopmode(OPMODE_STBYXOSC);
-  SX126X_CalibrateIR();
   SX126X_setopmode(SX126X_OPMODE_STBYXOSC);
+  SX126X_CalibrateIR();
+  //SX126X_setopmode(SX126X_OPMODE_STBYXOSC);
   //SX126X_writeReg(SX126X_REG_XTATRIM,radioConfig.CtuneA);
   //SX126X_writeReg(SX126X_REG_XTBTRIM,radioConfig.CtuneB);
   
@@ -44,10 +41,6 @@ int8_t SX126X_config(void)
   SX126X_setopmode(SX126X_OPMODE_RX);
   return 0;
 }
-//#define RFSW_CTRL_PORT	GPIOA
-//#define RFSW_CTRL_PIN		GPIO_PIN_10 //GPIO10
-//#define RFSW_TXRX_PORT	GPIOD
-//#define RFSW_TXRX_PIN		GPIO_PIN_11 //GPIO59
 
 int8_t SX126X_LoRaConfig(void)
 {

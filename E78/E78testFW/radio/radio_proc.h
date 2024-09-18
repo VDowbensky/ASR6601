@@ -22,7 +22,7 @@
 #define LOWL(x)  (x & 0x000000FF)
 	
 #define MAGICNUMBER 0xc96c236b
-
+	
 typedef struct SX126XX_radioconfig
 {
   uint32_t MagicNumber;
@@ -113,10 +113,9 @@ void prepareAnswerPacket(void);
 void preparepacketcommon(void);
 void radio_startburst(void);
 void radio_delayms(uint32_t ms);
-void RADIO_DIO0handler(void);
 
-void RADIO_setctune(uint8_t tune);
-void RADIO_ctunecorrection(void);
+//void RADIO_setctune(uint8_t tune);
+//void RADIO_ctunecorrection(void);
 
 extern uint8_t RADIO_rxBuffer[];
 extern uint8_t RADIO_txBuffer[];

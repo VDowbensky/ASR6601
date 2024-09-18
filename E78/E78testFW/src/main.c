@@ -7,7 +7,7 @@ int main(void)
 	init_power_clk();
 	init_peripherals();
 	delay_ms(100);
-	printf("\r\nRA08 test\r\n");
+	printf("\r\nE78 test\r\n");
 	led_on();
 	radio_init();
 	delay_ms(100);

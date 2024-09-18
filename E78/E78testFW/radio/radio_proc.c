@@ -56,8 +56,6 @@ uint32_t sweepdelay;
 //uint32_t sweepcnt;
 bool sweepflag; //temp/
 
-//struct AES_ctx aes_ctx;
-
 void radio_init(void)
 {
 	lorac_init();
@@ -263,6 +261,7 @@ void printcrcerror(void)
   printf("FERR\r\n");
 }
 
+/*
 void RADIO_setctune(uint8_t tune)
 {
   uint8_t tuneA, tuneB;
@@ -293,6 +292,7 @@ void RADIO_ctunecorrection(void)
 //  if(tune < 0) tune = 0;
 //  RADIO_setctune((uint8_t)tune);
 }
+*/
 
 void LORA_IRQHandler(void)
 {

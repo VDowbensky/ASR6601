@@ -33,7 +33,7 @@
           <SLE66CMisc></SLE66CMisc>
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
-          <SFDFile>D:\MCU\ASR6601\Ra-08\tremo_testFW\TREMO.SFR</SFDFile>
+          <SFDFile>D:\RFprojects\ASR6601\E78\E78testFW\chip\TREMO.SFR</SFDFile>
           <bCustSvd>1</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
@@ -338,7 +338,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>CONFIG_LORA_USE_TCXO</Define>
               <Undefine></Undefine>
               <IncludePath>.\inc;.\lib\inc;.\chip;.\periph;.\radio;.\cli;.\AES;.\SSD1306</IncludePath>
             </VariousControls>

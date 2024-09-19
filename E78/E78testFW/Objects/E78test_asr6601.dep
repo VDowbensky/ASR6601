@@ -15,7 +15,7 @@ I (lib\inc\tremo_adc.h)(0x6639D141)
 I (lib\inc\tremo_delay.h)(0x65316054)
 I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (radio\sx126x.h)(0x66B21268)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)
@@ -64,7 +64,7 @@ I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
 I (inc\tremo_it.h)(0x63EB15D8)
 I (periph\adc.h)(0x66EA90A7)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (radio\sx126x.h)(0x66B21268)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)
@@ -103,7 +103,7 @@ I (lib\inc\tremo_adc.h)(0x6639D141)
 I (lib\inc\tremo_delay.h)(0x65316054)
 I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (radio\sx126x.h)(0x66B21268)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)
@@ -305,7 +305,7 @@ I (lib\inc\tremo_uart.h)(0x65316054)
 I (lib\inc\tremo_adc.h)(0x6639D141)
 I (lib\inc\tremo_delay.h)(0x65316054)
 I (inc\retargetserial.h)(0x6656D756)
-F (.\periph\lorac.c)(0x66D1BF52)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli -I ./AES -I ./SSD1306-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="540" -DARMCM4 -DCONFIG_LORA_USE_TCXO-o ./objects/lorac.o -MMD)
+F (.\periph\lorac.c)(0x66EC1450)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli -I ./AES -I ./SSD1306-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="540" -DARMCM4 -DCONFIG_LORA_USE_TCXO-o ./objects/lorac.o -MMD)
 I (inc\bsp.h)(0x66EAA4CF)
 I (lib\inc\tremo_system.h)(0x65316054)
 I (chip\tremo_cm4.h)(0x65316054)
@@ -339,7 +339,7 @@ I (lib\inc\tremo_adc.h)(0x6639D141)
 I (lib\inc\tremo_delay.h)(0x65316054)
 I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (radio\sx126x.h)(0x66B21268)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)
@@ -362,7 +362,7 @@ I (lib\inc\tremo_delay.h)(0x65316054)
 I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
 I (lib\inc\tremo_timer.h)(0x65316054)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (radio\sx126x.h)(0x66B21268)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)
@@ -402,7 +402,7 @@ I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
 I (lib\inc\tremo_i2c.h)(0x6639D9C9)
 F (.\radio\radio_proc.c)(0x66EAD26B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli -I ./AES -I ./SSD1306-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="540" -DARMCM4 -DCONFIG_LORA_USE_TCXO-o ./objects/radio_proc.o -MMD)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (inc\bsp.h)(0x66EAA4CF)
 I (lib\inc\tremo_system.h)(0x65316054)
 I (chip\tremo_cm4.h)(0x65316054)
@@ -447,7 +447,7 @@ I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (periph\ustimer.h)(0x6687BEEF)
 I (radio\sx126x_proc.h)(0x66E92C2F)
 I (periph\flash.h)(0x66598259)
@@ -469,7 +469,7 @@ I (inc\retargetserial.h)(0x6656D756)
 I (periph\uart.h)(0x66A8AC0A)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x.h)(0x66B21268)
-F (.\radio\sx126x_proc.c)(0x66EACDC1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli -I ./AES -I ./SSD1306-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="540" -DARMCM4 -DCONFIG_LORA_USE_TCXO-o ./objects/sx126x_proc.o -MMD)
+F (.\radio\sx126x_proc.c)(0x66EBD3F1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli -I ./AES -I ./SSD1306-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="540" -DARMCM4 -DCONFIG_LORA_USE_TCXO-o ./objects/sx126x_proc.o -MMD)
 I (radio\sx126x_proc.h)(0x66E92C2F)
 I (inc\bsp.h)(0x66EAA4CF)
 I (lib\inc\tremo_system.h)(0x65316054)
@@ -489,7 +489,7 @@ I (periph\flash.h)(0x66598259)
 I (radio\sx126x_interface.h)(0x66E92B93)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x.h)(0x66B21268)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (periph\ustimer.h)(0x6687BEEF)
 F (.\cli\command_interpreter.c)(0x6658633F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ./inc -I ./lib/inc -I ./chip -I ./periph -I ./radio -I ./cli -I ./AES -I ./SSD1306-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARM/ARMCM4/Include-IC:/Keil_v535/ARM/CMSIS/Include-IC:/Users/Admin/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/Device/ARMCM4/Include-D__UVISION_VERSION="540" -DARMCM4 -DCONFIG_LORA_USE_TCXO-o ./objects/command_interpreter.o -MMD)
 I (inc\bsp.h)(0x66EAA4CF)
@@ -534,7 +534,7 @@ I (AES\type_define.h)(0x6302F3CF)
 I (AES\algorithm.h)(0x6302F3CF)
 I (AES\sec_regs.h)(0x6302F3CF)
 I (AES\drv.h)(0x6302F3CF)
-I (radio\radio_proc.h)(0x66EAD27E)
+I (radio\radio_proc.h)(0x66EAD6B8)
 I (radio\sx126x.h)(0x66B21268)
 I (periph\lorac.h)(0x66B1FC14)
 I (radio\sx126x_interface.h)(0x66E92B93)

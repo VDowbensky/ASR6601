@@ -23,6 +23,7 @@ void lorac_init(void)
   NVIC_EnableIRQ(LORA_IRQn);
   //NVIC_SetPriority(LORAC_IRQn, 2);
 	gpio_set_iomux(RFSW_TXRX_PORT, RFSW_TXRX_PIN, 3); //check
+	gpio_init(RFSW_CTRL_PORT, RFSW_CTRL_PIN,GPIO_MODE_OUTPUT_PP_HIGH);
 }
 
 uint8_t lorac_transfer(uint8_t b)

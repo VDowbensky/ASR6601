@@ -3027,19 +3027,19 @@ Image Symbol Table
     .data                                    0x20000000   Section        4  stdout.o(.data)
     _errno                                   0x20000004   Data           4  errno.o(.data)
     .data                                    0x20000004   Section        4  errno.o(.data)
-    fac_us                                   0x200005d4   Data           1  tremo_delay.o(.bss.fac_us)
-    [Anonymous Symbol]                       0x200005d4   Section        0  tremo_delay.o(.bss.fac_us)
-    initialized                              0x200015dc   Data           1  retarget.o(.bss.initialized)
-    [Anonymous Symbol]                       0x200015dc   Section        0  retarget.o(.bss.initialized)
-    radio_proc.phase                         0x20001680   Data           1  radio_proc.o(.bss.radio_proc.phase)
-    [Anonymous Symbol]                       0x20001680   Section        0  radio_proc.o(.bss.radio_proc.phase)
-    rxCount                                  0x20001884   Data           4  retarget.o(.bss.rxCount)
-    [Anonymous Symbol]                       0x20001884   Section        0  retarget.o(.bss.rxCount)
-    rxReadIndex                              0x20001888   Data           4  retarget.o(.bss.rxReadIndex)
-    [Anonymous Symbol]                       0x20001888   Section        0  retarget.o(.bss.rxReadIndex)
-    rxWriteIndex                             0x2000188c   Data           4  retarget.o(.bss.rxWriteIndex)
-    [Anonymous Symbol]                       0x2000188c   Section        0  retarget.o(.bss.rxWriteIndex)
-    STACK                                    0x20001908   Section     2048  startup_tremo.o(STACK)
+    fac_us                                   0x200005e4   Data           1  tremo_delay.o(.bss.fac_us)
+    [Anonymous Symbol]                       0x200005e4   Section        0  tremo_delay.o(.bss.fac_us)
+    initialized                              0x200015ec   Data           1  retarget.o(.bss.initialized)
+    [Anonymous Symbol]                       0x200015ec   Section        0  retarget.o(.bss.initialized)
+    radio_proc.phase                         0x20001690   Data           1  radio_proc.o(.bss.radio_proc.phase)
+    [Anonymous Symbol]                       0x20001690   Section        0  radio_proc.o(.bss.radio_proc.phase)
+    rxCount                                  0x20001894   Data           4  retarget.o(.bss.rxCount)
+    [Anonymous Symbol]                       0x20001894   Section        0  retarget.o(.bss.rxCount)
+    rxReadIndex                              0x20001898   Data           4  retarget.o(.bss.rxReadIndex)
+    [Anonymous Symbol]                       0x20001898   Section        0  retarget.o(.bss.rxReadIndex)
+    rxWriteIndex                             0x2000189c   Data           4  retarget.o(.bss.rxWriteIndex)
+    [Anonymous Symbol]                       0x2000189c   Section        0  retarget.o(.bss.rxWriteIndex)
+    STACK                                    0x20001918   Section     2048  startup_tremo.o(STACK)
 
     Global Symbols
 
@@ -3416,47 +3416,47 @@ Image Symbol Table
     Region$$Table$$Base                      0x08006b30   Number         0  anon$$obj.o(Region$$Table)
     Region$$Table$$Limit                     0x08006b50   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
-    commands                                 0x20000008   Data        1056  app_cli.o(.data.commands)
-    inter_packet_delay                       0x20000428   Data           2  radio_proc.o(.data.inter_packet_delay)
-    Channel                                  0x20000430   Data           2  radio_proc.o(.bss.Channel)
-    RADIO_rxBuffer                           0x20000434   Data          64  radio_proc.o(.bss.RADIO_rxBuffer)
-    RADIO_txBuffer                           0x20000474   Data          64  radio_proc.o(.bss.RADIO_txBuffer)
-    RssiPkt                                  0x200004b4   Data           4  radio_proc.o(.bss.RssiPkt)
-    SignalRssiPkt                            0x200004b8   Data           4  radio_proc.o(.bss.SignalRssiPkt)
-    SnrPkt                                   0x200004bc   Data           4  radio_proc.o(.bss.SnrPkt)
-    T                                        0x200004c0   Data           4  adc.o(.bss.T)
-    Vcc                                      0x200004c4   Data           4  adc.o(.bss.Vcc)
-    adc_ticks                                0x200004c8   Data           4  tremo_it.o(.bss.adc_ticks)
-    answer_needed                            0x200004cc   Data           1  radio_proc.o(.bss.answer_needed)
-    ciBuffer                                 0x200004cd   Data         256  app_cli.o(.bss.ciBuffer)
-    crc_error                                0x200005cd   Data           1  radio_proc.o(.bss.crc_error)
-    dco_value                                0x200005d0   Data           4  adc.o(.bss.dco_value)
-    flashbuffer                              0x200005d8   Data        4096  flash.o(.bss.flashbuffer)
-    gain_value                               0x200015d8   Data           4  adc.o(.bss.gain_value)
-    master                                   0x200015dd   Data           1  radio_proc.o(.bss.master)
-    maxchan                                  0x200015de   Data           2  radio_proc.o(.bss.maxchan)
-    minchan                                  0x200015e0   Data           2  radio_proc.o(.bss.minchan)
-    opmode                                   0x200015e2   Data           1  sx126x_proc.o(.bss.opmode)
-    packet_received                          0x200015e3   Data           1  radio_proc.o(.bss.packet_received)
-    packet_sent                              0x200015e4   Data           1  radio_proc.o(.bss.packet_sent)
-    prevopmode                               0x200015e5   Data           1  sx126x_proc.o(.bss.prevopmode)
-    radioConfig                              0x200015e8   Data         152  radio_proc.o(.bss.radioConfig)
-    rxBuffer                                 0x20001681   Data         512  retarget.o(.bss.rxBuffer)
-    rxpacket                                 0x20001890   Data          36  radio_proc.o(.bss.rxpacket)
-    rxpacketnumber                           0x200018b4   Data           2  radio_proc.o(.bss.rxpacketnumber)
-    slaveID                                  0x200018b6   Data           2  radio_proc.o(.bss.slaveID)
-    state                                    0x200018b8   Data          20  app_cli.o(.bss.state)
-    sweepdelay                               0x200018cc   Data           4  radio_proc.o(.bss.sweepdelay)
-    sweepflag                                0x200018d0   Data           1  radio_proc.o(.bss.sweepflag)
-    sweeprx                                  0x200018d1   Data           1  radio_proc.o(.bss.sweeprx)
-    sweeptx                                  0x200018d2   Data           1  radio_proc.o(.bss.sweeptx)
-    tx_needed                                0x200018d3   Data           1  radio_proc.o(.bss.tx_needed)
-    tx_ticks                                 0x200018d4   Data           4  radio_proc.o(.bss.tx_ticks)
-    txmode                                   0x200018d8   Data           1  app_cli.o(.bss.txmode)
-    txpacket                                 0x200018dc   Data          36  radio_proc.o(.bss.txpacket)
-    txpacketcount                            0x20001900   Data           2  radio_proc.o(.bss.txpacketcount)
-    txpacketnumber                           0x20001902   Data           2  radio_proc.o(.bss.txpacketnumber)
-    __initial_sp                             0x20002108   Data           0  startup_tremo.o(STACK)
+    commands                                 0x20000008   Data        1072  app_cli.o(.data.commands)
+    inter_packet_delay                       0x20000438   Data           2  radio_proc.o(.data.inter_packet_delay)
+    Channel                                  0x20000440   Data           2  radio_proc.o(.bss.Channel)
+    RADIO_rxBuffer                           0x20000444   Data          64  radio_proc.o(.bss.RADIO_rxBuffer)
+    RADIO_txBuffer                           0x20000484   Data          64  radio_proc.o(.bss.RADIO_txBuffer)
+    RssiPkt                                  0x200004c4   Data           4  radio_proc.o(.bss.RssiPkt)
+    SignalRssiPkt                            0x200004c8   Data           4  radio_proc.o(.bss.SignalRssiPkt)
+    SnrPkt                                   0x200004cc   Data           4  radio_proc.o(.bss.SnrPkt)
+    T                                        0x200004d0   Data           4  adc.o(.bss.T)
+    Vcc                                      0x200004d4   Data           4  adc.o(.bss.Vcc)
+    adc_ticks                                0x200004d8   Data           4  tremo_it.o(.bss.adc_ticks)
+    answer_needed                            0x200004dc   Data           1  radio_proc.o(.bss.answer_needed)
+    ciBuffer                                 0x200004dd   Data         256  app_cli.o(.bss.ciBuffer)
+    crc_error                                0x200005dd   Data           1  radio_proc.o(.bss.crc_error)
+    dco_value                                0x200005e0   Data           4  adc.o(.bss.dco_value)
+    flashbuffer                              0x200005e8   Data        4096  flash.o(.bss.flashbuffer)
+    gain_value                               0x200015e8   Data           4  adc.o(.bss.gain_value)
+    master                                   0x200015ed   Data           1  radio_proc.o(.bss.master)
+    maxchan                                  0x200015ee   Data           2  radio_proc.o(.bss.maxchan)
+    minchan                                  0x200015f0   Data           2  radio_proc.o(.bss.minchan)
+    opmode                                   0x200015f2   Data           1  sx126x_proc.o(.bss.opmode)
+    packet_received                          0x200015f3   Data           1  radio_proc.o(.bss.packet_received)
+    packet_sent                              0x200015f4   Data           1  radio_proc.o(.bss.packet_sent)
+    prevopmode                               0x200015f5   Data           1  sx126x_proc.o(.bss.prevopmode)
+    radioConfig                              0x200015f8   Data         152  radio_proc.o(.bss.radioConfig)
+    rxBuffer                                 0x20001691   Data         512  retarget.o(.bss.rxBuffer)
+    rxpacket                                 0x200018a0   Data          36  radio_proc.o(.bss.rxpacket)
+    rxpacketnumber                           0x200018c4   Data           2  radio_proc.o(.bss.rxpacketnumber)
+    slaveID                                  0x200018c6   Data           2  radio_proc.o(.bss.slaveID)
+    state                                    0x200018c8   Data          20  app_cli.o(.bss.state)
+    sweepdelay                               0x200018dc   Data           4  radio_proc.o(.bss.sweepdelay)
+    sweepflag                                0x200018e0   Data           1  radio_proc.o(.bss.sweepflag)
+    sweeprx                                  0x200018e1   Data           1  radio_proc.o(.bss.sweeprx)
+    sweeptx                                  0x200018e2   Data           1  radio_proc.o(.bss.sweeptx)
+    tx_needed                                0x200018e3   Data           1  radio_proc.o(.bss.tx_needed)
+    tx_ticks                                 0x200018e4   Data           4  radio_proc.o(.bss.tx_ticks)
+    txmode                                   0x200018e8   Data           1  app_cli.o(.bss.txmode)
+    txpacket                                 0x200018ec   Data          36  radio_proc.o(.bss.txpacket)
+    txpacketcount                            0x20001910   Data           2  radio_proc.o(.bss.txpacketcount)
+    txpacketnumber                           0x20001912   Data           2  radio_proc.o(.bss.txpacketnumber)
+    __initial_sp                             0x20002118   Data           0  startup_tremo.o(STACK)
 
 
 
@@ -3466,7 +3466,7 @@ Memory Map of the image
 
   Image Entry point : 0x080000d5
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006f80, Max: 0x00040000, ABSOLUTE, COMPRESSED[0x00006db8])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006f90, Max: 0x00040000, ABSOLUTE, COMPRESSED[0x00006dc0])
 
     Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006b50, Max: 0x00040000, ABSOLUTE)
 
@@ -3786,67 +3786,67 @@ Memory Map of the image
     0x08006b30   0x08006b30   0x00000020   Data   RO         1881    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006b50, Size: 0x00002108, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x00000268])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006b50, Size: 0x00002118, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x00000270])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   COMPRESSED   0x00000004   Data   RW         1493    .data               mc_w.l(stdout.o)
     0x20000004   COMPRESSED   0x00000004   Data   RW         1780    .data               mc_w.l(errno.o)
-    0x20000008   COMPRESSED   0x00000420   Data   RW          225    .data.commands      app_cli.o
-    0x20000428   COMPRESSED   0x00000002   Data   RW         1232    .data.inter_packet_delay  radio_proc.o
-    0x2000042a   COMPRESSED   0x00000006   PAD
-    0x20000430        -       0x00000002   Zero   RW         1249    .bss.Channel        radio_proc.o
-    0x20000432   COMPRESSED   0x00000002   PAD
-    0x20000434        -       0x00000040   Zero   RW         1246    .bss.RADIO_rxBuffer  radio_proc.o
-    0x20000474        -       0x00000040   Zero   RW         1254    .bss.RADIO_txBuffer  radio_proc.o
-    0x200004b4        -       0x00000004   Zero   RW         1243    .bss.RssiPkt        radio_proc.o
-    0x200004b8        -       0x00000004   Zero   RW         1245    .bss.SignalRssiPkt  radio_proc.o
-    0x200004bc        -       0x00000004   Zero   RW         1244    .bss.SnrPkt         radio_proc.o
-    0x200004c0        -       0x00000004   Zero   RW         1181    .bss.T              adc.o
-    0x200004c4        -       0x00000004   Zero   RW         1180    .bss.Vcc            adc.o
-    0x200004c8        -       0x00000004   Zero   RW           46    .bss.adc_ticks      tremo_it.o
-    0x200004cc        -       0x00000001   Zero   RW         1233    .bss.answer_needed  radio_proc.o
-    0x200004cd        -       0x00000100   Zero   RW          227    .bss.ciBuffer       app_cli.o
-    0x200005cd        -       0x00000001   Zero   RW         1237    .bss.crc_error      radio_proc.o
-    0x200005ce   COMPRESSED   0x00000002   PAD
-    0x200005d0        -       0x00000004   Zero   RW         1179    .bss.dco_value      adc.o
-    0x200005d4        -       0x00000001   Zero   RW          388    .bss.fac_us         tremo_delay.o
-    0x200005d5   COMPRESSED   0x00000003   PAD
-    0x200005d8        -       0x00001000   Zero   RW         1146    .bss.flashbuffer    flash.o
-    0x200015d8        -       0x00000004   Zero   RW         1178    .bss.gain_value     adc.o
-    0x200015dc        -       0x00000001   Zero   RW           68    .bss.initialized    retarget.o
-    0x200015dd        -       0x00000001   Zero   RW         1230    .bss.master         radio_proc.o
-    0x200015de        -       0x00000002   Zero   RW         1250    .bss.maxchan        radio_proc.o
-    0x200015e0        -       0x00000002   Zero   RW         1251    .bss.minchan        radio_proc.o
-    0x200015e2        -       0x00000001   Zero   RW         1417    .bss.opmode         sx126x_proc.o
-    0x200015e3        -       0x00000001   Zero   RW         1236    .bss.packet_received  radio_proc.o
-    0x200015e4        -       0x00000001   Zero   RW         1238    .bss.packet_sent    radio_proc.o
-    0x200015e5        -       0x00000001   Zero   RW         1418    .bss.prevopmode     sx126x_proc.o
-    0x200015e6   COMPRESSED   0x00000002   PAD
-    0x200015e8        -       0x00000098   Zero   RW         1241    .bss.radioConfig    radio_proc.o
-    0x20001680        -       0x00000001   Zero   RW         1242    .bss.radio_proc.phase  radio_proc.o
-    0x20001681        -       0x00000200   Zero   RW           70    .bss.rxBuffer       retarget.o
-    0x20001881   COMPRESSED   0x00000003   PAD
-    0x20001884        -       0x00000004   Zero   RW           69    .bss.rxCount        retarget.o
-    0x20001888        -       0x00000004   Zero   RW           71    .bss.rxReadIndex    retarget.o
-    0x2000188c        -       0x00000004   Zero   RW           72    .bss.rxWriteIndex   retarget.o
-    0x20001890        -       0x00000024   Zero   RW         1247    .bss.rxpacket       radio_proc.o
-    0x200018b4        -       0x00000002   Zero   RW         1227    .bss.rxpacketnumber  radio_proc.o
-    0x200018b6        -       0x00000002   Zero   RW         1253    .bss.slaveID        radio_proc.o
-    0x200018b8        -       0x00000014   Zero   RW          226    .bss.state          app_cli.o
-    0x200018cc        -       0x00000004   Zero   RW         1257    .bss.sweepdelay     radio_proc.o
-    0x200018d0        -       0x00000001   Zero   RW         1248    .bss.sweepflag      radio_proc.o
-    0x200018d1        -       0x00000001   Zero   RW         1240    .bss.sweeprx        radio_proc.o
-    0x200018d2        -       0x00000001   Zero   RW         1239    .bss.sweeptx        radio_proc.o
-    0x200018d3        -       0x00000001   Zero   RW         1231    .bss.tx_needed      radio_proc.o
-    0x200018d4        -       0x00000004   Zero   RW         1225    .bss.tx_ticks       radio_proc.o
-    0x200018d8        -       0x00000001   Zero   RW          223    .bss.txmode         app_cli.o
-    0x200018d9   COMPRESSED   0x00000003   PAD
-    0x200018dc        -       0x00000024   Zero   RW         1252    .bss.txpacket       radio_proc.o
-    0x20001900        -       0x00000002   Zero   RW         1228    .bss.txpacketcount  radio_proc.o
-    0x20001902        -       0x00000002   Zero   RW         1226    .bss.txpacketnumber  radio_proc.o
-    0x20001904   COMPRESSED   0x00000004   PAD
-    0x20001908        -       0x00000800   Zero   RW          239    STACK               startup_tremo.o
+    0x20000008   COMPRESSED   0x00000430   Data   RW          225    .data.commands      app_cli.o
+    0x20000438   COMPRESSED   0x00000002   Data   RW         1232    .data.inter_packet_delay  radio_proc.o
+    0x2000043a   COMPRESSED   0x00000006   PAD
+    0x20000440        -       0x00000002   Zero   RW         1249    .bss.Channel        radio_proc.o
+    0x20000442   COMPRESSED   0x00000002   PAD
+    0x20000444        -       0x00000040   Zero   RW         1246    .bss.RADIO_rxBuffer  radio_proc.o
+    0x20000484        -       0x00000040   Zero   RW         1254    .bss.RADIO_txBuffer  radio_proc.o
+    0x200004c4        -       0x00000004   Zero   RW         1243    .bss.RssiPkt        radio_proc.o
+    0x200004c8        -       0x00000004   Zero   RW         1245    .bss.SignalRssiPkt  radio_proc.o
+    0x200004cc        -       0x00000004   Zero   RW         1244    .bss.SnrPkt         radio_proc.o
+    0x200004d0        -       0x00000004   Zero   RW         1181    .bss.T              adc.o
+    0x200004d4        -       0x00000004   Zero   RW         1180    .bss.Vcc            adc.o
+    0x200004d8        -       0x00000004   Zero   RW           46    .bss.adc_ticks      tremo_it.o
+    0x200004dc        -       0x00000001   Zero   RW         1233    .bss.answer_needed  radio_proc.o
+    0x200004dd        -       0x00000100   Zero   RW          227    .bss.ciBuffer       app_cli.o
+    0x200005dd        -       0x00000001   Zero   RW         1237    .bss.crc_error      radio_proc.o
+    0x200005de   COMPRESSED   0x00000002   PAD
+    0x200005e0        -       0x00000004   Zero   RW         1179    .bss.dco_value      adc.o
+    0x200005e4        -       0x00000001   Zero   RW          388    .bss.fac_us         tremo_delay.o
+    0x200005e5   COMPRESSED   0x00000003   PAD
+    0x200005e8        -       0x00001000   Zero   RW         1146    .bss.flashbuffer    flash.o
+    0x200015e8        -       0x00000004   Zero   RW         1178    .bss.gain_value     adc.o
+    0x200015ec        -       0x00000001   Zero   RW           68    .bss.initialized    retarget.o
+    0x200015ed        -       0x00000001   Zero   RW         1230    .bss.master         radio_proc.o
+    0x200015ee        -       0x00000002   Zero   RW         1250    .bss.maxchan        radio_proc.o
+    0x200015f0        -       0x00000002   Zero   RW         1251    .bss.minchan        radio_proc.o
+    0x200015f2        -       0x00000001   Zero   RW         1417    .bss.opmode         sx126x_proc.o
+    0x200015f3        -       0x00000001   Zero   RW         1236    .bss.packet_received  radio_proc.o
+    0x200015f4        -       0x00000001   Zero   RW         1238    .bss.packet_sent    radio_proc.o
+    0x200015f5        -       0x00000001   Zero   RW         1418    .bss.prevopmode     sx126x_proc.o
+    0x200015f6   COMPRESSED   0x00000002   PAD
+    0x200015f8        -       0x00000098   Zero   RW         1241    .bss.radioConfig    radio_proc.o
+    0x20001690        -       0x00000001   Zero   RW         1242    .bss.radio_proc.phase  radio_proc.o
+    0x20001691        -       0x00000200   Zero   RW           70    .bss.rxBuffer       retarget.o
+    0x20001891   COMPRESSED   0x00000003   PAD
+    0x20001894        -       0x00000004   Zero   RW           69    .bss.rxCount        retarget.o
+    0x20001898        -       0x00000004   Zero   RW           71    .bss.rxReadIndex    retarget.o
+    0x2000189c        -       0x00000004   Zero   RW           72    .bss.rxWriteIndex   retarget.o
+    0x200018a0        -       0x00000024   Zero   RW         1247    .bss.rxpacket       radio_proc.o
+    0x200018c4        -       0x00000002   Zero   RW         1227    .bss.rxpacketnumber  radio_proc.o
+    0x200018c6        -       0x00000002   Zero   RW         1253    .bss.slaveID        radio_proc.o
+    0x200018c8        -       0x00000014   Zero   RW          226    .bss.state          app_cli.o
+    0x200018dc        -       0x00000004   Zero   RW         1257    .bss.sweepdelay     radio_proc.o
+    0x200018e0        -       0x00000001   Zero   RW         1248    .bss.sweepflag      radio_proc.o
+    0x200018e1        -       0x00000001   Zero   RW         1240    .bss.sweeprx        radio_proc.o
+    0x200018e2        -       0x00000001   Zero   RW         1239    .bss.sweeptx        radio_proc.o
+    0x200018e3        -       0x00000001   Zero   RW         1231    .bss.tx_needed      radio_proc.o
+    0x200018e4        -       0x00000004   Zero   RW         1225    .bss.tx_ticks       radio_proc.o
+    0x200018e8        -       0x00000001   Zero   RW          223    .bss.txmode         app_cli.o
+    0x200018e9   COMPRESSED   0x00000003   PAD
+    0x200018ec        -       0x00000024   Zero   RW         1252    .bss.txpacket       radio_proc.o
+    0x20001910        -       0x00000002   Zero   RW         1228    .bss.txpacketcount  radio_proc.o
+    0x20001912        -       0x00000002   Zero   RW         1226    .bss.txpacketnumber  radio_proc.o
+    0x20001914   COMPRESSED   0x00000004   PAD
+    0x20001918        -       0x00000800   Zero   RW          239    STACK               startup_tremo.o
 
 
 ==============================================================================
@@ -3859,7 +3859,7 @@ Image component sizes
        348         12          0          0         16       6089   adc.o
        310          0          0          0          0       2480   aes.o
         50          0          0          0          0       2281   aes_proc.o
-      7226       2364       2875       1056        277      20714   app_cli.o
+      7226       2364       2875       1072        277      20714   app_cli.o
         84          0          0          0          0       2952   bsp.o
       1218         78         90          0          0       8212   command_interpreter.o
         82          0          0          0       4096        927   flash.o
@@ -3885,7 +3885,7 @@ Image component sizes
        220          0          0          0          0       5522   ustimer.o
 
     ----------------------------------------------------------------------
-     19364       2940       3220       1060       7388     170359   Object Totals
+     19364       2940       3220       1076       7388     170359   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         50          8          5          2         23          0   (incl. Padding)
 
@@ -3960,15 +3960,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     24116       3062       3356       1068       7388     171611   Grand Totals
-     24116       3062       3356        616       7388     171611   ELF Image Totals (compressed)
-     24116       3062       3356        616          0          0   ROM Totals
+     24116       3062       3356       1084       7388     171611   Grand Totals
+     24116       3062       3356        624       7388     171611   ELF Image Totals (compressed)
+     24116       3062       3356        624          0          0   ROM Totals
 
 ==============================================================================
 
     Total RO  Size (Code + RO Data)                27472 (  26.83kB)
-    Total RW  Size (RW Data + ZI Data)              8456 (   8.26kB)
-    Total ROM Size (Code + RO Data + RW Data)      28088 (  27.43kB)
+    Total RW  Size (RW Data + ZI Data)              8472 (   8.27kB)
+    Total ROM Size (Code + RO Data + RW Data)      28096 (  27.44kB)
 
 ==============================================================================
 

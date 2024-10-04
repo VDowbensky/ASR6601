@@ -205,6 +205,8 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("SET_EM", "w", cli_setem, ""),
 		
 		COMMAND_ENTRY("SET_PACONFIG", "ww", cli_setpaconfig, ""), //technological
+		
+		COMMAND_ENTRY(NULL, NULL, NULL, NULL),
   };
 
 

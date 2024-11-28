@@ -116,3 +116,8 @@ Ra-08/RA08_testHW/Project Outputs for RA08T/Design Rule Check - RA08T.drc
 *.EXTREP
 Ra-08/RA08_testHW/Project Outputs for RA08T/Status Report.Txt
 *.PrjPcbStructure
+*.scvd
+Ra-08/tremo_testFW/JLinkLog.txt
+Ra-08/tremo_testFW/JLinkSettings.ini
+/Ra-08/tremo_testFW/Listings
+/Ra-08/tremo_testFW/Objects

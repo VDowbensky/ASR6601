@@ -104,3 +104,7 @@ com.*
 *.xml
 *.sys
 
+E78/E78testFW/EventRecorderStub.scvd
+*.scvd
+/E78/E78testFW/Listings
+/E78/E78testFW/Objects

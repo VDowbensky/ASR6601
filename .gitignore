@@ -108,3 +108,11 @@ E78/E78testFW/EventRecorderStub.scvd
 *.scvd
 /E78/E78testFW/Listings
 /E78/E78testFW/Objects
+Ra-08/RA08_testHW/Project Outputs for RA08T/Design Rule Check - RA08T.drc
+*.html
+*.APR_LIB
+*.apr
+*.DRR
+*.EXTREP
+Ra-08/RA08_testHW/Project Outputs for RA08T/Status Report.Txt
+*.PrjPcbStructure

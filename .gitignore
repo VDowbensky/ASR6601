@@ -73,7 +73,6 @@ db.*
 *.html
 *.htm
 *.md5
-*.png
 *.pro
 *.qrc
 *.js

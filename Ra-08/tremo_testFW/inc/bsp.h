@@ -22,6 +22,7 @@
 #define RXD0_PORT			GPIOB
 #define RXD0_PIN			GPIO_PIN_0
 
+
 #define LPRXD_PORT		GPIOD //probably for GPS
 #define LPRXD_PIN			GPIO_PIN_12
 

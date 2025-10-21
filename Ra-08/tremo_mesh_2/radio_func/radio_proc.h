@@ -1,0 +1,19 @@
+#ifndef _RADIO_PROC_H_
+#define _RADIO_PROC_H_
+
+#include "radio_func.h"
+
+/* 
+Preset	      Bandwidth (kHz)	      SF	      Data Rate (kbps)	      Link Budget	      Best For
+LongFast	    250	                  11	      1.07	                  153dB	            Default
+MediumSlow	  250	                  10	      1.95	                  150.5dB	          Better speed
+MediumFast	  250	                  9	        3.52	                  148dB	            Fast with good range
+ShortSlow	    250	                  8	        6.25	                  145.5dB	          Fast with moderate range
+ShortFast	    250	                  7	        10.94	                  143dB	            Very fast, shorter range
+ShortTurbo	  500	                  7	        21.88	                  140dB	            Maximum speed, minimum range 
+*/
+
+void radio_proc(void);
+
+
+#endif

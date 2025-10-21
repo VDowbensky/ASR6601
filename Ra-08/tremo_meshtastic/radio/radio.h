@@ -58,7 +58,7 @@
 #define MIN_RX_SWEEP_TIME							10
 #define MAX_RX_SWEEP_TIME							60000
 
-#define SX126X_FREQ_DEFAULT						770000000UL
+#define SX126X_FREQ_DEFAULT						433125000UL
 #define SX126X_TXPOWER_DEFAULT				10
 #define SX126X_RAMPTIME_DEFAULT				SX126X_RAMP_10U
 
@@ -67,76 +67,33 @@
 
 typedef struct
 {
-  uint32_t device_id;//4
-  uint8_t chip;//5
-  uint8_t modem;//6
-  uint8_t work_mode;//7
-  uint8_t reserved0;//8
-  uint32_t frequency0;//12
-  uint32_t frequency1;//16
-  uint32_t frequency2;//20
-  uint32_t frequency3;//24
-  int8_t txpower0;//25
-  int8_t txpower1;//26
-  int8_t txpower2;//27
-  int8_t txpower3;//28
-  uint8_t ramptime0;//29
-  uint8_t ramptime1;//30
-  uint8_t ramptime2;//31
-  uint8_t ramptime3;//32
+  uint32_t device_id;//+3
+  uint32_t frequency;//+7
+  int8_t txpower;//+8
+  uint8_t ramptime;//+9
   //calibration and user parameters - add here
-  uint8_t user_params[96];//128 XO trim - for SX126x, K_freq for LR1121; AES etc.
-  //LORA parameters
-  uint8_t bw;//1
-  uint8_t sf;//2
-  uint8_t cr;//3
-  uint8_t ldropt;//4
-  uint16_t loraprelen;//5
-  uint8_t implheader;//6
-  uint16_t lorasync;//8
-  uint8_t lorapaylen;//9
-  uint8_t loracrc;//10
-  uint8_t invertiq;//11
-  uint8_t lora_reserved[53];//64
-  //FSK parameters
-  uint32_t br; //4
-  uint8_t rbw;//5
-  uint8_t shaping;//6
-  uint8_t reserved1[2];//8
-  uint32_t fdev;//12
-  uint16_t fskprelen;//14
-	uint8_t predetlen;//15
-  uint8_t fsksynclen;//16
-  uint8_t fsksync[16];//32
-  uint8_t addrcomp;//33
-  uint8_t syncmatch;//34
-  uint8_t nodeaddr;//35
-  uint8_t braddr;//36 
-  uint8_t varlen;//37
-  uint8_t fskpaylen;//38
-  uint8_t crctype;//39
-  uint8_t reserved3;//40
-  uint16_t crcinit;//44
-  uint16_t crcpoly;//48
-  uint8_t white;//49
-  uint8_t whiteinit;//50
-  uint8_t fsk_reserved[14];//64
-  //LR_FHSS
-  //OQPSK
-  //...
+	uint8_t xta;//+10
+	uint8_t xtb;//+11
+  uint8_t bw;//+12
+  uint8_t sf;//+13
+  uint8_t cr;//+14
+  uint8_t ldropt;//+15
+  uint16_t loraprelen;//+17
+  uint8_t implheader;//18
+	uint8_t reserved0;//+19
+  uint16_t lorasync;//+21
+  uint8_t lorapaylen;//+22
+  uint8_t loracrc;//+23
+  uint8_t invertiq;//+24
+  uint8_t reserved1[231];//255
 }radioconfig_t;
 
 //incoming packet status
 typedef struct
 {
-	uint8_t rx_status; //FSK
-	uint8_t errors; //FSK,1280 only
-	float rssi_sync; //FSK
-	float rssi_avg; //FSK
 	float rssi_pkt; //LoRa
 	float snr_pkt; //LoRa
 	float signal_rssi_pkt; //LoRa
-	//sx1280 packet status
 }rxpacketstatus_t;
 
 //statistics
@@ -144,7 +101,7 @@ typedef struct
 {
 	uint16_t pkt_received; 
 	uint16_t crc_error; 
-	uint16_t len_header_error; 
+	uint16_t header_error; 
 	uint16_t false_sync;
 }rxstats_t;
 
@@ -162,11 +119,14 @@ int8_t radio_setopmode(uint8_t mode);
 
 int8_t radio_setmodem(uint8_t modem);
 int8_t radio_setpower(int8_t dbm);
-int8_t radio_getxotrim(uint16_t *trim);
-int8_t radio_setxotrim(uint16_t trim);
+int8_t radio_getxotrim(uint8_t *trim);
+int8_t radio_setxotrim(uint8_t trim);
 
 extern radioconfig_t radioconfig;
+extern uint8_t opmode;
+extern uint8_t prevopmode;
 extern uint8_t txmode;
+
 
 int8_t radio_fs(void);
 int8_t radio_rx(void);

@@ -15,18 +15,6 @@
 *.map
 *.ld
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
 
 # Logs and databases #
 ######################
@@ -49,21 +37,10 @@ build
 db.*
 */DerivedData/
 # IDE Specific Files
-*.uvopt
-*.uvproj
 *.uvmpw
-*.uvoptx
-*.uvprojx
 *.uvguix.Admin
 *.Admin
-*.ewp
-*.eww
-*.ewd
 *.sln
-*.vcxproj
-*.cproject
-*.project
-*.slsproj
 *.d
 *.lnp
 *.sct
@@ -102,8 +79,6 @@ com.*
 *.sim
 *.xml
 *.sys
-
-E78/E78testFW/EventRecorderStub.scvd
 *.scvd
 /E78/E78testFW/Listings
 /E78/E78testFW/Objects
@@ -115,7 +90,6 @@ Ra-08/RA08_testHW/Project Outputs for RA08T/Design Rule Check - RA08T.drc
 *.EXTREP
 Ra-08/RA08_testHW/Project Outputs for RA08T/Status Report.Txt
 *.PrjPcbStructure
-*.scvd
 Ra-08/tremo_testFW/JLinkLog.txt
 Ra-08/tremo_testFW/JLinkSettings.ini
 /Ra-08/tremo_testFW/Listings

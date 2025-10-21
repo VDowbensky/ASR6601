@@ -3,16 +3,19 @@
 #include "app_cli.h"
 #include "gui.h"
 #include "test.h"
+#include "flash.h"
 
 int main(void)
 {
 	init_power_clk();
 	init_peripherals();
 	delay_ms(100);
-	printf("\r\nRA08 test\r\n");
+	printf("\r\nMeshtastic sniffer\r\n");
+	printf("HW=%d,FW=%d.%d\r\n",HW_VERSION,FW_VERSION,FW_REVISION);
 	led_on();
 	SSD1306_Init();
 	SSD1306_Clear(0);
+	readconfig();
 	radio_config();
 	delay_ms(100);
 	led_off();

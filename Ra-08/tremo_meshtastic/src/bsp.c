@@ -27,8 +27,7 @@ void init_peripherals(void)
 	mygpio_init();
 	myadc_init();
 	RETARGET_SerialInit();
-	//auxuart_init(UART1_BR);
-	//radiospi_init();
+	lorac_init();
 	ustimer_init();
 }
 

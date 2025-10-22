@@ -59,6 +59,9 @@ void cli_sendburst(int argc, char **argv);
 void cli_stopburst (int argc, char **argv);
 void cli_txstream(int argc, char **argv);
 
+void cli_getstats(int argc, char **argv);
+void cli_clearstats(int argc, char **argv);
+
 //device dependent
 void cli_getvt(int argc, char **argv);
 //special tests
@@ -100,6 +103,9 @@ CommandEntry_t commands[] =
     COMMAND_ENTRY("START_TX", "www", cli_sendburst, "Start packet burst"),
     COMMAND_ENTRY("STOP_TX", "", cli_stopburst, "Stop packet burst"),
     COMMAND_ENTRY("TX_STREAM", "v", cli_txstream, "Start/stop TX stream"),
+		
+		COMMAND_ENTRY("GET_STATS", "", cli_getstats, ""),
+		COMMAND_ENTRY("CLR_STATS", "", cli_clearstats, ""),
     //System health - device dependent
     COMMAND_ENTRY("GET_VT", "", cli_getvt, "Get ADC data"),
 
@@ -224,7 +230,7 @@ void cli_setxotrim(int argc, char **argv)
   tune = ciGetUnsigned(argv[1]);
   if(tune > 94) tune = 94;
   RADIO_setctune(tune);
-  printf("SET_CTUNE: %d\r\n",tune);
+  printf("SET_XOTRIM: %d\r\n",tune);
 }
 
 void cli_getRSSI(int argc, char **argv)
@@ -400,6 +406,7 @@ void cli_setsync(int argc, char **argv)
 	uint16_t sw;
 	sw = ciGetUnsigned(argv[1]) & 0xffff;
 	radioConfig.LoRaSyncWord = sw;
+	SX126X_config();
 	printf("SET_SYNC: 0x%04X\r\n",radioConfig.LoRaSyncWord);
 }
 
@@ -525,6 +532,18 @@ void cli_setpaconfig(int argc, char **argv)
 	hpmax = ciGetUnsigned(argv[2]);
 	SX126X_SetPaConfig(dutycycle,hpmax,false);
 	printf("SET_PACONFIG: %d,%d\r\n",dutycycle,hpmax);
+}
+
+void cli_getstats(int argc, char **argv)
+{
+	radio_getrxstats();
+	printf("GET_STATS: PKT=%d,FERR=%d,HERR=%d\r\n",rxstats.pkt_received,rxstats.crc_error,rxstats.header_error);
+}
+
+void cli_clearstats(int argc, char **argv)
+{
+	radio_clrrxstats();
+	printf("CLR_STATS: OK\r\n");
 }
 
 void updatescreen(void)

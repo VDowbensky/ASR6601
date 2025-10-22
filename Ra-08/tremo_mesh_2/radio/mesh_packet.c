@@ -24,7 +24,13 @@ void print_meshtastic_packet(void)
 {
   uint8_t i;
   //print rssi, rssi_pkt, snr_pkt first from radio_get_pkt_status()
-  printf("RPCK: RSSI_PKT=%.1f,RSSI_SIGN=%.1f,SNR=%.1f\r\n",pktstatus.rssi_pkt,pktstatus.signal_rssi_pkt,pktstatus.snr_pkt);
+	if(crc_error) 
+	{
+		crc_error = false;
+		printf("FERR: ");
+	}
+	else printf("RPCK: ");
+  printf("RSSI_PKT=%.1f,RSSI_SIGN=%.1f,SNR=%.1f\r\n",pktstatus.rssi_pkt,pktstatus.signal_rssi_pkt,pktstatus.snr_pkt);
   printf("Destination ID: 0x%08X\r\n",rxmessage.destination_id);
   printf("Sender ID: 0x%08X\r\n",rxmessage.sender_id);
   printf("Packet ID: 0x%08X\r\n",rxmessage.packet_id);

@@ -103,6 +103,8 @@ void radio_rx(void);
 void process_rx_packet(void);
 int8_t radio_get_pkt_status(rxpacketstatus_t *status);
 int8_t radio_get_rx_packet(void);
+void radio_getrxstats(void);
+void radio_clrrxstats(void);
 
 
 void RADIO_setctune(uint8_t tune);
@@ -127,6 +129,8 @@ extern volatile bool tx_request;
 extern bool packet_received;
 extern bool crc_error;
 extern bool packet_sent;
+
+extern rxstats_t rxstats;
 
 extern uint8_t txmode;
 

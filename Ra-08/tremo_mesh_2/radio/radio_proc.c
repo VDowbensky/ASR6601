@@ -31,6 +31,7 @@ uint32_t slave_id;
 meshtastic_pkt_t txmessage;
 meshtastic_pkt_t rxmessage;
 rxpacketstatus_t pktstatus;
+rxstats_t rxstats;
 
 void radio_init(void)
 {
@@ -75,11 +76,11 @@ void radio_proc(void)
 
 void process_rx_packet(void)
 {
-	//if(crc_error)
-	//{
-	//	crc_error = false;
-	//	printcrcerror();
-	//}
+//	if(crc_error)
+//	{
+//		crc_error = false;
+//		printcrcerror();
+//	}
 	//else
 	//{
 		//retrieve packet params
@@ -115,7 +116,6 @@ int8_t radio_get_rx_packet(void)
 	SX126X_readBuffer(rxpointer,radio_rxbuffer,rx_paylen);
 	return RADIO_OK;
 }
-
 
 void radio_startburst(void)
 {
@@ -189,6 +189,17 @@ void radio_rx(void)
 {
 	SX126X_SetLoRaPacketParams(radioConfig.LoRaPreLen, radioConfig.LoRaImplHeader,radioConfig.LoRaPayLen,radioConfig.LoRaCrcOn,radioConfig.LoRaInvertIQ);
 	SX126X_setopmode(SX126X_OPMODE_RX);
+}
+
+void radio_getrxstats(void)
+{
+	uint8_t dummy;
+	SX126X_LoRaGetStats(&dummy,&rxstats.pkt_received,&rxstats.crc_error,&rxstats.header_error);
+}
+
+void radio_clrrxstats(void)
+{
+	SX126X_ResetStats();
 }
 
 

@@ -25,9 +25,9 @@ void print_meshtastic_packet(void)
   uint8_t i;
   //print rssi, rssi_pkt, snr_pkt first from radio_get_pkt_status()
   printf("RPCK: RSSI_PKT=%.1f,RSSI_SIGN=%.1f,SNR=%.1f\r\n",pktstatus.rssi_pkt,pktstatus.signal_rssi_pkt,pktstatus.snr_pkt);
-  printf("Destination ID: %u\r\n",rxmessage.destination_id);
-  printf("Sender ID: %u\r\n",rxmessage.sender_id);
-  printf("Packet ID: %u\r\n",rxmessage.packet_id);
+  printf("Destination ID: 0x%08X\r\n",rxmessage.destination_id);
+  printf("Sender ID: 0x%08X\r\n",rxmessage.sender_id);
+  printf("Packet ID: 0x%08X\r\n",rxmessage.packet_id);
   //flags
   printf("Hop start: %d\r\n",(rxmessage.flags & HOPSTART_MSK) >> HOPSTART_POS);
   printf("Hop limit: %d\r\n",rxmessage.flags & HOPLIMIT_MSK);

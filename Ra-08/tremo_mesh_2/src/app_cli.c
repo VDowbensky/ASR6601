@@ -191,7 +191,7 @@ void cli_setfreq(int argc, char **argv)
 {
   radioConfig.RfFreq = ciGetUnsigned(argv[1]) * 1000;
   radio_set_freq(radioConfig.RfFreq);
-  printf("SET_FREQ: %u,\r\n",radioConfig.RfFreq / 1000);
+  printf("SET_FREQ: %u\r\n",radioConfig.RfFreq / 1000);
 	updatescreen();
 }
 
